@@ -2,16 +2,19 @@
 /**
  * @package ECDD
  */
-get_header(); ?>
-  <div class="wrap">
-    <?php if ( have_posts() ) :  while ( have_posts() ) : the_post(); ?>
-          <?php get_template_part( 'assets/views/content' ) ?>
-        <?php endwhile; ?>
-      <?php the_posts_navigation(); ?>
-    <?php else : ?>
-      <?php get_template_part( 'assets/views/content', 'none' ); ?>
-    <?php endif; ?>
-  </div>
+?>
 
-<?php get_sidebar(); ?>
+<?php get_header(); ?>
+
+<header class="header">
+  <?php get_template_part('assets/views/bar-top', 'bar-top'); ?>
+  <?php get_template_part('assets/views/head', 'head'); ?>
+  <?php get_template_part('assets/views/banner-index', 'banner-index'); ?>
+</header>
+
+<main class="main">
+  <?php get_template_part('assets/views/content-index', 'content-index'); ?>
+</main>
+
 <?php get_footer(); ?>
+

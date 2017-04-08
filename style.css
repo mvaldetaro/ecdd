@@ -1,7 +1,27 @@
-body { background: red; }
+@font-face { font-family: 'proxima_novablack'; src: url("../ecdd/assets/font/proximanova-black-webfont.woff2") format("woff2"), url("../ecdd/assets/font/proximanova-black-webfont.woff") format("woff"); font-weight: normal; font-style: normal; }
 
-h1 { font-size: 25px; }
+@font-face { font-family: 'proxima_nova_rgbold'; src: url("../ecdd/assets/font/proximanova-bold-webfont.woff2") format("woff2"), url("../ecdd/assets/font/proximanova-bold-webfont.woff") format("woff"); font-weight: normal; font-style: normal; }
 
-/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic3R5bGUuY3NzIiwic291cmNlcyI6WyJzdHlsZS5zY3NzIiwicGFydGlhbHMvX3ZhcmlhYmxlcy5zY3NzIiwicGFydGlhbHMvX3N0cnVjdHVyZS5zY3NzIl0sIm1hcHBpbmdzIjoiQUVBQSxBQUFBLElBQUksQ0FBQyxFQUNILFVBQVUsRURESixHQUFHLEdDRVY7O0FBRUQsQUFBQSxFQUFFLENBQUMsRUFDRCxTQUFTLEVBQUUsSUFBSyxHQUNqQiIsIm5hbWVzIjpbXX0= */
+@font-face { font-family: 'proxima_nova_rgbold_italic'; src: url("../ecdd/assets/font/proximanova-boldit-webfont.woff2") format("woff2"), url("../ecdd/assets/font/proximanova-boldit-webfont.woff") format("woff"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'proxima_novaextrabold'; src: url("../ecdd/assets/font/proximanova-extrabold-webfont.woff2") format("woff2"), url("../ecdd/assets/font/proximanova-extrabold-webfont.woff") format("woff"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'proxima_novalight'; src: url("../ecdd/assets/font/proximanova-light-webfont.woff2") format("woff2"), url("../ecdd/assets/font/proximanova-light-webfont.woff") format("woff"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'proxima_novalight_italic'; src: url("../ecdd/assets/font/proximanova-lightitalic-webfont.woff2") format("woff2"), url("../ecdd/assets/font/proximanova-lightitalic-webfont.woff") format("woff"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'proxima_nova_rgregular'; src: url("../ecdd/assets/font/proximanova-regular-webfont.woff2") format("woff2"), url("../ecdd/assets/font/proximanova-regular-webfont.woff") format("woff"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'proxima_novaregular_italic'; src: url("../ecdd/assets/font/proximanova-regularitalic-webfont.woff2") format("woff2"), url("../ecdd/assets/font/proximanova-regularitalic-webfont.woff") format("woff"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'proxima_novasemibold'; src: url("../ecdd/assets/font/proximanova-semibold-webfont.woff2") format("woff2"), url("../ecdd/assets/font/proximanova-semibold-webfont.woff") format("woff"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'proxima_novasemibold_italic'; src: url("../ecdd/assets/font/proximanova-semibolditalic-webfont.woff2") format("woff2"), url("../ecdd/assets/font/proximanova-semibolditalic-webfont.woff") format("woff"); font-weight: normal; font-style: normal; }
+
+h1, h2, h3, h4, h5, h6 { font-family: "Raleway", sans-serif; }
+
+p { font-family: "Raleway", sans-serif; }
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic3R5bGUuY3NzIiwic291cmNlcyI6WyJzdHlsZS5zY3NzIiwicGFydGlhbHMvX3ZhcmlhYmxlcy5zY3NzIiwicGFydGlhbHMvX2ZvbnQtZmFjZS5zY3NzIiwicGFydGlhbHMvX3RpcG8uc2NzcyIsInBhcnRpYWxzL19zdHJ1Y3R1cmUuc2NzcyJdLCJtYXBwaW5ncyI6IkFFQUEsVUFBVSxHQUNOLFdBQVcsRUFBRSxtQkFBb0IsRUFDakMsR0FBRyxFQUFFLDBEQUFHLENBQXdELGVBQU0sRUFDakUseURBQUcsQ0FBdUQsY0FBTSxFQUNyRSxXQUFXLEVBQUUsTUFBTyxFQUNwQixVQUFVLEVBQUUsTUFBTzs7QUFHdkIsVUFBVSxHQUNOLFdBQVcsRUFBRSxxQkFBc0IsRUFDbkMsR0FBRyxFQUFFLHlEQUFHLENBQXVELGVBQU0sRUFDaEUsd0RBQUcsQ0FBc0QsY0FBTSxFQUNwRSxXQUFXLEVBQUUsTUFBTyxFQUNwQixVQUFVLEVBQUUsTUFBTzs7QUFHdkIsVUFBVSxHQUNOLFdBQVcsRUFBRSw0QkFBNkIsRUFDMUMsR0FBRyxFQUFFLDJEQUFHLENBQXlELGVBQU0sRUFDbEUsMERBQUcsQ0FBd0QsY0FBTSxFQUN0RSxXQUFXLEVBQUUsTUFBTyxFQUNwQixVQUFVLEVBQUUsTUFBTzs7QUFHdkIsVUFBVSxHQUNOLFdBQVcsRUFBRSx1QkFBd0IsRUFDckMsR0FBRyxFQUFFLDhEQUFHLENBQTRELGVBQU0sRUFDckUsNkRBQUcsQ0FBMkQsY0FBTSxFQUN6RSxXQUFXLEVBQUUsTUFBTyxFQUNwQixVQUFVLEVBQUUsTUFBTzs7QUFHdkIsVUFBVSxHQUNOLFdBQVcsRUFBRSxtQkFBb0IsRUFDakMsR0FBRyxFQUFFLDBEQUFHLENBQXdELGVBQU0sRUFDakUseURBQUcsQ0FBdUQsY0FBTSxFQUNyRSxXQUFXLEVBQUUsTUFBTyxFQUNwQixVQUFVLEVBQUUsTUFBTzs7QUFHdkIsVUFBVSxHQUNOLFdBQVcsRUFBRSwwQkFBMkIsRUFDeEMsR0FBRyxFQUFFLGdFQUFHLENBQThELGVBQU0sRUFDdkUsK0RBQUcsQ0FBNkQsY0FBTSxFQUMzRSxXQUFXLEVBQUUsTUFBTyxFQUNwQixVQUFVLEVBQUUsTUFBTzs7QUFHdkIsVUFBVSxHQUNOLFdBQVcsRUFBRSx3QkFBeUIsRUFDdEMsR0FBRyxFQUFFLDREQUFHLENBQTBELGVBQU0sRUFDbkUsMkRBQUcsQ0FBeUQsY0FBTSxFQUN2RSxXQUFXLEVBQUUsTUFBTyxFQUNwQixVQUFVLEVBQUUsTUFBTzs7QUFHdkIsVUFBVSxHQUNOLFdBQVcsRUFBRSw0QkFBNkIsRUFDMUMsR0FBRyxFQUFFLGtFQUFHLENBQWdFLGVBQU0sRUFDekUsaUVBQUcsQ0FBK0QsY0FBTSxFQUM3RSxXQUFXLEVBQUUsTUFBTyxFQUNwQixVQUFVLEVBQUUsTUFBTzs7QUFHdkIsVUFBVSxHQUNOLFdBQVcsRUFBRSxzQkFBdUIsRUFDcEMsR0FBRyxFQUFFLDZEQUFHLENBQTJELGVBQU0sRUFDcEUsNERBQUcsQ0FBMEQsY0FBTSxFQUN4RSxXQUFXLEVBQUUsTUFBTyxFQUNwQixVQUFVLEVBQUUsTUFBTzs7QUFHdkIsVUFBVSxHQUNOLFdBQVcsRUFBRSw2QkFBOEIsRUFDM0MsR0FBRyxFQUFFLG1FQUFHLENBQWlFLGVBQU0sRUFDMUUsa0VBQUcsQ0FBZ0UsY0FBTSxFQUM5RSxXQUFXLEVBQUUsTUFBTyxFQUNwQixVQUFVLEVBQUUsTUFBTzs7QUM1RXZCLEFBQUEsRUFBRSxFQUFFLEFBQUEsRUFBRSxFQUFFLEFBQUEsRUFBRSxFQUFFLEFBQUEsRUFBRSxFQUFFLEFBQUEsRUFBRSxFQUFFLEFBQUEsRUFBRSxDQUFDLEVBQ25CLFdBQVcsRUZEQyxTQUFTLEVBQUUsVUFBVSxHRUVwQzs7QUFFRCxBQUFBLENBQUMsQ0FBQyxFQUNFLFdBQVcsRUZKQSxTQUFTLEVBQUUsVUFBVSxHRUtuQyIsIm5hbWVzIjpbXX0= */
 
 /*# sourceMappingURL=style.css.map */

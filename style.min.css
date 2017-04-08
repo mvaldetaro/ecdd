@@ -1,2 +1,19 @@
-body{background:red}
-h1{font-size:25px}
+/**
+ * ECDD
+ * @version v1.0.0
+ * @link http://www.infnet.edu.br/ecdd
+ * @author Magno Valdetaro
+ * @last update Sat Apr 08 2017,
+ */
+@font-face{font-family:'proxima_novablack';src:url("../ecdd/assets/font/proximanova-black-webfont.woff2") format("woff2"),url("../ecdd/assets/font/proximanova-black-webfont.woff") format("woff");font-weight:normal;font-style:normal}
+@font-face{font-family:'proxima_nova_rgbold';src:url("../ecdd/assets/font/proximanova-bold-webfont.woff2") format("woff2"),url("../ecdd/assets/font/proximanova-bold-webfont.woff") format("woff");font-weight:normal;font-style:normal}
+@font-face{font-family:'proxima_nova_rgbold_italic';src:url("../ecdd/assets/font/proximanova-boldit-webfont.woff2") format("woff2"),url("../ecdd/assets/font/proximanova-boldit-webfont.woff") format("woff");font-weight:normal;font-style:normal}
+@font-face{font-family:'proxima_novaextrabold';src:url("../ecdd/assets/font/proximanova-extrabold-webfont.woff2") format("woff2"),url("../ecdd/assets/font/proximanova-extrabold-webfont.woff") format("woff");font-weight:normal;font-style:normal}
+@font-face{font-family:'proxima_novalight';src:url("../ecdd/assets/font/proximanova-light-webfont.woff2") format("woff2"),url("../ecdd/assets/font/proximanova-light-webfont.woff") format("woff");font-weight:normal;font-style:normal}
+@font-face{font-family:'proxima_novalight_italic';src:url("../ecdd/assets/font/proximanova-lightitalic-webfont.woff2") format("woff2"),url("../ecdd/assets/font/proximanova-lightitalic-webfont.woff") format("woff");font-weight:normal;font-style:normal}
+@font-face{font-family:'proxima_nova_rgregular';src:url("../ecdd/assets/font/proximanova-regular-webfont.woff2") format("woff2"),url("../ecdd/assets/font/proximanova-regular-webfont.woff") format("woff");font-weight:normal;font-style:normal}
+@font-face{font-family:'proxima_novaregular_italic';src:url("../ecdd/assets/font/proximanova-regularitalic-webfont.woff2") format("woff2"),url("../ecdd/assets/font/proximanova-regularitalic-webfont.woff") format("woff");font-weight:normal;font-style:normal}
+@font-face{font-family:'proxima_novasemibold';src:url("../ecdd/assets/font/proximanova-semibold-webfont.woff2") format("woff2"),url("../ecdd/assets/font/proximanova-semibold-webfont.woff") format("woff");font-weight:normal;font-style:normal}
+@font-face{font-family:'proxima_novasemibold_italic';src:url("../ecdd/assets/font/proximanova-semibolditalic-webfont.woff2") format("woff2"),url("../ecdd/assets/font/proximanova-semibolditalic-webfont.woff") format("woff");font-weight:normal;font-style:normal}
+h1,h2,h3,h4,h5,h6{font-family:"Raleway",sans-serif}
+p{font-family:"Raleway",sans-serif}

@@ -33,6 +33,9 @@
        *
        */
 
+      wp_register_script('ecdd_bootstrapjs', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array(), '1.0', true); // Custom scripts
+      wp_enqueue_script('ecdd_bootstrapjs'); // Enqueue it!
+
       wp_register_script('ecdd_vendorsJs', get_template_directory_uri() . '/assets/js/vendors.min.js', array(), '1.0', true); // Custom scripts
       wp_enqueue_script('ecdd_vendorsJs'); // Enqueue it!
 
