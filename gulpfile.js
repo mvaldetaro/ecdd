@@ -32,6 +32,17 @@
 var project                 = 'ECDDTheme'; // Project Name.
 var projectURL              = 'localhost/ecdd'; // Project URL. Could be something like localhost:8888.
 var productURL              = './'; // Theme/Plugin URL. Leave it like it is, since our gulpfile.js lives in the root folder.
+var pkg = require('./package.json');
+var date = new Date().toDateString();
+var banner = ['/**',
+  ' * <%= pkg.name %>',
+  ' * @version v<%= pkg.version %>',
+  ' * @link <%= pkg.homepage %>',
+  ' * @author <%= pkg.author %>',
+  ' * @last update '+ date +',',
+  ' */',
+  ''].join('\n');
+
 
 // Translation related.
 var text_domain             = 'ECDD'; // Your textdomain here.
@@ -123,6 +134,7 @@ var browserSync  = require('browser-sync').create(); // Reloads browser and inje
 var reload       = browserSync.reload; // For manual browser reload.
 var wpPot        = require('gulp-wp-pot'); // For generating the .pot file.
 var sort         = require('gulp-sort'); // Recommended to prevent unnecessary changes in pot-file.
+var header       = require('gulp-header'); // Add a header to file.
 
 /**
  * Task: `browser-sync`.
@@ -202,6 +214,7 @@ gulp.task( 'browser-sync', function() {
     .pipe( minifycss( {
       maxLineLen: 10
     }))
+    .pipe(header(banner, {pkg: pkg}))
     .pipe( lineec() ) // Consistent Line Endings for non UNIX systems.
     .pipe( gulp.dest( styleDestination ) )
 
@@ -253,6 +266,7 @@ gulp.task( 'browser-sync', function() {
     .pipe( minifycss( {
       maxLineLen: 10
     }))
+    .pipe(header(banner, {pkg: pkg}))
     .pipe( lineec() ) // Consistent Line Endings for non UNIX systems.
     .pipe( gulp.dest( cssVendorDestination ) )
 
@@ -283,6 +297,7 @@ gulp.task( 'browser-sync', function() {
       suffix: '.min'
     }))
     .pipe( uglify() )
+    .pipe(header(banner, {pkg: pkg}))
     .pipe( lineec() ) // Consistent Line Endings for non UNIX systems.
     .pipe( gulp.dest( jsVendorDestination ) )
     .pipe( notify( { message: 'TASK: "vendorsJs" Completed! 💯', onLast: true } ) );
@@ -310,6 +325,7 @@ gulp.task( 'browser-sync', function() {
       suffix: '.min'
     }))
     .pipe( uglify() )
+    .pipe(header(banner, {pkg: pkg}))
     .pipe( lineec() ) // Consistent Line Endings for non UNIX systems.
     .pipe( gulp.dest( jsCustomDestination ) )
     .pipe( notify( { message: 'TASK: "customJs" Completed! 💯', onLast: true } ) );
