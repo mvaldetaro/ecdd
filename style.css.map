@@ -1,0 +1,1 @@
+{"version":3,"sources":["partials/_structure.scss","partials/_variables.scss","style.css"],"names":[],"mappings":"AAAA,OACE,gBCDS,EDEV;;AAED,KACE,gBAAgB,EACjB;;AEFD,kXAAkX","file":"style.css","sourcesContent":["body {\r\n  background: $color;\r\n}\r\n\r\nh1 {\r\n  font-size: 25px;\r\n}\r\n","$color: red;\r\n"]}

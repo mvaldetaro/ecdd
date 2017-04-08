@@ -1,0 +1,1193 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"background-co",
+				"background-color"
+			],
+			[
+				"tempo",
+				"tempoAtual"
+			],
+			[
+				"img",
+				"imgRandon"
+			],
+			[
+				"images",
+				"imagens"
+			],
+			[
+				"tra",
+				"transition"
+			],
+			[
+				"trans",
+				"transform"
+			],
+			[
+				"re",
+				"relative"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"font-aw",
+				"font-awesome.min.css"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"max",
+				"maxValue"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"border-",
+				"border-bottom"
+			],
+			[
+				"get",
+				"getItem"
+			],
+			[
+				"name",
+				"nameUser"
+			],
+			[
+				"new",
+				"newObjectUser"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"btn",
+				"btnCadastro"
+			],
+			[
+				"login",
+				"loginForm"
+			],
+			[
+				"do",
+				"document"
+			],
+			[
+				"getE",
+				"getElementById"
+			],
+			[
+				"set",
+				"setNr"
+			],
+			[
+				"r",
+				"return"
+			],
+			[
+				"ine",
+				"innerHTML"
+			],
+			[
+				"ma",
+				"maxValue"
+			],
+			[
+				"min",
+				"minValue"
+			],
+			[
+				"ge",
+				"getElementById"
+			],
+			[
+				"aln",
+				"aluno"
+			],
+			[
+				"p",
+				"push"
+			],
+			[
+				"tabl",
+				"table-cell"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"box",
+				"box-sizing"
+			],
+			[
+				"S",
+				"scale()"
+			],
+			[
+				"TRA",
+				"transform"
+			],
+			[
+				"eas",
+				"ease-out"
+			],
+			[
+				"tar",
+				"transition"
+			],
+			[
+				"rght",
+				"right"
+			],
+			[
+				"in",
+				"inset"
+			],
+			[
+				"bo",
+				"box-shadow"
+			],
+			[
+				"li",
+				"linear-gradient()"
+			],
+			[
+				"back",
+				"background-image"
+			],
+			[
+				"op",
+				"opacity"
+			],
+			[
+				"rg",
+				"rgba()"
+			],
+			[
+				"mi",
+				"miniatura2.png\tw:140 h:140"
+			],
+			[
+				"no",
+				"no-repeat"
+			],
+			[
+				"image",
+				"images/"
+			],
+			[
+				"ima",
+				"images/"
+			],
+			[
+				"margi",
+				"margin-top"
+			],
+			[
+				"lo",
+				"logo_rodape.png\tw:65 h:67"
+			],
+			[
+				"border-b",
+				"border-box"
+			],
+			[
+				"acc",
+				"accept-charset\tAttr"
+			],
+			[
+				"text-align",
+				"text-align"
+			],
+			[
+				"font-",
+				"font-variant"
+			],
+			[
+				"ca",
+				"cappucino_chocolate.jpg\tw:143 h:143"
+			],
+			[
+				"lis",
+				"list-style"
+			],
+			[
+				"c",
+				"criarVetorAleatorio"
+			],
+			[
+				"pa",
+				"padding-top"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"borde",
+				"border-color"
+			],
+			[
+				"i",
+				"inherit"
+			],
+			[
+				"fi",
+				"font-size"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"boder",
+				"border"
+			],
+			[
+				"txt",
+				"text-transform"
+			],
+			[
+				"fo",
+				"font-size"
+			],
+			[
+				"le",
+				"letter-spacing"
+			],
+			[
+				"FO",
+				"font-size"
+			],
+			[
+				"prin",
+				"print_r"
+			],
+			[
+				"table",
+				"tableService"
+			],
+			[
+				"sy",
+				"style.scss"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"widt",
+				"width"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"MARGIN",
+				"margin-bottom"
+			],
+			[
+				"TEXT",
+				"text-align"
+			],
+			[
+				"inl",
+				"inline-block"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "functions.php",
+			"settings":
+			{
+				"buffer_size": 3782,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "<video id=\"video\" preload=\"auto\" controls width=\"500\" height=\"auto\" >\n  <source src=\"http://simplypx.com/images/Prometheus.mp4\" type=\"video/mp4\" />\n  <p>Seu navegdaor não suporta vídeos em HMTL5 :(</p>\n</video>\n<!-- <div class=\"caption\">Prometheus</div>\n<div class=\"control\">\n  <div class=\"btmControl\">\n    <div class=\"btnPlay btn\" title=\"Play/Pause video\"><span class=\"icon-play\"></span></div>\n    <div class=\"progress-bar\">\n      <div class=\"progress\">\n        <span class=\"bufferBar\"></span>\n        <span class=\"timeBar\"></span>\n      </div>\n    </div>\n    <div class=\"sound sound2 btn\" title=\"Mute/Unmute sound\"><span class=\"icon-sound\"></span></div>\n    <div class=\"btnFS btn\" title=\"Switch to full screen\"><span class=\"icon-fullscreen\"></span></div>\n  </div>-->\n</div>\n",
+			"settings":
+			{
+				"buffer_size": 776,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Magno/Google Drive/ADS/DEV-FRONT-END/d1_html_css/AT/css/tipo.css",
+			"settings":
+			{
+				"buffer_size": 369,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 354.0,
+		"last_filter": "ins",
+		"selected_items":
+		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"inde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"pack",
+				"Package Control: Remove Package"
+			],
+			[
+				"package",
+				"Package Control: Remove Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"INDE",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 446.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/wamp64/www/ecdd/wp-content/themes/ecdd/assets/functions"
+	],
+	"file_history":
+	[
+		"/C/wamp64/www/ecdd/wp-content/themes/ecdd/assets/css/vendor.scss",
+		"/C/wamp64/www/ecdd/wp-content/themes/ecdd/assets/css/partials/_structure.scss",
+		"/C/wamp64/www/ecdd/wp-content/themes/ecdd/assets/css/vendor/normalize.css",
+		"/C/wamp64/www/ecdd/wp-content/themes/ecdd/gulpfile.js",
+		"/C/wamp64/www/ecdd/wp-content/themes/ecdd/assets/css/vendor/animate.css",
+		"/C/wamp64/www/ecdd/wp-content/themes/ecdd/assets/js/vendors.js",
+		"/C/wamp64/www/ecdd/wp-content/themes/ecdd/assets/functions/scripts_styles.php",
+		"/C/wamp64/www/ecdd/wp-content/themes/ecdd/style.css.map",
+		"/C/wamp64/www/ecdd/wp-content/themes/ecdd/style.min.css",
+		"/C/wamp64/www/ecdd/wp-content/themes/ecdd/assets/js/custom.min.js",
+		"/C/wamp64/www/ecdd/wp-content/themes/ecdd/assets/js/custom/home.js",
+		"/C/wamp64/www/ecdd/wp-content/themes/ecdd/assets/js/custom.js",
+		"/C/wamp64/www/ecdd/wp-content/themes/ecdd/assets/js/custom/scripts.js",
+		"/C/wamp64/www/ecdd/wp-content/themes/ecdd/assets/js/vendor/wow.js",
+		"/C/wamp64/www/ecdd/wp-content/themes/ecdd/footer.php",
+		"/C/wamp64/www/ecdd/wp-content/themes/ecdd/header.php",
+		"/C/wamp64/www/ecdd/wp-content/themes/ecdd/assets/css/partials/_variables.scss",
+		"/C/wamp64/www/ecdd/wp-content/themes/ecdd/style.css",
+		"/C/wamp64/www/ecdd/wp-content/themes/ecdd/assets/css/style.scss",
+		"/C/Users/Magno/Downloads/initializr-verekia-4.0/initializr/index.html",
+		"/C/wamp64/www/ecdd/wp-content/themes/twentyseventeen/header.php",
+		"/C/wamp64/www/ecdd/wp-content/themes/twentyseventeen/functions.php",
+		"/C/wamp64/www/ecdd/wp-content/themes/ecdd/assets/js/custom/custom.js",
+		"/C/wamp64/www/ecdd/wp-content/themes/ecdd/bower.json",
+		"/C/wamp64/www/ecdd/wp-content/themes/ecdd/package.json",
+		"/D/Dropbox/Works/ECDD/dev/assets/css/style.scss",
+		"/D/Dropbox/Works/ECDD/dev/assets/views/content.php",
+		"/D/Dropbox/Works/ECDD/dev/sidebar.php",
+		"/D/Dropbox/Works/ECDD/dev/gulpfile.js",
+		"/C/wamp64/bin/apache/apache2.4.23/conf/extra/httpd-vhosts.conf",
+		"/D/Dropbox/Works/ECDD/dev/footer.php",
+		"/D/Dropbox/Works/ECDD/dev/package.json",
+		"/D/Dropbox/Works/ECDD/dev/bower.json",
+		"/C/Users/Magno/Google Drive/ADS/DEV-FRONT-END/d2_javascript/AT/modelo/index.html",
+		"/C/Users/Magno/Google Drive/ADS/DEV-FRONT-END/d2_javascript/TP4/index.html",
+		"/C/Users/Magno/Google Drive/ADS/DEV-FRONT-END/d5_projeto_bloco/TP5_projeto/index.html",
+		"/C/Users/Magno/Google Drive/ADS/DEV-FRONT-END/d5_projeto_bloco/TP5_projeto/assets/css/header.css",
+		"/C/Users/Magno/Google Drive/ADS/DEV-FRONT-END/d5_projeto_bloco/TP5_projeto/assets/css/style.css",
+		"/C/Users/Magno/Google Drive/ADS/DEV-FRONT-END/d5_projeto_bloco/TP5_projeto/assets/css/breadcrumb.css",
+		"/C/Users/Magno/Google Drive/ADS/DEV-FRONT-END/d5_projeto_bloco/TP5_projeto/assets/css/mainnav.css",
+		"/C/Users/Magno/Google Drive/ADS/DEV-FRONT-END/d5_projeto_bloco/TP5_projeto/assets/css/userlog.css",
+		"/C/Users/Magno/Google Drive/ADS/DEV-FRONT-END/d5_projeto_bloco/TP5_projeto/assets/css/main.css",
+		"/C/Users/Magno/Google Drive/ADS/DEV-FRONT-END/d5_projeto_bloco/TP5_projeto/assets/css/carousel.css",
+		"/C/Users/Magno/Google Drive/ADS/DEV-FRONT-END/d2_javascript/TP4/q1.js",
+		"/C/Users/Magno/Google Drive/ADS/DEV-FRONT-END/d2_javascript/TP4/tp4.modelo/tp4/js/q1.js",
+		"/C/Users/Magno/Google Drive/ADS/DEV-FRONT-END/d5_projeto_bloco/TP5_projeto/assets/css/category.css",
+		"/C/Users/Magno/Downloads/tp4.modelo/tp4/js/q1.js",
+		"/C/Users/Magno/Downloads/tp4.modelo/tp4/js/q2.js",
+		"/C/Users/Magno/Downloads/tp4.modelo/tp4/js/q6.js",
+		"/C/Users/Magno/Downloads/tp4.modelo/tp4/js/q5.js",
+		"/C/Users/Magno/Downloads/tp4.modelo/tp4/js/q4.js",
+		"/C/Users/Magno/Downloads/tp4.modelo/tp4/js/q3.js",
+		"/C/Users/Magno/Google Drive/ADS/DEV-FRONT-END/d5_projeto_bloco/TP5_projeto/assets/js/main.js",
+		"/C/Users/Magno/Google Drive/ADS/DEV-FRONT-END/d5_projeto_bloco/TP5_projeto/assets/main.css",
+		"/C/Users/Magno/Google Drive/ADS/DEV-FRONT-END/d2_javascript/TP4/q1-vanilla.js",
+		"/C/Users/Magno/Google Drive/ADS/DEV-FRONT-END/d2_javascript/TP3/q1.js",
+		"/C/Users/Magno/Google Drive/ADS/DEV-FRONT-END/d2_javascript/TP4/q1-js.js",
+		"/C/Users/Magno/Google Drive/ADS/DEV-FRONT-END/d1_html_css/tp3_magno_valdetaro_html_css/local.html",
+		"/C/Users/Magno/Google Drive/ADS/DEV-FRONT-END/d1_html_css/tp3_magno_valdetaro_html_css/eventos.html",
+		"/C/Users/Magno/Google Drive/ADS/DEV-FRONT-END/d2_javascript/TP3/index.html",
+		"/C/Users/Magno/Google Drive/ADS/DEV-FRONT-END/d2_javascript/TP2/tp2_js_magno_valdetaro.js",
+		"/C/Users/Magno/Google Drive/ADS/DEV-FRONT-END/d2_javascript/TP3/q3.js",
+		"/C/Users/Magno/Google Drive/ADS/DEV-FRONT-END/d2_javascript/TP3/q6.js",
+		"/C/Users/Magno/Google Drive/ADS/DEV-FRONT-END/d1_html_css/TP3_Magno_Valdetaro/estilos.css",
+		"/C/Users/Magno/Google Drive/ADS/DEV-FRONT-END/d1_html_css/TP3_Magno_Valdetaro/index.html",
+		"/D/Dropbox/Works/ECDD/projeto/images/001-buildings.svg",
+		"/C/Users/Magno/Google Drive/ADS/DEV-FRONT-END/d2_javascript/TP3/q2.js",
+		"/C/Users/Magno/Google Drive/ADS/DEV-FRONT-END/d2_javascript/TP3/q4.js",
+		"/C/Users/Magno/Google Drive/ADS/DEV-FRONT-END/d2_javascript/TP3/app/app.css",
+		"/C/Users/Magno/Google Drive/ADS/DEV-FRONT-END/d2_javascript/pratica/objetos-metodos-heranca",
+		"/C/Users/Magno/Downloads/tp2_js_magno_valdetaro.js",
+		"/C/Users/Magno/AppData/Roaming/Sublime Text 3/Packages/User/SideBarEnhancements/Open With/Side Bar.sublime-menu",
+		"/C/Users/Magno/Google Drive/ADS/DEV-FRONT-END/d1_html_css/AT/index.html",
+		"/C/Users/Magno/Google Drive/ADS/DEV-FRONT-END/d1_html_css/AT/estilo.css",
+		"/C/Users/Magno/Google Drive/ADS/DEV-FRONT-END/d1_html_css/AT/css/header.css",
+		"/C/Users/Magno/Google Drive/ADS/DEV-FRONT-END/d1_html_css/AT/css/home.css",
+		"/C/Users/Magno/Google Drive/ADS/DEV-FRONT-END/d1_html_css/AT/css/footer.css",
+		"/C/Users/Magno/Google Drive/ADS/DEV-FRONT-END/d1_html_css/AT/sobre.html",
+		"/C/Users/Magno/Google Drive/ADS/DEV-FRONT-END/d1_html_css/AT/css/contato.css",
+		"/C/Users/Magno/Google Drive/ADS/DEV-FRONT-END/d1_html_css/AT/contato.html",
+		"/C/Users/Magno/Google Drive/ADS/DEV-FRONT-END/d1_html_css/AT/cartao_fidelidade.html",
+		"/C/Users/Magno/Google Drive/ADS/DEV-FRONT-END/d1_html_css/AT/css/fidelidade.css",
+		"/C/Users/Magno/Google Drive/ADS/DEV-FRONT-END/d1_html_css/AT/css/sobre.css",
+		"/C/Users/Magno/Google Drive/ADS/DEV-FRONT-END/d1_html_css/AT/css/tipo.css",
+		"/C/Users/Magno/Google Drive/ADS/DEV-FRONT-END/d1_html_css/AT/css/grid.css",
+		"/C/Users/Magno/Google Drive/ADS/DEV-FRONT-END/d1_html_css/TP3_Magno_Valdetaro/contato.html",
+		"/C/Users/Magno/Google Drive/ADS/DEV-FRONT-END/d1_html_css/TP3_Magno_Valdetaro/cardapio.html",
+		"/C/Users/Magno/Google Drive/ADS/DEV-FRONT-END/d1_html_css/TP3_Magno_Valdetaro/eventos.html",
+		"/C/Users/Magno/Google Drive/ADS/DEV-FRONT-END/d1_html_css/TP3_Magno_Valdetaro/local.html",
+		"/C/Users/Magno/Google Drive/ADS/DEV-FRONT-END/d1_html_css/TP2_Magno_Valdetaro/index.html",
+		"/C/Users/Magno/Google Drive/ADS/DEV-FRONT-END/d1_html_css/TP2_Magno_Valdetaro/estilos.css",
+		"/C/Users/Magno/Google Drive/ADS/DEV-FRONT-END/d1_html_css/TP2_Magno_Valdetaro/contato.html",
+		"/C/Users/Magno/Google Drive/ADS/DEV-FRONT-END/d1_html_css/TP2_Magno_Valdetaro/normalize.css",
+		"/C/Users/Magno/Google Drive/ADS/DEV-FRONT-END/d1_html_css/TP2_Magno_Valdetaro/reset.css",
+		"/D/Dropbox/Works/english-on-the-road/student/theme/eotr/pix_core/i/assignroles.svg",
+		"/D/Dropbox/Works/english-on-the-road/student/theme/eotr/pix_core/i/cohort.svg",
+		"/D/Dropbox/Works/english-on-the-road/student/theme/eotr/pix_core/i/withsubcat.svg",
+		"/D/Dropbox/Works/english-on-the-road/student/theme/eotr/pix_core/t/up.svg",
+		"/D/Dropbox/Works/english-on-the-road/student/theme/eotr/pix_core/t/export.svg",
+		"/D/Dropbox/Works/english-on-the-road/student/theme/eotr/pix_core/t/down.svg",
+		"/D/Dropbox/Works/english-on-the-road/student/theme/eotr/pix_core/t/add.svg",
+		"/D/Dropbox/Works/english-on-the-road/student/theme/eotr/scss/preset/default.scss",
+		"/D/Dropbox/Works/english-on-the-road/student/theme/eotr/config.php",
+		"/D/Dropbox/Works/english-on-the-road/student/theme/eotr/classes/output/core_renderer.php",
+		"/D/Dropbox/Works/english-on-the-road/student/theme/eotr/templates/columns2.mustache",
+		"/D/Dropbox/Works/english-on-the-road/student/theme/eotr/layout/columns2.php",
+		"/D/Dropbox/Works/english-on-the-road/student/theme/eotr/layout/course.php",
+		"/D/Dropbox/Works/english-on-the-road/student/theme/eotr/layout/coursecategory.php",
+		"/D/Dropbox/Works/english-on-the-road/student/theme/eotr/layout/incourse.php",
+		"/D/Dropbox/Works/english-on-the-road/student/theme/eotr/layout/mydashboard.php",
+		"/D/Dropbox/Works/english-on-the-road/student/theme/eotr/layout/report.php",
+		"/D/Dropbox/Works/english-on-the-road/student/theme/eotr/layout/columns1.php",
+		"/D/Dropbox/Works/english-on-the-road/student/theme/eotr/layout/admin.php",
+		"/D/Dropbox/Works/english-on-the-road/student/theme/eotr/layout/secure.php",
+		"/D/Dropbox/Works/english-on-the-road/student/theme/eotr/javascript/custom.js",
+		"/D/Dropbox/Works/english-on-the-road/student/theme/eotr/templates/admin.mustache",
+		"/C/Users/Magno/Desktop/frankenstein/style/plui.css",
+		"/C/Users/Magno/Desktop/frankenstein/style/custom.css",
+		"/D/Dropbox/Works/english-on-the-road/student/theme/eotr/amd/src/reframe.js",
+		"/C/Users/Magno/Desktop/frankenstein/config.php",
+		"/D/Dropbox/Works/english-on-the-road/student/theme/eotr/javascript/reframe.js",
+		"/D/Dropbox/Works/english-on-the-road/student/theme/eotr/amd/build/loader.min.js",
+		"/D/Dropbox/Works/english-on-the-road/student/theme/eotr/amd/src/loader.js",
+		"/D/Dropbox/Works/english-on-the-road/student/theme/eotr/amd/build/reframe.min.js",
+		"/D/Dropbox/Works/english-on-the-road/student/theme/eotr/amd/src/tab.js",
+		"/D/Dropbox/Works/english-on-the-road/student/theme/eotr/amd/src/scrollspy.js",
+		"/D/Dropbox/Works/english-on-the-road/student/theme/eotr/amd/src/popover.js",
+		"/D/Dropbox/Works/english-on-the-road/student/theme/eotr/templates/incourse.mustache"
+	],
+	"find":
+	{
+		"height": 72.0
+	},
+	"find_in_files":
+	{
+		"height": 161.0,
+		"where_history":
+		[
+			"D:\\Dropbox\\Works\\english-on-the-road\\student\\theme\\eotr\\scss",
+			"D:\\Dropbox\\Works\\english-on-the-road\\student\\theme\\eotr\\templates",
+			"D:\\Dropbox\\Works\\english-on-the-road\\student\\theme\\eotr\\scss",
+			"D:\\Dropbox\\Works\\english-on-the-road\\student\\theme\\eotr",
+			"D:\\Dropbox\\Works\\english-on-the-road\\student\\",
+			"D:\\Dropbox\\Works\\english-on-the-road\\student\\theme\\eotr\\",
+			"D:\\Dropbox\\Works\\english-on-the-road\\student\\theme\\eotr\\scss"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"styleWatchFiles",
+			"twentyseventeen",
+			"src=\"http://placehold.it/160x237\" alt=\"\"",
+			"alt=\"\"",
+			"http://placehold.it/350x150\"",
+			"assets/images/cartazes/filmes/008711.jpg",
+			"<div class=\"category-item\">\n              <img src=\"\" alt=\"\">\n              <h3>nome do filme</h3>\n            </div>",
+			"<div class=\"category-item\">\n              <img class=\"category-item-image\" src=\"assets/images/cartazes/filmes/cataz-os-saltimbancos-trapa.jpg\" alt=\"\">\n              <h3 class=\"category-item-title\">nome do filme</h3>\n            </div>",
+			"<div class=\"category-item\">\n              <img class=\"category-item-image\" src=\"assets/images/cartazes/filmes/bETiNTuEdSCdIqlPaWM5HHt2pqg.jpg\" alt=\"\">\n              <h3 class=\"category-item-title\">nome do filme</h3>\n            </div>",
+			"<div class=\"category-item\">\n              <img class=\"category-item-image\" src=\"assets/images/cartazes/filmes/482137.jpg\" alt=\"\">\n              <h3 class=\"category-item-title\">nome do filme</h3>\n            </div>",
+			"col-md-3",
+			"<div class=\"category-item\">\n            <img src=\"\" alt=\"\">\n            <h3>nome do filme</h3>\n          </div>",
+			"verifeForm",
+			"constutora",
+			"f.",
+			"f",
+			"#F2EDED",
+			"tabindex=\"",
+			"<figure>\n                <a href=\"#\">",
+			"<img src=\"images/miniaturas/",
+			"16px",
+			"style=\"color: #000; text-decoration: none;\"",
+			"style=\"color: #92845F;\"",
+			"link",
+			"home",
+			".eotr-header",
+			"eotr",
+			"sectionname",
+			"[data-region=\"drawer-toggle\"] .btn",
+			"data",
+			"[data-region=\"drawer-toggle\"]",
+			"@screen-sm-min",
+			".card",
+			".filemanager-container",
+			"link",
+			".mini",
+			".calendar-event-panel",
+			".path-calendar",
+			".block_course_overview",
+			".dash-divider",
+			":target",
+			"im-controls",
+			"[data-region=\"blocks-column\"]",
+			"#page-mod-quiz-report",
+			".card",
+			".completionprogress",
+			".file-picker td.label",
+			"li.activity.label",
+			"mod-indent-outer",
+			"11px",
+			".activity.modtype_label",
+			".course-content ",
+			"sectionname",
+			"breadcrumb-item",
+			"breadcrumb",
+			"text-overflow:ellipsis",
+			"boost",
+			"eotr",
+			"boost",
+			"\"})})})}),{}});",
+			"boost",
+			"general",
+			"p-y-1",
+			"course_list",
+			".categorypath",
+			".block_course_overview",
+			"#page-wrapper",
+			".card-title",
+			"card-title",
+			"course",
+			"pix_icon",
+			"block",
+			".btn-secondary",
+			".btn {",
+			".btn",
+			"breadcrumb-button",
+			".userpicture",
+			"img.userpicture",
+			".page-header-headings",
+			".page-context-header",
+			"regionmainsettingsmenu",
+			"blocks",
+			"region_main_settings_menu",
+			"get_compact_logo_url",
+			"p-y-1",
+			".m-t-1",
+			"navbar-static-top",
+			"[data-region=\"",
+			"[data-region=\"drawer\"]",
+			".bg-inverse",
+			"bg-inverse",
+			".usermenu",
+			"$content-header-footer-height",
+			"shadow",
+			"$standard-border",
+			"popover-region-container",
+			"$border-radius",
+			"$border-width",
+			"$caret-width",
+			"$line-height-base",
+			"unread-count",
+			"$toggle-width",
+			"toggler",
+			"tooltip",
+			"$headings-font-family",
+			"$state-success-bg",
+			"bg-inverse",
+			"footer",
+			"theme_boost",
+			"2016 Frédéric Massart - FMCorz.net",
+			"theme_boost",
+			"2016 Ryan Wyllie",
+			"theme_boost",
+			"2016 Frédéric Massart - FMCorz.net",
+			"theme_boost",
+			"2016 Frédéric Massart - FMCorz.net",
+			"theme_boost",
+			"2012 Bas Brands, www.basbrands.nl",
+			"theme_boost",
+			"2016 Frédéric Massart - FMCorz.net",
+			"theme_boost",
+			"2016 Damyon Wiese",
+			"theme_boost",
+			"2016 Frédéric Massart - FMCorz.net",
+			"theme_noanme",
+			"value",
+			"theme_boost",
+			"2016 Frédéric Massart - FMCorz.net"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "functions.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3782,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3601,
+								3601
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme-Darker.tmTheme",
+							"incomplete_sync": null,
+							"open_with_edit": true,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1305.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 776,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								210,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										204,
+										209
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/tag.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										1,
+										6
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme-Darker.tmTheme",
+							"default_dir": "C:\\wamp64\\www\\ecdd\\wp-content\\themes\\ecdd",
+							"incomplete_sync": null,
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/Users/Magno/Google Drive/ADS/DEV-FRONT-END/d1_html_css/AT/css/tipo.css",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 369,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								60,
+								60
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										81,
+										82
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										3,
+										4
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme-Darker.tmTheme",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/CSS3/CSS3.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 70.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 186.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 180.0
+	},
+	"pinned_build_system": "",
+	"project": "ecdd.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 312.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
