@@ -5,11 +5,21 @@
 ?>
 
 <?php get_header(); ?>
-
 <header class="header">
-  <?php get_template_part('assets/views/bar-top', 'bar-top'); ?>
-  <?php get_template_part('assets/views/head', 'head'); ?>
-  <?php get_template_part('assets/views/banner-index', 'banner-index'); ?>
+  <div class="header-content">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <?php get_template_part('assets/views/bar-top', 'bar-top'); ?>
+          <?php get_template_part('assets/views/head', 'head'); ?>
+          <?php get_template_part('assets/views/banner-index', 'banner-index'); ?>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header-background">
+    <img src="<?php bloginfo('template_directory')?>/assets/img/bg-1-desktop.png" alt="">
+  </div>
 </header>
 
 <main class="main">

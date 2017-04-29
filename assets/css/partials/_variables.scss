@@ -1,9 +1,36 @@
+// Media Queries
+
+$phone-width: 480px !default;
+$tablet-width: 720px !default;
+$desktop-width: 992px !default;
+$large-desktop-width: 1200px !default;
+$retina: '-webkit-min-device-pixel-ratio: 2' !default;
+
 // Fonts
-$headings-font: 'Raleway', sans-serif;
-$content-font: 'Raleway', sans-serif;
-$call-actions-heading-font: 'proxima_nova_rgbold';
-$banner-heading-font: 'proxima_nova_rgbold';
+$headings-font: 'Raleway', sans-serif !default;
+$content-font: 'Raleway', sans-serif !default;
+$call-actions-heading-font: 'proxima_nova_rgbold' !default;
+$banner-heading-font: 'proxima_novasemibold' !default;
+$banner-subheading-font: 'proxima_novalight' !default;
+
 
 // Colors
 $black: rgba(0,0,0, .87);
 $white: rgba(255,255,255, .87);
+
+$gray-base:              #000 !default;
+$gray-darker:            lighten($gray-base, 13.5%) !default; // #222
+$gray-dark:              lighten($gray-base, 20%) !default;   // #333
+$gray:                   lighten($gray-base, 33.5%) !default; // #555
+$gray-light:             lighten($gray-base, 87%) !default; // #777
+$gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
+
+$ecdd-mono-one:  rgb(214, 75, 16) !default;
+$ecdd-mono-two:  rgb(212, 106, 30) !default;
+$ecdd-mono-three: rgb(223, 141, 55) !default;
+$ecdd-mono-four: rgb(217, 174, 10) !default;
+$ecdd-mono-five: rgb(245, 203, 7) !default;
+$ecdd-mono-six:  rgb(254, 222, 72) !default;
+
+$link-default: #33ADFF !default;
+$link-hover: $ecdd-mono-three !default;

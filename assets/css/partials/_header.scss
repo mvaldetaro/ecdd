@@ -1,0 +1,35 @@
+.header {
+  position: relative;
+  height: 453px;
+  overflow: hidden;
+
+  @include tablet {
+    height: 726px;
+  }
+
+  @include desktop {
+    height: 830px;
+  }
+
+  .header-content,
+  .header-background {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: inherit;
+  }
+
+  .header-content {
+    z-index: 0;
+    & > div,
+    & > div > div,
+    & > div > div > div {
+      height: inherit;
+    }
+  }
+
+  .header-background {
+    z-index: -1;
+  }
+}

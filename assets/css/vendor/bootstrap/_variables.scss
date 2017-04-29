@@ -12,7 +12,7 @@ $gray-base:              #000 !default;
 $gray-darker:            lighten($gray-base, 13.5%) !default; // #222
 $gray-dark:              lighten($gray-base, 20%) !default;   // #333
 $gray:                   lighten($gray-base, 33.5%) !default; // #555
-$gray-light:             lighten($gray-base, 46.7%) !default; // #777
+$gray-light:             lighten($gray-base, 56.7%) !default; // #777
 $gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
 
 $brand-primary:         darken(#428bca, 6.5%) !default; // #337ab7
@@ -20,6 +20,18 @@ $brand-success:         #5cb85c !default;
 $brand-info:            #5bc0de !default;
 $brand-warning:         #f0ad4e !default;
 $brand-danger:          #d9534f !default;
+
+$alpha-white: rgba(255,255,255, .87);
+$white: rgb(255,255,255);
+$alpha-black: rgba(0,0,0, .87);
+
+$ecdd-mono-one:  rgb(214, 75, 16);
+$ecdd-mono-two:  rgb(212, 106, 30);
+$ecdd-mono-tree: rgb(223, 141, 55);
+$ecdd-mono-four: rgb(217, 174, 10);
+$ecdd-mono-five: rgb(245, 203, 7);
+$ecdd-mono-six:  rgb(254, 222, 72);
+
 
 
 //== Scaffolding
@@ -43,15 +55,15 @@ $link-hover-decoration: underline !default;
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-sans-serif:  'Raleway', sans-serif !default;
 $font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
 $font-family-base:        $font-family-sans-serif !default;
 
-$font-size-base:          14px !default;
+$font-size-base:          16px !default;
 $font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
-$font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
+$font-size-small:         ceil(($font-size-base * 0.80)) !default; // ~12px
 
 $font-size-h1:            floor(($font-size-base * 2.6)) !default; // ~36px
 $font-size-h2:            floor(($font-size-base * 2.15)) !default; // ~30px
@@ -92,24 +104,24 @@ $icon-font-svg-id:        "glyphicons_halflingsregular" !default;
 //
 //## Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).
 
-$padding-base-vertical:     6px !default;
-$padding-base-horizontal:   12px !default;
+$padding-base-vertical:     5px !default;
+$padding-base-horizontal:   16px !default;
 
-$padding-large-vertical:    10px !default;
+$padding-large-vertical:    6px !default;
 $padding-large-horizontal:  16px !default;
 
 $padding-small-vertical:    5px !default;
 $padding-small-horizontal:  10px !default;
 
-$padding-xs-vertical:       1px !default;
-$padding-xs-horizontal:     5px !default;
+$padding-xs-vertical:       6px !default;
+$padding-xs-horizontal:     16px !default;
 
 $line-height-large:         1.3333333 !default; // extra decimals for Win 8.1 Chrome
 $line-height-small:         1.5 !default;
 
-$border-radius-base:        4px !default;
-$border-radius-large:       6px !default;
-$border-radius-small:       3px !default;
+$border-radius-base:        16px !default;
+$border-radius-large:       16px !default;
+$border-radius-small:       16px !default;
 
 //** Global color for active items (e.g., navs or dropdowns).
 $component-active-color:    #fff !default;
@@ -147,31 +159,35 @@ $table-border-color:            #ddd !default;
 //
 //## For each of Bootstrap's buttons, define text, background and border color.
 
-$btn-font-weight:                normal !default;
+$btn-font-weight:                600 !default;
 
-$btn-default-color:              #333 !default;
-$btn-default-bg:                 #fff !default;
-$btn-default-border:             #ccc !default;
+$btn-default-color:              $alpha-white !default;
+$btn-default-bg:                 transparent !default;
+$btn-default-border:             $alpha-white !default;
 
-$btn-primary-color:              #fff !default;
-$btn-primary-bg:                 $brand-primary !default;
-$btn-primary-border:             darken($btn-primary-bg, 5%) !default;
+$btn-primary-color:              $brand-primary !default;
+$btn-primary-bg:                 $white !default;
+$btn-primary-border:             $white !default;
 
-$btn-success-color:              #fff !default;
-$btn-success-bg:                 $brand-success !default;
-$btn-success-border:             darken($btn-success-bg, 5%) !default;
+$btn-secondary-color:            $ecdd-mono-one !default;
+$btn-secondary-bg:               transparent !default;
+$btn-secondary-border:           $ecdd-mono-one !default;
 
-$btn-info-color:                 #fff !default;
-$btn-info-bg:                    $brand-info !default;
-$btn-info-border:                darken($btn-info-bg, 5%) !default;
+$btn-success-color:              $alpha-white !default;
+$btn-success-bg:                 transparent !default;
+$btn-success-border:             $alpha-white !default;
 
-$btn-warning-color:              #fff !default;
-$btn-warning-bg:                 $brand-warning !default;
-$btn-warning-border:             darken($btn-warning-bg, 5%) !default;
+$btn-info-color:                 $alpha-white !default;
+$btn-info-bg:                    transparent !default;
+$btn-info-border:                $alpha-white !default;
+
+$btn-warning-color:              $alpha-white !default;
+$btn-warning-bg:                 transparent !default;
+$btn-warning-border:             $alpha-white !default;
 
 $btn-danger-color:               #fff !default;
-$btn-danger-bg:                  $brand-danger !default;
-$btn-danger-border:              darken($btn-danger-bg, 5%) !default;
+$btn-danger-bg:                  transparent !default;
+$btn-danger-border:              $alpha-white !default;
 
 $btn-link-disabled-color:        $gray-light !default;
 

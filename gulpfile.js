@@ -125,6 +125,7 @@ var uglify       = require('gulp-uglify'); // Minifies JS files
 var imagemin     = require('gulp-imagemin'); // Minify PNG, JPEG, GIF and SVG images with imagemin.
 
 // Utility related plugins.
+var gutil        = require('gulp-util'); // Utility functions for gulp plugins
 var rename       = require('gulp-rename'); // Renames files E.g. style.css -> style.min.css
 var lineec       = require('gulp-line-ending-corrector'); // Consistent Line Endings for non UNIX systems. Gulp Plugin for Line Ending Corrector (A utility that makes sure your files have consistent line endings)
 var filter       = require('gulp-filter'); // Enables you to work on a subset of the original files by filtering them using globbing.
@@ -135,6 +136,9 @@ var reload       = browserSync.reload; // For manual browser reload.
 var wpPot        = require('gulp-wp-pot'); // For generating the .pot file.
 var sort         = require('gulp-sort'); // Recommended to prevent unnecessary changes in pot-file.
 var header       = require('gulp-header'); // Add a header to file.
+
+// Deploy related plugins.
+var ftp     = require('vinyl-ftp'); // Minify PNG, JPEG, GIF and SVG images with imagemin.
 
 /**
  * Task: `browser-sync`.
@@ -380,9 +384,7 @@ gulp.task( 'browser-sync', function() {
          } ))
         .pipe(gulp.dest(translatePath))
         .pipe( notify( { message: 'TASK: "translate" Completed! 💯', onLast: true } ) )
-
  });
-
 
  /**
   * Watch Tasks.

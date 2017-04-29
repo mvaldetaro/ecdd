@@ -1,0 +1,23 @@
+.search {
+  .modal-content {
+    padding: 24px 16px 16px 16px;
+    border-radius: 3px;
+  }
+}
+
+.search__form__input {
+  width: 100%;
+  padding: 8px 16px;
+  border-radius: 3px;
+  border: 1px solid $gray-light;
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 8px;
+  &::placeholder {
+    color: $gray-light;
+  }
+}
+
+.search__form__button {
+
+}

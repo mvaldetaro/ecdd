@@ -1,0 +1,100 @@
+.head {
+  padding-top: 32px;
+  width: 100%;
+  @include tablet {
+    padding-top: 0;
+  }
+
+  .logo{
+    display: inline-block;
+    width: 180px;
+
+    @include tablet {
+      width: 222px;
+      height: 80px;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .main-menu {
+    display: inline-block;
+    float: right;
+    @include tablet {
+      display: inline-block;
+      float: none;
+    }
+
+    & > button {
+      width: 32px;
+      height: 32px;
+      display: block;
+      border: 0;
+      padding: 0;
+      margin: 16.25px 0;
+      background: url('assets/img/icons/ic_menu_white_36px.svg') no-repeat center center;
+      background-size: cover;
+      span {
+        display: none;
+      }
+    }
+
+    &__list {
+      list-style: none;
+
+      & > .menu-item {
+        display: inline-block;
+        text-transform: uppercase;
+
+        &.current-menu-item a{
+          background: rgba(0,0,0, .25);
+        }
+
+        a {
+          color: $white;
+          text-decoration: none;
+          padding: 8px 16px;
+          display: block;
+          border-radius: 16px;
+          transition: .3s ease-in-out;
+
+          &:hover {
+            background: rgba(0,0,0, .25);
+          }
+        }
+      }
+    }
+  }
+}
+
+.main-menu-mobile {
+  background: $ecdd-mono-one;
+  display: none;
+  &__list {
+    list-style: none;
+    padding: 16px 0;
+    margin: 0;
+
+    .menu-item {
+      border-bottom: 1px solid $ecdd-mono-two;
+      &:last-child{
+        border-bottom: none;
+      }
+      a {
+        color: $white;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 8px 16px;
+        display: block;
+
+        &:hover {
+          background-color: $ecdd-mono-four;
+          text-shadow: 0 1px 1px $ecdd-mono-three;
+        }
+      }
+    }
+  }
+}

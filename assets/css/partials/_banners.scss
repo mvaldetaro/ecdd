@@ -1,0 +1,36 @@
+.banner-index {
+  position: absolute;
+  width: 100%;
+  padding: 15px;
+  bottom: 15px;
+  left: 0;
+
+  @include tablet {
+    bottom: 213px;
+  }
+
+  &__title{
+    font-size: 28px;
+    font-family: $banner-heading-font;
+    color: $white;
+    text-transform: uppercase;
+    text-shadow: 0 1px 3px rgba(0,0,0, .35);
+    @include tablet {
+      font-size: 60px;
+    }
+  }
+
+  &__subtitle{
+    font-size: 11px;
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-family: $banner-subheading-font;
+    color: $white;
+    text-transform: uppercase;
+    text-shadow: 0 1px 3px rgba(0,0,0, .35);
+    @include tablet {
+      font-size: 23px;
+      margin-bottom: 48px;
+    }
+  }
+}

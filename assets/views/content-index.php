@@ -1,15 +1,17 @@
  <!-- Trabalho dos Alunos -->
  <div class="container">
-  <?php get_template_part('assets/views/banner-index', 'bar-top'); ?>
+  <?php get_template_part('assets/views/students-works', 'bar-top'); ?>
 </div>
 <!-- /Trabalho dos Alunos -->
 <!-- Agenda e Eventos -->
 <div class="container">
-  <div class="col-md-4">
-    <?php get_template_part('assets/views/calendar', 'calendar'); ?>
-  </div>
-  <div class="col-md-6">
-    <?php get_template_part('assets/views/events', 'events'); ?>
+  <div class="row">
+    <div class="col-md-4">
+      <?php get_template_part('assets/views/calendar', 'calendar'); ?>
+    </div>
+    <div class="col-md-6">
+      <?php get_template_part('assets/views/events', 'events'); ?>
+    </div>
   </div>
 </div>
 <!-- /Agenda e Events -->

@@ -1,0 +1,192 @@
+.students-works {
+  margin-top: 16px;
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+  }
+  &__header {
+    margin-bottom: 16px;
+  }
+
+  &__title {
+    font-family: $headings-font;
+    font-size: 1em;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $gray;
+    display: inline-block;
+    &:before{
+      content: "";
+      height: 1px;
+      width: 30%;
+      background-color: $gray;
+      display: block;
+      margin-bottom: 8px;
+    }
+  }
+
+  &__menu {
+    &__list {
+      list-style: none;
+      text-transform: uppercase;
+      margin: 0;
+      padding: 0;
+      font-size: .70em;
+    }
+    &__item,
+    &__item-current {
+      display: inline-block;
+      padding: 4px;
+      &:first-child {
+        padding-left: 0;
+      }
+      &:last-child {
+        padding-right: 0;
+      }
+      & > a {
+        color: $gray;
+      }
+    }
+    &__item-current {
+      font-weight: 600;
+      &:after{
+        content: "";
+        display: block;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        margin: 4px auto;
+        background-color: $ecdd-mono-one;
+      }
+    }
+  }
+
+  &__content {
+    text-align: left;
+    font-size: 0.1px;
+    &:after {
+      content: '';
+      display: inline-block;
+      width: 100%;
+    }
+    &__item {
+      width: calc(99.9%/3);
+      display: inline-block;
+
+      & > div {
+        height: inherit;
+      }
+
+      @include tablet {
+        overflow: hidden;
+
+        &:nth-child(6n+1){
+          width: calc(99.9%/4);
+          height: 123.79px;
+        }
+        &:nth-child(6n+2){
+         width: calc(99.9%/2);
+         height: 202.73px;
+        }
+        &:nth-child(6n+3){
+         width: calc(99.9%/4);
+         height: 202.74px;
+        }
+        &:nth-child(6n+4){
+          width: calc(99.9%/4);
+          height: 202.74px;
+          margin-top: -79px
+        }
+        &:nth-child(6n+5){
+         width: calc(99.9%/2.666);
+         height: 123.79px;
+        }
+        &:nth-child(6n+6){
+         width: calc(99.9%/2.666);
+         height: 123.79px;
+        }
+      }
+
+      @include desktop {
+
+        &:nth-child(6n+1){
+          width: calc(99.9%/4);
+          height: 161.61px;
+        }
+        &:nth-child(6n+2){
+         width: calc(99.9%/2);
+         height: 264.68px;
+        }
+        &:nth-child(6n+3){
+         width: calc(99.9%/4);
+         height: 264.68px;
+        }
+        &:nth-child(6n+4){
+          width: calc(99.9%/4);
+          height: 264.68px;
+          margin-top: -103px;
+        }
+        &:nth-child(6n+5){
+         width: calc(99.9%/2.666);
+         height: 161.61px;
+        }
+        &:nth-child(6n+6){
+         width: calc(99.9%/2.666);
+         height: 161.61px;
+        }
+      }
+
+      @include large-desktop {
+        &:nth-child(6n+1){
+          height: 196px;
+        }
+        &:nth-child(6n+2){
+         height: 321px;
+        }
+        &:nth-child(6n+3){
+         height: 321px;
+        }
+        &:nth-child(6n+4){
+          height: 321px;
+          margin-top: -125px
+        }
+        &:nth-child(6n+5){
+         height: 196px;
+        }
+        &:nth-child(6n+6){
+         height: 196px;
+        }
+      }
+
+      & img {
+        width: 100%;
+        height: auto;
+        @include tablet {
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  .mix,
+  .gap {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .mix {
+    background: #fff;
+    position: relative;
+  }
+
+  .mix:before {
+    content: '';
+    display: inline-block;
+  }
+
+  @include tablet {
+    margin-top: -228px;
+  }
+
+}

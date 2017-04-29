@@ -21,6 +21,9 @@
     // Add default posts and comments RSS feed links to head.
     add_theme_support( 'automatic-feed-links' );
 
+    // Add custom logo
+    add_theme_support('custom-logo');
+
     /*
      * Let WordPress manage the document title.
      * By adding theme support, we declare that this theme does not use a
@@ -34,13 +37,15 @@
      *
      * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
      */
-    add_theme_support( 'post-thumbnails' );
+    add_theme_support('post-thumbnails');
 
     // This theme uses wp_nav_menu() in two locations.
-    register_nav_menus( array(
-      'top'    => __( 'Top Menu', 'ecdd' ),
-      'footer' => __( 'Footer Menu', 'ecdd' ),
-    ) );
+    register_nav_menus(array(
+      'top'    => __('Top Menu', 'ecdd'),
+      'header' => __('Header Menu', 'ecdd'),
+      'footer' => __('Footer Menu', 'ecdd'),
+      'mobile' => __('Mobile Menu', 'ecdd'),
+    ));
 
     /*
      * Switch default core markup for search form, comment form, and comments
@@ -111,6 +116,8 @@
     return ' &hellip; ' . $link;
   }
   add_filter( 'excerpt_more', 'ecdd_excerpt_more' );
+
+  add_filter('show_admin_bar', '__return_false');
 
   /**
    * Register widget area.

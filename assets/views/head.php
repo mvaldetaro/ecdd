@@ -4,35 +4,21 @@
  */
 ?>
 <!-- Cabecalho -->
-    <div class="head">
-      <div class="logo">
-        <!-- TODO: Oferece suporte de alterar pelo Painel de Administração -->
-        <img src="" alt="ECDD - Escola de Comunicação e Design Digital">
-      </div>
-      <nav class="main-menu">
-        <ul class="main-menu__list">
-          <li class="main-menu__item">
-            <a href="#">Home</a>
-          </li>
-          <li class="main-menu__item">
-            <a href="#">MBAs</a>
-          </li>
-          <li class="main-menu__item">
-            <a href="#">Pós-Graduações</a>
-          </li>
-          <li class="main-menu__item">
-            <a href="#">Graduações</a>
-          </li>
-          <li class="main-menu__item">
-            <a href="#">EAD</a>
-          </li>
-          <li class="main-menu__item">
-            <a href="#">Formações</a>
-          </li>
-          <li class="main-menu__item">
-            <a href="#">A Escola</a>
-          </li>
-        </ul>
-      </nav>
+  <div class="head">
+    <div class="logo">
+      <?php the_custom_logo(); ?>
     </div>
-    <!-- /Cabecalho -->
+    <?php
+      wp_nav_menu( array(
+        'theme_location' => 'header',
+        'container' => 'nav',
+        'container_class' => 'main-menu hidden-sm-down',
+        'menu_class' => 'main-menu__list',
+      ));
+    ?>
+
+    <div class="main-menu hidden-md-up">
+      <button id="menu-icon-toggle"><span>Menu</span></button>
+    </div>
+  </div>
+<!-- /Cabecalho -->

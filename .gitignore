@@ -1,6 +1,8 @@
 ecdd.sublime-project
 ecdd.sublime-workspace
 
+ftpsync.settings
+
 # Dependency directories
 node_modules
 

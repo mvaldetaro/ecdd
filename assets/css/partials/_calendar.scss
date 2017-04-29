@@ -1,0 +1,101 @@
+.calendar {
+  margin-top: 16px;
+  position: relative;
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+  }
+  &__header {
+    margin-bottom: 16px;
+    position: relative;
+
+    .title {
+      font-family: $headings-font;
+      font-size: 1em;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: $gray;
+      display: inline-block;
+      &:before{
+        content: "";
+        height: 1px;
+        width: 45%;
+        background-color: $gray;
+        display: block;
+        margin-bottom: 8px;
+      }
+    }
+
+    .go-to-link {
+      position: absolute;
+      bottom: 15%;
+      right: 0;
+      font-size: .75em;
+      text-transform: uppercase;
+      color: $link-default;
+      font-weight: 500;
+      padding-right: 24px;
+      display: inline-block;
+      background: url('assets/img/icons/ic_keyboard_arrow_right_blue_24px.svg') no-repeat right center;
+      transition: all .2s ease-in-out;
+      &:hover {
+        color: $link-hover;
+        background-image: url('assets/img/icons/ic_keyboard_arrow_right_blue_hover_24px.svg');
+        text-decoration: none;
+      }
+    }
+  }
+  &__content{
+    &__list{
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      &__item{
+        display: block;
+        position: relative;
+        margin-bottom: 16px;
+        padding-bottom: 16px;
+        border-bottom: 1px solid $gray-lighter;
+        &__data{
+          width: 15%;
+          font-size: 1.250em;
+          display: inline-block;
+          float: left;
+          text-align: right;
+          p {
+            font-family: $banner-subheading-font;
+            margin-top: 8px;
+            span {
+              display: block;
+              clear: both;
+              font-size: 0.550em;
+            }
+          }
+
+        }
+        &__event{
+          width: 80%;
+          display: inline-block;
+          border-left: 1px solid $gray-light;
+          padding-left: 8px;
+          margin-left: 8px;
+          h3 {
+            font-size: 1em;
+            margin-top: 8px;
+            a {
+              color: $link-default;
+              transition: all .2s ease-in-out;
+              &:hover{
+                color: $link-hover;
+              }
+            }
+          }
+          p {
+            font-size: .75em;
+          }
+        }
+      }
+    }
+  }
+}

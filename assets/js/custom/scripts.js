@@ -1,4 +1,10 @@
 console.info('scripts');
-var body = $('body');
 
-console.log(body);
+/**
+* Slide Main Menu
+*/
+$(window).load(function() {
+  $('#menu-icon-toggle').click(function() {
+    $('.main-menu-mobile').slideToggle('2000', 'easeInOutQuad', function () {});
+  });
+});
