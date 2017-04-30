@@ -98,6 +98,8 @@ p{font-family:"Raleway",sans-serif}
 .calendar__header .go-to-link:hover{color:#df8d37;background-image:url("assets/img/icons/ic_keyboard_arrow_right_blue_hover_24px.svg");text-decoration:none}
 .calendar__content__list{list-style:none;margin:0;padding:0}
 .calendar__content__list__item{display:block;position:relative;margin-bottom:16px;padding-bottom:16px;border-bottom:1px solid #eee}
+.calendar__content__list__item:nth-child(4),.calendar__content__list__item:nth-child(5),.calendar__content__list__item:nth-child(6){display:none}
+.calendar__content__list__item:nth-child(3){border-bottom:0}
 .calendar__content__list__item__data{width:15%;font-size:1.250em;display:inline-block;float:left;text-align:right}
 .calendar__content__list__item__data p{font-family:"proxima_novalight";margin-top:8px}
 .calendar__content__list__item__data p span{display:block;clear:both;font-size:.550em}
@@ -106,6 +108,35 @@ p{font-family:"Raleway",sans-serif}
 .calendar__content__list__item__event h3 a{color:#33adff;-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out}
 .calendar__content__list__item__event h3 a:hover{color:#df8d37}
 .calendar__content__list__item__event p{font-size:.75em}
+.events{margin-top:16px;position:relative}
+.events *,.events *:before,.events *:after{box-sizing:border-box}
+.events__header{margin-bottom:16px;position:relative}
+.events__header .title{font-family:"Raleway",sans-serif;font-size:1em;font-weight:400;text-transform:uppercase;color:#555;display:inline-block}
+.events__header .title:before{content:"";height:1px;width:45%;background-color:#555;display:block;margin-bottom:8px}
+.events__header .go-to-link{position:absolute;bottom:15%;right:0;font-size:.75em;text-transform:uppercase;color:#33adff;font-weight:500;padding-right:24px;display:inline-block;background:url("assets/img/icons/ic_keyboard_arrow_right_blue_24px.svg") no-repeat right center;-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out}
+.events__header .go-to-link:hover{color:#df8d37;background-image:url("assets/img/icons/ic_keyboard_arrow_right_blue_hover_24px.svg");text-decoration:none}
+.events__content{width:100%;height:210px;overflow:hidden;background:#d64b10;position:relative}
+.events__content__figure{width:100%;height:inherit;position:absolute}
+.events__content__figure img{width:100%;height:auto}
+.events__content__caption{position:absolute;width:95%;background-color:#d64b10;bottom:16px;left:0;padding:16px}
+.events__content__caption h3{font-family:"proxima_nova_rgbold";text-transform:uppercase;font-size:1.500em;margin-top:0}
+.events__content__caption h3 a{color:rgba(255,255,255,0.87)}
+.events__content__caption p{margin-bottom:0;color:rgba(255,255,255,0.87);font-size:.75em}
+.our-teachers{margin-top:16px;position:relative}
+.our-teachers *,.our-teachers *:before,.our-teachers *:after{box-sizing:border-box}
+.our-teachers__header{margin-bottom:16px;position:relative}
+.our-teachers__header .title{font-family:"Raleway",sans-serif;font-size:1em;font-weight:400;text-transform:uppercase;color:#555;display:inline-block}
+.our-teachers__header .title:before{content:"";height:1px;width:45%;background-color:#555;display:block;margin-bottom:8px}
+.our-teachers__header .expand-link{position:absolute;bottom:15%;right:0;font-size:.75em;text-transform:uppercase;color:#33adff;font-weight:500;padding-right:24px;display:inline-block;background:url("assets/img/icons/ic_keyboard_arrow_down_blue_24px.svg") no-repeat right center;-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out}
+.our-teachers__header .expand-link:hover{color:#df8d37;background-image:url("assets/img/icons/ic_keyboard_arrow_down_blue_hover_24px.svg");text-decoration:none}
+.our-teachers__content__item{display:block;position:relative;margin-bottom:16px;padding-bottom:16px;border-bottom:1px solid #eee;min-height:75px;overflow:hidden;clear:both;-webkit-transition:.2s all ease-in-out;transition:.2s all ease-in-out}
+.our-teachers__content__item.item-invisible{display:none}
+.our-teachers__content__item.item-visible{display:inherit}
+.our-teachers__content__item__thumb{width:24%;height:75px;overflow:hidden;font-size:1.250em;display:inline-block;float:left}
+.our-teachers__content__item__thumb img{width:100%;height:auto}
+.our-teachers__content__item__info{width:73%;display:inline-block;padding-left:8px;margin-left:8px}
+.our-teachers__content__item__info h3{margin-top:8px;font-size:1em;text-transform:uppercase}
+.our-teachers__content__item__info p{font-size:.75em;margin-bottom:0}
 @media(min-width:576px){.hidden-sm-up{display:none !important}
 }@media(min-width:720px){.header{height:726px}
 .bar-top{display:block}
@@ -124,6 +155,9 @@ p{font-family:"Raleway",sans-serif}
 .students-works__content__item:nth-child(6n+6){width:calc(99.9%/2.666);height:123.79px}
 .students-works__content__item img{height:100%}
 .students-works{margin-top:-228px}
+.calendar__content__list__item:nth-child(3){border-bottom:1px solid #eee}
+.calendar__content__list__item:last-child{border-bottom:0}
+.calendar__content__list__item:nth-child(4),.calendar__content__list__item:nth-child(5),.calendar__content__list__item:nth-child(6){display:inherit}
 }@media(min-width:768px){.hidden-md-up{display:none !important}
 }@media(min-width:992px){.hidden-lg-up{display:none !important}
 .header{height:830px}

@@ -16,5 +16,33 @@ var mixer = mixitup('.students-works__content', {
  }
 });
 
+/* Controla Componente Nossos Professores */
+
+// Implementa toogle click
+(function($) {
+    $.fn.clickToggle = function(func1, func2) {
+        var funcs = [func1, func2];
+        this.data('toggleclicked', 0);
+        this.click(function() {
+            var data = $(this).data();
+            var tc = data.toggleclicked;
+            $.proxy(funcs[tc], this)();
+            data.toggleclicked = (tc + 1) % 2;
+        });
+        return this;
+    };
+}(jQuery));
+
+// Ação
+$('.our-teachers .expand-link').clickToggle(
+  function() {
+    //primeiro click
+    $('.our-teachers__content .item-invisible').removeClass('item-invisible').addClass('item-visible');
+  },
+  function() {
+    //segundo click
+    $('.our-teachers__content .item-visible').removeClass('item-visible').addClass('item-invisible');
+});
+
 
 
