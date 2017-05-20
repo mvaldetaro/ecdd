@@ -1,3 +1,17 @@
+.embed-frame {
+  position: relative;
+  width: 100%;
+  padding-top: 56.3%;
+}
+
+.embed-frame iframe {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+}
+
 .hidden {
   display: none;
 }

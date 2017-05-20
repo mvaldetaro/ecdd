@@ -9,7 +9,9 @@ $retina: '-webkit-min-device-pixel-ratio: 2' !default;
 // Fonts
 $headings-font: 'Raleway', sans-serif !default;
 $content-font: 'Raleway', sans-serif !default;
-$call-actions-heading-font: 'proxima_nova_rgbold' !default;
+$alert-font: $content-font !default;
+$call-actions-title-font: 'proxima_nova_rgbold' !default;
+$call-actions-subtitle-font: $headings-font !default;
 $banner-heading-font: 'proxima_novasemibold' !default;
 $banner-subheading-font: 'proxima_novalight' !default;
 

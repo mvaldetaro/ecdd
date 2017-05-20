@@ -1,0 +1,109 @@
+.our-teachers {
+  margin-top: 16px;
+  position: relative;
+  &:after {
+    content: "";
+    height: 1px;
+    width: 45%;
+    background-color: $gray-light;
+    display: block;
+    margin: 32px auto 16px auto;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+  }
+  &__header {
+    margin-bottom: 16px;
+    position: relative;
+    .title {
+      font-family: $headings-font;
+      font-size: 1em;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: $gray;
+      display: inline-block;
+      &:before{
+        content: "";
+        height: 1px;
+        width: 45%;
+        background-color: $gray;
+        display: block;
+        margin-bottom: 8px;
+      }
+    }
+    .expand-link {
+      position: absolute;
+      bottom: 15%;
+      right: 0;
+      font-size: .75em;
+      text-transform: uppercase;
+      color: $link-default;
+      font-weight: 500;
+      padding-right: 24px;
+      display: inline-block;
+      background: url('assets/img/icons/ic_keyboard_arrow_down_blue_24px.svg') no-repeat right center;
+      transition: all .2s ease-in-out;
+      &:hover {
+        color: $link-hover;
+        background-image: url('assets/img/icons/ic_keyboard_arrow_down_blue_hover_24px.svg');
+        text-decoration: none;
+      }
+    }
+  }
+  &__content {
+    & div > div:first-child > .our-teachers__content__item {
+      margin-top: 0;
+      padding-top: 0;
+      border-top: none;
+    }
+    &__item{
+      display: block;
+      position: relative;
+      margin-top: 16px;
+      padding-top: 16px;
+      /*border-top: 1px solid $gray-lighter;*/
+      min-height: 75px;
+      overflow: hidden;
+      clear: both;
+      transition: .2s all ease-in-out;
+
+      &.item-invisible {
+        display: none;
+      }
+      &.item-visible {
+        display: inherit;
+      }
+      &__thumb {
+        width: 24%;
+        height: 75px;
+        overflow: hidden;
+        font-size: 1.250em;
+        display: inline-block;
+        float: left;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      &__info {
+        width: 73%;
+        display: inline-block;
+        padding-left: 8px;
+        margin-left: 8px;
+        h3 {
+          margin-top: 0;
+          font-size: 1em;
+          text-transform: uppercase;
+        }
+        p {
+          font-size: .75em;
+          margin-bottom: 0;
+        }
+      }
+
+    }
+  }
+}

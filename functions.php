@@ -63,6 +63,12 @@
 
   add_action( 'after_setup_theme', 'ecdd_setup' );
 
+
+  function my_add_excerpts_to_pages() {
+       add_post_type_support( 'page', 'excerpt' );
+  }
+  add_action('init', 'my_add_excerpts_to_pages' );
+
   // Remove Generator Version in the head.
   remove_action('wp_head', 'wp_generator');
 
@@ -107,16 +113,17 @@
     if ( is_admin() ) {
       return $link;
     }
-
     $link = sprintf( '<p class="link-more"><a href="%1$s" class="more-link">%2$s</a></p>',
       esc_url( get_permalink( get_the_ID() ) ),
-      /* translators: %s: Name of current post */
       sprintf( __( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'ecdd' ), get_the_title( get_the_ID() ) )
     );
     return ' &hellip; ' . $link;
   }
   add_filter( 'excerpt_more', 'ecdd_excerpt_more' );
 
+  /**
+   * Remove Admin Bar.
+   */
   add_filter('show_admin_bar', '__return_false');
 
   /**
@@ -125,6 +132,14 @@
    * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
    */
   function ecdd_widgets_init() {}
+
+  /**
+   * Create Post Types
+   * @since 1.0.0
+   */
+  if (file_exists(dirname(__FILE__).'/assets/functions/post-types.php')) {
+    require_once( dirname(__FILE__).'/assets/functions/post-types.php');
+  }
 
 ?>
 

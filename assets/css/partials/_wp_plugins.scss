@@ -1,0 +1,47 @@
+/*
+ * CONTACT FORM 7
+ */
+
+[role="alert"] {
+      padding: 8px 16px !important;
+      border-radius: 3px;
+      margin-top: -8px;
+      font-family: $alert-font;
+      font-size: .85em !important;
+      font-weight: 500;
+      box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.17);
+      color: $black;
+      background-color: $white;
+      border: none !important;
+    }
+
+    [role="alert"].wpcf7-not-valid-tip,
+    [role="alert"].wpcf7-mail-sent-ng {
+      color: $white;
+      background-color: #F44336;
+    }
+
+    [role="alert"].wpcf7-validation-errors,
+    [role="alert"].wpcf7-spam-blocked,
+    [role="alert"].wpcf7-response-output {
+      margin: 0;
+      margin-top: 8px;
+      color: $black;
+      background-color: $ecdd-mono-five;
+    }
+
+    [role="alert"].wpcf7-mail-sent-ok {
+      margin: 0;
+      margin-top: 8px;
+      color: $black;
+      background-color: #8BC34A;
+    }
+
+    div.wpcf7 .ajax-loader {
+      background: url(assets/img/ripple.svg) no-repeat center center;
+      background-size: contain;
+      width: 32px;
+      height: 32px;
+      margin: 0 auto;
+      display: inherit;
+    }

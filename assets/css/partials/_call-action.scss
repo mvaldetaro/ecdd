@@ -1,0 +1,103 @@
+$bg-color-ca-default: $ecdd-mono-one !default;
+$bg-color-ca-small: #455A64 !default;
+
+.call-action {
+  background-color: $bg-color-ca-default;
+  margin-top: 32px;
+  position: relative;
+  padding: 40px 0;
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+  }
+
+  &--small {
+    background-color: $bg-color-ca-small;
+    padding: 32px 0;
+  }
+
+  &__header {
+    margin-bottom: 16px;
+    position: relative;
+  }
+
+  &__title {
+    font-family: $call-actions-title-font;
+    font-size: 1.875em;
+    color: $white;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 8px;
+
+    &--small {
+      font-size: 1.5em;
+    }
+  }
+
+  &__subtitle {
+    font-family: $call-actions-subtitle-font;
+    font-size: 1.125em;
+    font-weight: 300;
+    color: $white;
+    text-transform: uppercase;
+    margin-top: 0;
+  }
+
+  &__content {
+    color: $white;
+    &--small {
+      font-size: .95em;
+      padding-bottom: 8px;
+    }
+    label {
+      margin-top: 16px;
+      color: $white;
+    }
+  }
+
+  &__btn {
+    &--small {
+      &:hover {
+        color: $bg-color-ca-small;
+      }
+    }
+  }
+
+  &__form {
+
+    &__input {
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid $white;
+      padding: 8px 0;
+      margin-bottom: 16px;
+      width: 100%;
+      font-size: 1em;
+      color: $white;
+      font-weight: 300;
+      &::placeholder {
+        color: rgba(255,255,255, .4);
+        font-size: .85em;
+      }
+      &:hover{
+        border-color: $ecdd-mono-three;
+      }
+      &:focus {
+        border-color: $ecdd-mono-five;
+      }
+    }
+    &__button {
+      width: 50%;
+      margin: 8px auto;
+      display: inherit;
+      outline: none;
+
+      &:hover,
+      &:focus {
+        color: $ecdd-mono-one;
+      }
+    }
+  }
+}

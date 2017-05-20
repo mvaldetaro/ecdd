@@ -1,0 +1,79 @@
+$bg-footer-color: #263238 !default;
+
+.footer {
+  background-color: $bg-footer-color;
+  position: relative;
+  padding: 40px 0;
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+  }
+
+  &__logo {
+    margin-left: -5px;
+  }
+
+  &__address {
+    color: $white;
+    font-size: 0.875em;
+  }
+
+  &__social {
+    color: $white;
+    font-size: 0.875em;
+    &__item{
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+      margin-right: 8px;
+
+      span {
+        display: none;
+      }
+      &[rel="facebook"]:hover > svg {
+        fill: #4267b2;
+      }
+
+      &[rel="twitter"]:hover > svg {
+        fill: #1da1f2;
+      }
+
+      &[rel="linkedin"]:hover > svg {
+        fill: #0077B5;
+      }
+    }
+
+    &__icon {
+      fill: $white;
+      width: 32px;
+      height: 32px;
+      transition: .2s all ease-in-out;
+    }
+
+  }
+
+  &__courses {
+    &__title {
+      color: $white;
+      text-transform: uppercase;
+      font-size: .85em;
+      font-weight: 600;
+      margin: 16px 0;
+    }
+    &__list{
+      display: none;
+      &__item {
+      }
+    }
+  }
+
+  a {
+    color: $white;
+    &:hover {
+      color: $ecdd-mono-two;
+      text-decoration: none;
+    }
+  }
+}

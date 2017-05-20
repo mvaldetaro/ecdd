@@ -14,8 +14,9 @@
     </div>
   </div>
 </div>
-<!-- /Agenda e Events -->
-<?php get_template_part('assets/views/call-action-course.php', 'about-course'); ?>
+<!-- Mais sobre os cursos -->
+<?php get_template_part('assets/views/call-action-course', 'about-course'); ?>
+
 <!-- Nossos Professores -->
 <div class="container">
   <?php get_template_part('assets/views/our-teachers', 'our-teachers'); ?>
@@ -23,13 +24,15 @@
 <!-- /Nossos Professores -->
 <!-- Institucuinal -->
 <div class="container">
-  <div class="col-md-6">
-    <div class="embed-responsive">
-      <iframe class="embed-responsive__item" src="https://www.youtube.com/embed/-6JEXzF72b0?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+  <div class="row">
+    <div class="col-sm-8 text-align-center">
+      <div class="embed-frame" style="margin-top: 16px;">
+        <iframe src="https://www.youtube.com/embed/-6JEXzF72b0?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+      </div>
     </div>
-  </div>
-  <div class="col-md-4">
-    <?php get_template_part('assets/views/likebox-facebook', 'likebox'); ?>
+    <div class="col-sm-4">
+      <?php get_template_part('assets/views/likebox-facebook', 'likebox'); ?>
+    </div>
   </div>
 </div>
 <!-- /Institucuinal -->
