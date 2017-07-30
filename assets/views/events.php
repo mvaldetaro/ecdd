@@ -1,6 +1,6 @@
 <section class="events">
   <header class="events__header wow animated fadeIn">
-    <h2 class="title">Eventos</h2>
+    <h2 class="title">Aconteceu na ECDD</h2>
     <a class="go-to-link" href="<?php bloginfo('url'); ?>/category/eventos" title="Eventos passados">Outros eventos</a>
   </header>
   <div class="events__content">
@@ -13,10 +13,10 @@
     $query = new WP_Query($args);
     if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post();
     ?>
-      <figure class="events__content__figure wow animated fadeIn">
+      <figure class="events__content__figure">
         <?php the_post_thumbnail('large'); ?>
       </figure>
-      <figcaption class="events__content__caption wow animated slideInRight">
+      <figcaption class="events__content__caption">
         <h3><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
         <p><?php the_excerpt(); ?></p>
       </figcaption>

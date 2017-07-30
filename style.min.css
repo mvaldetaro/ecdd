@@ -269,7 +269,7 @@ body.page{margin-bottom:0}
 .footer__social__icon{fill:white;width:32px;height:32px;-webkit-transition:.2s all ease-in-out;transition:.2s all ease-in-out}
 .footer__courses__title{color:white;text-transform:uppercase;font-size:.85em;font-weight:600;margin:16px 0}
 .footer__courses__list{display:none;list-style:none}
-.footer__courses__list__item{padding:4px 0;font-weight:400;font-size:.875em;line-height:21px;letter-spacing:.03em}
+.footer__courses__list__item{padding:4px 0;font-weight:400;font-size:.775em;line-height:21px;letter-spacing:.03em}
 .footer__courses__list__item a:hover{color:#ef6c00}
 .footer a{color:white}
 .footer a:hover{color:#ef6c00;text-decoration:none}

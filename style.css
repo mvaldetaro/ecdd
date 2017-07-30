@@ -707,7 +707,7 @@ body.page { margin-bottom: 0; }
 
 @media (min-width: 992px) { .footer__courses__list { display: block; padding-left: 0; margin-bottom: 32px; } }
 
-.footer__courses__list__item { padding: 4px 0; font-weight: 400; font-size: .875em; line-height: 21px; letter-spacing: .03em; }
+.footer__courses__list__item { padding: 4px 0; font-weight: 400; font-size: .775em; line-height: 21px; letter-spacing: .03em; }
 
 .footer__courses__list__item a:hover { color: #EF6C00; }
 

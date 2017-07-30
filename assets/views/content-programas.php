@@ -8,16 +8,17 @@
             <a href="javascript:;" data-filter=".todos" class="hvr-underline-from-left">Todos</a>
           </li>
           <li class="programas__menu__item">
-            <a href="javascript:;" data-filter=".mba" class="hvr-underline-from-left">MBAs</a>
+            <a href="javascript:;" data-filter=".graduacao" class="hvr-underline-from-left">Graduação</a>
           </li>
           <li class="programas__menu__item">
-            <a href="javascript:;" data-filter=".pos-graduacao" class="hvr-underline-from-left"><span class="visible-xs-inline-block">Pós</span> <span class="hidden-xs">Pós-Graduações</span></a>
+            <a href="javascript:;" data-filter=".mba" class="hvr-underline-from-left">MBA</a>
           </li>
           <li class="programas__menu__item">
-            <a href="javascript:;" data-filter=".graduacao" class="hvr-underline-from-left">Graduações</a>
+            <a href="javascript:;" data-filter=".pos-graduacao" class="hvr-underline-from-left"><span class="visible-xs-inline-block">Pós</span> <span class="hidden-xs">Pós-Graduação</span></a>
           </li>
+
           <li class="programas__menu__item">
-            <a href="javascript:;" data-filter=".formacao" class="hvr-underline-from-left">Formações</a>
+            <a href="javascript:;" data-filter=".formacao" class="hvr-underline-from-left">Formação</a>
           </li>
         </ul>
       </nav>

@@ -16,7 +16,7 @@
             </svg>
             <span>Facebook</span>
           </a>
-          <a href="#" class="footer__social__item" rel="twitter">
+          <!--<a href="#" class="footer__social__item" rel="twitter">
             <svg viewBox="0 0 32 32" class="footer__social__icon">
               <use xlink:href="#twitter-logo-on-black-background" />
             </svg>
@@ -27,19 +27,19 @@
               <use xlink:href="#linkedin-logo" />
             </svg>
             <span>Linkedin</span>
-          </a>
+          </a>-->
         </div>
       </div>
       <!-- MBAs e Pós -->
       <div class="col-md-3">
         <div class="footer__courses wow animated fadeInUp">
-          <h2 class="footer__courses__title"><a href="<?php bloginfo('url'); ?>/category/mba/">MBAs</a></h2>
+          <h2 class="footer__courses__title"><a href="<?php bloginfo('url'); ?>/category/mba/">MBA</a></h2>
           <ul class="footer__courses__list">
           <?php programasList('mba', 'mba') ?>
           </ul>
         </div>
         <div class="footer__courses wow animated fadeInUp" data-wow-delay="0.2">
-          <h2 class="footer__courses__title"><a href="<?php bloginfo('url'); ?>/category/pos-graduacao/">Pós Graduações</a></h2>
+          <h2 class="footer__courses__title"><a href="<?php bloginfo('url'); ?>/category/pos-graduacao/">Pós Graduação</a></h2>
           <ul class="footer__courses__list">
             <?php programasList('pos-graduacao', 'pos') ?>
           </ul>
@@ -49,7 +49,7 @@
       <!-- Graduações -->
       <div class="col-md-3">
         <div class="footer__courses wow animated fadeInUp" data-wow-delay="0.4">
-          <h2 class="footer__courses__title"><a href="<?php bloginfo('url'); ?>/category/graduacao/">Graduações</a></h2>
+          <h2 class="footer__courses__title"><a href="<?php bloginfo('url'); ?>/category/graduacao/">Graduação</a></h2>
           <ul class="footer__courses__list">
             <?php programasList('graduacao', 'graduacao') ?>
           </ul>
@@ -65,7 +65,7 @@
           </ul>
         </div>
         <div class="footer__courses wow animated fadeInUp" data-wow-delay="0.8">
-          <h2 class="footer__courses__title"><a href="<?php bloginfo('url'); ?>/category/formacao/">Formações</a></h2>
+          <h2 class="footer__courses__title"><a href="<?php bloginfo('url'); ?>/category/formacao/">Formação</a></h2>
           <ul class="footer__courses__list">
             <?php programasList('formacao', 'formacao') ?>
           </ul>

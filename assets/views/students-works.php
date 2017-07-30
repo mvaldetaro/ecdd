@@ -8,13 +8,13 @@
           <a href="javascript:;" data-filter=".recente">Recentes</a>
         </li>
         <li class="students-works__menu__item">
+          <a href="javascript:;" data-filter=".graduacao">Graduação</a>
+        </li>
+        <li class="students-works__menu__item">
           <a href="javascript:;" data-filter=".mba">MBA</a>
         </li>
         <li class="students-works__menu__item">
           <a href="javascript:;" data-filter=".pos-graduacao"><span class="visible-xs-inline-block">Pós</span> <span class="hidden-xs">Pós-Graduação</span></a>
-        </li>
-        <li class="students-works__menu__item">
-          <a href="javascript:;" data-filter=".graduacao">Graduação</a>
         </li>
         <li class="students-works__menu__item">
           <a href="javascript:;" data-filter=".formacao">Formação</a>
