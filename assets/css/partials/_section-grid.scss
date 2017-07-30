@@ -1,0 +1,52 @@
+.grid {
+  padding: 32px 0;
+  position: relative;
+  .container {
+    position: relative;
+  }
+  &__header {
+    .title {
+      font-weight: 300;
+      font-size: 1.8em;
+      display: inline-block;
+      text-transform: uppercase;
+      @include tablet {
+        font-size: 2.5em;
+      }
+      &:before {
+        content: "";
+        height: 1px;
+        width: 60%;
+        background-color: $black;
+        display: block;
+        margin-bottom: 16px;
+        @include tablet {
+          width: 26%;
+        }
+      }
+      &--invert {
+        color: $white;
+        &:before {
+          background-color: $white;
+        }
+      }
+    }
+  }
+  &__content {
+
+    &__list {
+      list-style: none;
+      padding-left: 0;
+      &__item {
+        display: inline-block;
+        margin: 8px;
+        &:first-child {
+          margin-left: 0;
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

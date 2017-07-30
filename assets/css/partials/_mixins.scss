@@ -4,6 +4,12 @@
   }
 }
 
+@mixin mid-tablet {
+  @media (min-width: #{$mid-tablet-width}) {
+    @content;
+  }
+}
+
 @mixin desktop {
   @media (min-width: #{$desktop-width}) {
     @content;
@@ -14,4 +20,13 @@
   @media (min-width: #{$large-desktop-width}) {
     @content;
   }
+}
+
+/* Colors */
+@mixin gradient($left: #000, $right: #000) {
+  background: $left; /* Old browsers */
+  background: -webkit-linear-gradient(bottom left, $left 0%, $right 100%);
+  background: -o-linear-gradient(bottom left, $left 0%, $right 100%);
+  background: linear-gradient(to top right, $left 0%, $right 100%); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr= $left , endColorstr= $right ,GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }

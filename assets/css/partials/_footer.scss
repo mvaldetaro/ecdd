@@ -1,4 +1,4 @@
-$bg-footer-color: #263238 !default;
+$bg-footer-color: #202020 !default; //#263238
 
 .footer {
   background-color: $bg-footer-color;
@@ -64,7 +64,22 @@ $bg-footer-color: #263238 !default;
     }
     &__list{
       display: none;
+      list-style: none;
+      @include desktop {
+        display: block;
+        padding-left: 0;
+        margin-bottom: 32px;
+      }
       &__item {
+        padding: 4px 0;
+        font-weight: 400;
+        font-size: .875em;
+        line-height: 21px;
+        letter-spacing: .03em;
+
+        a:hover {
+          color: $ecdd-mono-extra;
+        }
       }
     }
   }
@@ -72,7 +87,7 @@ $bg-footer-color: #263238 !default;
   a {
     color: $white;
     &:hover {
-      color: $ecdd-mono-two;
+      color: $ecdd-mono-extra;
       text-decoration: none;
     }
   }

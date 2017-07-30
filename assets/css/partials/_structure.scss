@@ -4,9 +4,506 @@
 
 .main {
   position: relative;
+  background-color: #F9F9FB;
 }
 
 .fb-page-box {
   display: inline-block;
   margin-top: 16px;
 }
+
+.bg-orange {
+  @include gradient($left: #d64b10, $right: #E38806);
+}
+
+.bg-purple {
+  @include gradient($left: #453cc9, $right: #912cf2);
+}
+
+.bg-gray {
+  @include gradient($left: #2B5056, $right: #27494E);
+}
+
+.bg-admissao {
+  background: url('assets/img/admissao.jpg') no-repeat center center;
+  background-color: #1E3A3E !important;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.bg-green {
+  @include gradient($left: #13bc77, $right: #0bd3b9);
+}
+
+.btn-wide {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.btn-lg-wide {
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
+.card {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  /*height: 314px;*/
+  border-radius: 4px;
+  box-shadow: 0 -1px 1px 0 rgba(0,0,0,.05), 0 1px 2px 0 rgba(0,0,0,.2);
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  margin-bottom: 32px;
+
+  &--programa {
+    min-height: 308px;
+
+    @include desktop {
+      min-height: 374px;
+    }
+
+    @include large-desktop {
+      min-height: 308px;
+    }
+  }
+
+  &--portfolio {
+    min-height: 290px;
+  }
+
+  &.hover {
+    -webkit-transform: translateY(-4px);
+    -ms-transform: translateY(-4px);
+    transform: translateY(-4px);
+    box-shadow: 0 4px 25px 0 rgba(0,0,0,.3), 0 0 1px 0 rgba(0,0,0,.25);
+
+    & picture img {
+      -moz-transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+    }
+  }
+
+  &__figure {
+    min-height: 162px;
+    height: 162px;
+    position: relative;
+    overflow: hidden;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+
+    & picture{
+      & > img {
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        -moz-transition: all .2s;
+        -webkit-transition: all .2s;
+        transition: all .2s;
+      }
+    }
+  }
+
+  &__content{
+    padding: 0 16px 16px 16px;
+
+    & > .title {
+      font-size: 1.313em;
+      font-weight: 300;
+      & > a {
+        color: #33adff;
+        & :hover {
+          color: #33adff;
+        }
+      }
+    }
+    & > p {
+      font-size: .875em;
+      font-weight: 400;
+      color: $black;
+    }
+  }
+}
+
+.side-menu {
+  margin-top: 22px;
+  margin-bottom: 11px;
+  &__list {
+    list-style: none;
+    padding:  0;
+
+    li {
+      a {
+        padding: 8px 16px;
+        display: block;
+        text-transform: uppercase;
+        color: $ecdd-mono-extra;
+        font-weight: 500;
+        font-size: .875em;
+        border-bottom: 1px solid rgba(0,0,0, .1);
+        letter-spacing: .02em;
+        font-weight: 500;
+
+        &:hover {
+          text-decoration: none;
+          color: $ecdd-mono-five;
+        }
+      }
+    }
+    .sub-menu {
+      list-style: none;
+      padding-left: 0;
+
+      a {
+        padding-left: 40px;
+      }
+    }
+  }
+}
+
+body.page  {
+  margin-bottom: 0;
+}
+
+.page {
+  margin-bottom: 32px;
+  &__header {
+    .title {
+      font-size: 1.75em;
+      text-transform: uppercase;
+      font-weight: 200;
+      display: inline-block;
+      @include tablet {
+        font-size: 3.750em;
+      }
+      @include desktop {
+        font-size: 3.750em;
+      }
+      &:before {
+        content: "";
+        height: 1px;
+        width: 30%;
+        background-color: $gray;
+        display: block;
+        margin-bottom: 8px;
+      }
+    }
+    &__intro {
+      p {
+        font-size: 1em;
+        line-height: 25px;
+      }
+
+      @include tablet {
+        font-size: 1.313em;
+        line-height: 34px;
+      }
+    }
+  }
+
+  &__content {
+    h2 {
+      font-size: 1.6em;
+      text-transform: uppercase;
+      font-weight: 400;
+      color: $black; //$ecdd-mono-extra
+    }
+
+    h3 {
+      font-size: 1.2em;
+      text-transform: uppercase;
+      font-weight: 500;
+      color: $ecdd-mono-extra;
+    }
+
+    h4 {
+      font-size: 1em;
+      text-transform: uppercase;
+      font-weight: 500;
+      color: $ecdd-mono-extra;
+    }
+
+    p {
+      line-height: 26px;
+      margin-bottom: 16px;
+    }
+
+    .col-md-6 {
+      p {
+        font-size: .875em;
+        line-height: 23px;
+      }
+    }
+
+    .col-md-4 {
+      p {
+        font-size: .813em;
+        line-height: 19px;
+        text-rendering: optimizeLegibility;
+      }
+      ul {
+        padding-left: 0px;
+        list-style: none;
+        li {
+          font-size: .813em;
+          line-height: 19px;
+          margin-bottom: 8px;
+          text-rendering: optimizeLegibility;
+        }
+      }
+    }
+
+    ul {
+      margin-bottom: 16px;
+      li {
+        margin-bottom: 8px;
+      }
+    }
+
+    .testimony {
+      border: 1px solid rgba(0,0,0,.1);
+      text-align: center;
+      position: relative;
+      margin-top: 132px;
+      margin-bottom: 32px;
+      padding-top: 87px;
+      border-radius: 5px;
+      background-color: #fff;
+
+      &__blockquote{
+          margin-left: 20px;
+          margin-right: 20px;
+        @include tablet {
+          margin-left: 40px;
+          margin-right: 40px
+        }
+        @include desktop {
+
+        }
+        p {
+          font-style: italic;
+          font-size: .875em;
+          line-height: 24px;
+          @include tablet {
+            font-size: 1.250em;
+            line-height: 30px;
+          }
+
+          @include desktop {
+
+          }
+        }
+      }
+
+
+
+      &__image {
+        border-radius: 50%;
+        position: absolute;
+        left: calc(50% - 83px);
+        top: -75px;
+        padding: 8px;
+        background-color: #fff;
+        border: 1px solid rgba(0,0,0,.1);
+        width: 150px;
+        height: 150px;
+      }
+      &__cite{
+        font-weight: 500;
+        display: inline-block;
+        margin: 24px 0 24px 0;
+        font-size: 1.1em;
+        font-style: normal;
+        @include tablet {
+          font-size: 1.250em;
+        }
+        @include desktop {
+          font-size: 1.250em;
+        }
+        small {
+          margin-top: 8px;
+          display: block;
+          font-weight: 300;
+          line-height: 21px;
+          font-size: .7em;
+          @include tablet {
+            font-size: .6em;
+          }
+        }
+      }
+    }
+
+    table {
+      width: 100%;
+      max-width: 100%;
+      margin-bottom: 24px;
+      // Cells
+      > thead,
+      > tbody,
+      > tfoot {
+        > tr {
+          > th,
+          > td {
+            padding: 16px;
+            line-height: 24px;
+            vertical-align: top;
+            border-top: 1px solid $black;
+          }
+        }
+      }
+      // Bottom align for column headings
+      > thead > tr > th {
+        vertical-align: bottom;
+        border-bottom: 2px solid $black;
+      }
+      // Remove top border from thead by default
+      > caption + thead,
+      > colgroup + thead,
+      > thead:first-child {
+        > tr:first-child {
+          > th,
+          > td {
+            border-top: 0;
+          }
+        }
+      }
+      // Account for multiple tbody instances
+      > tbody + tbody {
+        border-top: 2px solid $black;
+      }
+
+      // Nesting
+      .table {
+        background-color: $white;
+      }
+    }
+
+    &--tab {
+      padding: 16px;
+
+      .col-md-6 {
+        p {
+          font-size: .875em;
+          line-height: 23px;
+        }
+      }
+
+      .col-md-4 {
+        p {
+          font-size: .813em;
+          line-height: 19px;
+        }
+      }
+
+      .col-md-8 {
+        p {
+          font-size: .875em;
+          line-height: 23px;
+        }
+
+        ul {
+          li {
+            margin-bottom: 8px;
+            font-size: .875em;
+            line-height: 23px;
+          }
+        }
+      }
+
+    }
+  }
+}
+
+.widebox {
+  margin-top: 32px;
+  padding: 32px 0;
+  position: relative;
+
+  &__header {
+    .title {
+      font-weight: 300;
+      font-size: 1.8em;
+      display: inline-block;
+      text-transform: uppercase;
+      color: rgba(255,255,255,.8);
+      @include tablet {
+        font-size: 2.5em;
+      }
+      &:before {
+        content: "";
+        height: 1px;
+        width: 20%;
+        background-color: rgba(255,255,255,.8);
+        display: block;
+        margin-bottom: 16px;
+        @include tablet {
+          width: 30%;
+        }
+      }
+    }
+  }
+
+  &__content {
+    color: rgba(255,255,255,.8);
+    margin-top: 16px;
+    &__item {
+      text-align: center;
+      padding: 16px 0;
+      .title {
+        text-transform: uppercase;
+        font-size: 1.250em;
+      }
+      .icon {
+        fill: rgba(255,255,255,.8);
+        width: 100px;
+        height: 100px;
+      }
+      p {
+        font-size: .813em;
+        line-height: 19px;
+      }
+    }
+  }
+}
+
+.generic {
+  margin-top: 16px;
+  position: relative;
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+  }
+  &__header {
+    margin-bottom: 16px;
+    position: relative;
+    .title {
+      font-family: $headings-font;
+      font-size: 1.750em;
+      font-weight: 300;
+      text-transform: uppercase;
+      color: $gray;
+      display: inline-block;
+      &:before{
+        content: "";
+        height: 1px;
+        width: 45%;
+        background-color: $gray;
+        display: block;
+        margin-bottom: 8px;
+      }
+      @include tablet {
+        font-size: 2em;
+        font-weight: 200;
+      }
+
+      @include desktop {
+        font-size: 2.500em;
+      }
+    }
+  }
+}
+
+

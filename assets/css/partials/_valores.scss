@@ -1,0 +1,106 @@
+.valores {
+  @include gradient($left: #13bc77, $right: #0bd3b9);
+  padding: 32px 0;
+   &__header {
+    .title {
+      font-weight: 300;
+      font-size: 1.8em;
+      color: #2B5056;
+      display: inline-block;
+      text-transform: uppercase;
+      @include tablet {
+        font-size: 2.5em;
+      }
+        &:before {
+          content: "";
+          height: 1px;
+          width: 60%;
+          background-color: #2B5056;
+          display: block;
+          margin-bottom: 16px;
+          @include tablet {
+            width: 50%;
+          }
+        }
+    }
+  }
+  &__content {
+    color: #2B5056;
+    &__item {
+      .title {
+        text-transform: uppercase;
+        font-size: 2em;
+        margin-top: 32px;
+        font-weight: 400;
+      }
+      .group {
+        margin-top: 24px;
+        .spacer {
+          margin: 45px 0;
+        }
+      }
+      .modalidade {
+        font-size: 1.375em;
+        line-height: 22px;
+        font-weight: 300;
+        text-transform: uppercase;
+        .bolsa {
+          font-weight: 700;
+        }
+        .horario {
+          font-size: .75em;
+          line-height: 32px;
+          font-weight: 500;
+          display: block;
+        }
+        @include tablet {
+          line-height: 24px;
+        }
+        @include desktop {
+          line-height: 26px;
+        }
+      }
+      .preco {
+        font-size: 1.375em;
+        line-height: 22px;
+        font-weight: 500;
+        &__integral {
+          display: block;
+          font-size: .65em;
+          line-height: 32px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+  &__footer {
+    margin-top: 32px;
+    padding: 24px 0;
+    border-top: 1px solid #2B5056;
+
+    @include tablet {
+      padding: 24px 48px 0 48px;
+    }
+
+    img {
+      margin-right: 24px;
+      vertical-align: middle;
+      @include tablet {
+        float: left;
+      }
+    }
+
+    p {
+      margin-top: 12px;
+      a {
+        color: #2B5056;
+        text-decoration: underline;
+        font-weight: 500;
+      }
+
+      a:hover {
+        color: $ecdd-mono-one;
+      }
+    }
+  }
+}

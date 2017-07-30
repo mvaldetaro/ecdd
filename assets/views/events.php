@@ -1,10 +1,9 @@
 <section class="events">
-  <header class="events__header">
+  <header class="events__header wow animated fadeIn">
     <h2 class="title">Eventos</h2>
     <a class="go-to-link" href="<?php bloginfo('url'); ?>/category/eventos" title="Eventos passados">Outros eventos</a>
   </header>
   <div class="events__content">
-
     <?php
     $args = array(
       'category_name' => 'eventos',
@@ -14,10 +13,10 @@
     $query = new WP_Query($args);
     if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post();
     ?>
-      <figure class="events__content__figure">
+      <figure class="events__content__figure wow animated fadeIn">
         <?php the_post_thumbnail('large'); ?>
       </figure>
-      <figcaption class="events__content__caption">
+      <figcaption class="events__content__caption wow animated slideInRight">
         <h3><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
         <p><?php the_excerpt(); ?></p>
       </figcaption>

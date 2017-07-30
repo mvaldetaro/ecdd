@@ -1,0 +1,134 @@
+$bg-color-ca-default: $ecdd-mono-one !default;
+$bg-color-ca-small: #455A64 !default;
+
+.infos{
+  background-color: $bg-color-ca-default;
+  position: relative;
+  padding: 32px 0;
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+  }
+
+  &__header {
+    margin-bottom: 16px;
+    position: relative;
+
+     .title {
+      font-family: $call-actions-title-font;
+      font-size: 1.875em;
+      color: $white;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+        @include tablet {
+          font-size: 3.375em;
+        }
+      }
+
+    .subtitle {
+      font-family: $call-actions-subtitle-font;
+      font-size: 1.125em;
+      font-weight: 300;
+      color: $white;
+      text-transform: uppercase;
+      margin-top: 0;
+      margin-bottom: 32px;
+    }
+
+  }
+
+  &__content {
+    color: $white;
+    label {
+      margin-top: 16px;
+      color: $white;
+    }
+    &--admissao {
+      .pravaler {
+        img {
+          margin-bottom: 8px
+        }
+
+        p {
+          margin-bottom: 16px;
+        }
+
+        margin-top: 11px;
+        @include desktop {
+          padding: 0 86px;
+        }
+      }
+
+      .btn-primary {
+        &:hover,
+        &:focus {
+          color: #2A4D53;
+        }
+      }
+    }
+  }
+
+  &__form {
+
+    &__input {
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid $white;
+      padding: 8px 0;
+      width: 100%;
+      font-size: 1em;
+      color: $white;
+      font-weight: 300;
+      &::placeholder {
+        color: rgba(255,255,255, .67);
+        font-size: .85em;
+      }
+      &:hover{
+        border-color: $ecdd-mono-three;
+      }
+      &:focus {
+        border-color: $ecdd-mono-five;
+      }
+    }
+
+    &__textarea {
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid $white;
+      padding: 8px 0;
+      width: 100%;
+      height: 139px;
+      font-size: 1em;
+      color: $white;
+      font-weight: 300;
+      &::placeholder {
+        color: rgba(255,255,255, .67);
+        font-size: .85em;
+      }
+      &:hover{
+        border-color: $ecdd-mono-three;
+      }
+      &:focus {
+        border-color: $ecdd-mono-five;
+      }
+    }
+
+    &__button {
+      width: 34%;
+      margin: 8px auto;
+      display: inherit;
+      outline: none;
+
+      @include desktop {
+        margin: 8px 0;
+      }
+
+      &:hover,
+      &:focus {
+        color: $ecdd-mono-one;
+      }
+    }
+  }
+}

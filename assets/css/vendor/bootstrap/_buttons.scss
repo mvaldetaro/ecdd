@@ -41,7 +41,7 @@
   &.active {
     outline: 0;
     background-image: none;
-    @include box-shadow(inset 0 3px 5px rgba(0,0,0,.125));
+    @include box-shadow(none);
   }
 
   &.disabled,
@@ -74,6 +74,19 @@ a.btn {
 }
 .btn-secondary {
   @include button-variant($btn-secondary-color, $btn-secondary-bg, $btn-secondary-border);
+  &:hover,
+  &:focus,
+  &.focus {
+    @include button-variant(#0EC99C, $btn-secondary-color, $btn-secondary-color);
+  }
+}
+.btn-invert { // primary with inverts colors
+  @include button-variant($btn-invert-color, $btn-invert-bg, $btn-invert-border);
+  &:hover,
+  &:focus,
+  &.focus {
+    @include button-variant($btn-default-color, $btn-invert-color, $btn-invert-border);
+  }
 }
 // Success appears as green
 .btn-success {

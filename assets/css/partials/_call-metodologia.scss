@@ -1,0 +1,44 @@
+$bg-color: #343434 !default;
+
+.metodologia{
+  background-color: $bg-color;
+  background: url('assets/img/blackboard.jpg') no-repeat center center;
+  background-attachment: fixed;
+  position: relative;
+  padding: 32px 0;
+  text-align: center;
+
+  @include desktop {
+    text-align: left
+  }
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+  }
+
+  &__header {
+    margin-bottom: 16px;
+    position: relative;
+    .title {
+      font-family: $call-actions-title-font;
+      font-size: 2em;
+      color: $white;
+      text-transform: uppercase;
+      @include tablet {
+        font-size: 3.375em;
+      }
+    }
+  }
+
+  &__content {
+    color: $white;
+  }
+
+  .btn-primary {
+    &:hover {
+      color: $bg-color;
+    }
+  }
+}

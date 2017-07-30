@@ -1,13 +1,13 @@
 .head {
   padding-top: 32px;
   width: 100%;
-  @include tablet {
+  @include desktop {
     padding-top: 0;
   }
 
-  .logo{
+  .logo {
     display: inline-block;
-    width: 180px;
+    /*width: 180px;*/
 
     @include tablet {
       width: 222px;
@@ -23,9 +23,14 @@
   .main-menu {
     display: inline-block;
     float: right;
-    @include tablet {
+    @include desktop {
       display: inline-block;
       float: none;
+      vertical-align: text-top;
+    }
+
+    @include large-desktop {
+      padding-left: 34px;
     }
 
     & > button {
@@ -34,7 +39,7 @@
       display: block;
       border: 0;
       padding: 0;
-      margin: 16.25px 0;
+      margin: 6px 0;
       background: url('assets/img/icons/ic_menu_white_36px.svg') no-repeat center center;
       background-size: cover;
       span {
@@ -44,25 +49,39 @@
 
     &__list {
       list-style: none;
+      padding-left: 0;
 
       & > .menu-item {
         display: inline-block;
         text-transform: uppercase;
 
-        &.current-menu-item a{
-          background: rgba(0,0,0, .25);
+        &.current-menu-item a {
+          //background: rgba(0,0,0, .1);
+          &.hvr-underline-from-left{
+            &:before {
+              content: "";
+              position: absolute;
+              z-index: -1;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              background: #fff;
+              height: 2px;
+            }
+          }
         }
 
         a {
           color: $white;
           text-decoration: none;
-          padding: 8px 16px;
+          padding: 8px;
           display: block;
-          border-radius: 16px;
           transition: .3s ease-in-out;
+          font-weight: 500;
+          text-shadow: 0px 1px 1px rgba(0, 0, 0, .87);
 
           &:hover {
-            background: rgba(0,0,0, .25);
+            //background: rgba(0,0,0, .25);
           }
         }
       }

@@ -5,7 +5,7 @@ $bg-color-ca-small: #455A64 !default;
   background-color: $bg-color-ca-default;
   margin-top: 32px;
   position: relative;
-  padding: 40px 0;
+  padding: 40px 0 20px 0;
 
   *,
   *:before,
@@ -16,6 +16,13 @@ $bg-color-ca-small: #455A64 !default;
   &--small {
     background-color: $bg-color-ca-small;
     padding: 32px 0;
+    @include desktop {
+      padding: 32px 0 8px 0;
+    }
+  }
+
+  &--eventos {
+    padding: 40px 0;
   }
 
   &__header {
@@ -30,6 +37,13 @@ $bg-color-ca-small: #455A64 !default;
     text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 8px;
+    @include tablet {
+      font-size: 3.375em;
+    }
+
+    &--financiamentos {
+      color: #2b5056;
+    }
 
     &--small {
       font-size: 1.5em;
@@ -43,22 +57,74 @@ $bg-color-ca-small: #455A64 !default;
     color: $white;
     text-transform: uppercase;
     margin-top: 0;
+    margin-bottom: 32px;
   }
 
   &__content {
     color: $white;
+
+    &--financiamentos {
+      color: #2b5056;
+    }
+
+    &--eventos {
+      .btn-primary {
+        margin-top: 16px;
+      }
+    }
+
     &--small {
       font-size: .95em;
       padding-bottom: 8px;
     }
+
     label {
       margin-top: 16px;
       color: $white;
     }
+
+    &__dl {
+
+    }
+
+    &__dt {
+      font-weight: bold;
+      font-size: 1.3em;
+      margin-bottom: 8px;
+    }
+
+    &__dd {
+      padding-bottom: 16px;
+      margin-bottom: 32px;
+      border-bottom: 1px solid $ecdd-mono-five;
+      font-size: 1.063em;
+      line-height: 27px;
+      &:last-child {
+        border-bottom: 0;
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  &__list {
+
+    &__item {
+      margin-bottom: 16px;
+    }
   }
 
   &__btn {
-    &--small {
+    &--studentship {
+      @include tablet {
+        width: 100%;
+        margin: 45px auto 0 auto;
+      }
+
+      @include desktop {
+        width: 50%;
+        font-size: 1.25em;
+      }
       &:hover {
         color: $bg-color-ca-small;
       }
@@ -72,13 +138,12 @@ $bg-color-ca-small: #455A64 !default;
       border: none;
       border-bottom: 1px solid $white;
       padding: 8px 0;
-      margin-bottom: 16px;
       width: 100%;
       font-size: 1em;
       color: $white;
       font-weight: 300;
       &::placeholder {
-        color: rgba(255,255,255, .4);
+        color: rgba(255,255,255, .67);
         font-size: .85em;
       }
       &:hover{
@@ -89,15 +154,26 @@ $bg-color-ca-small: #455A64 !default;
       }
     }
     &__button {
-      width: 50%;
+      width: 34%;
       margin: 8px auto;
-      display: inherit;
       outline: none;
+
+      @include desktop {
+        margin: 8px 0;
+      }
 
       &:hover,
       &:focus {
         color: $ecdd-mono-one;
       }
     }
+  }
+
+  .rocket-position {
+    display: block;
+    width: 500px;
+    height: 500px;
+    top: -70px;
+    position: absolute;
   }
 }

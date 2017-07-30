@@ -17,6 +17,9 @@
       text-transform: uppercase;
       color: $gray;
       display: inline-block;
+      @include tablet {
+        font-size: 1.5em;
+      }
       &:before{
         content: "";
         height: 1px;
@@ -56,66 +59,55 @@
         position: relative;
         margin-bottom: 16px;
         padding-bottom: 16px;
-        border-bottom: 1px solid $gray-lighter;
-        &:nth-child(4),
-        &:nth-child(5),
-        &:nth-child(6) {
-          display: none;
-        }
-        &:nth-child(3) {
-          border-bottom: none;
-        }
-        @include tablet {
-          &:nth-child(3) {
-            border-bottom: 1px solid $gray-lighter;
-          }
+        min-height: 97px;
+        @include desktop {
           &:last-child {
-            border-bottom: none;
-          }
-          &:nth-child(4),
-          &:nth-child(5),
-          &:nth-child(6){
-            display: inherit;
-          }
-      }
-      &__data{
-        width: 15%;
-        font-size: 1.250em;
-        display: inline-block;
-        float: left;
-        text-align: right;
-        p {
-          font-family: $banner-subheading-font;
-          margin-top: 8px;
-          span {
-            display: block;
-            clear: both;
-            font-size: 0.550em;
+            display: none;
           }
         }
-      }
-      &__event{
-        width: 80%;
-        display: inline-block;
-        border-left: 1px solid $gray-light;
-        padding-left: 8px;
-        margin-left: 8px;
-        h3 {
-          font-size: 1em;
-          margin-top: 8px;
-          a {
-            color: $link-default;
-            transition: all .2s ease-in-out;
-            &:hover{
-              color: $link-hover;
+        @include large-desktop {
+          &:last-child {
+            display: block;
+          }
+        }
+        &__data{
+          width: 15%;
+          font-size: 1.250em;
+          display: inline-block;
+          float: left;
+          text-align: right;
+          p {
+            font-family: $banner-subheading-font;
+            margin-top: 8px;
+            span {
+              display: block;
+              clear: both;
+              font-size: 0.550em;
             }
           }
         }
-        p {
-          font-size: .75em;
+        &__event{
+          width: 80%;
+          display: inline-block;
+          border-left: 1px solid $gray-light;
+          padding-left: 8px;
+          margin-left: 8px;
+          h3 {
+            font-size: 1em;
+            margin-top: 8px;
+            a {
+              color: $link-default;
+              transition: all .2s ease-in-out;
+              &:hover{
+                color: $link-hover;
+              }
+            }
+          }
+          p {
+            font-size: .75em;
+          }
         }
       }
     }
   }
-}
 }

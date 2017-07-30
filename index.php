@@ -7,7 +7,7 @@
 <?php get_header(); ?>
 <header class="header">
   <div class="header-content">
-    <div class="container-fluid">
+    <div class="container">
       <div class="row">
         <div class="col-md-12">
           <?php get_template_part('assets/views/bar-top', 'bar-top'); ?>
@@ -17,8 +17,7 @@
       </div>
     </div>
   </div>
-  <div class="header-background">
-    <img src="<?php bloginfo('template_directory')?>/assets/img/bg-1-desktop.png" alt="">
+  <div class="header-background" aria-hidden="true" style="background-image: url('<?php bloginfo('template_directory'); echo'/assets/img/bg-1-desktop.png'; ?>');">
   </div>
 </header>
 

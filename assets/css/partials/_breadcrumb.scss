@@ -1,0 +1,64 @@
+.breadcrumbs-warp {
+  display: none;
+  @include tablet {
+    display: block;
+  }
+  padding: 48px 0 16px 0;
+
+  .entry-breadcrumbs {
+    font-size: .875em;
+    white-space: nowrap;
+
+    [itemprop="itemListElement"] {
+      padding-right: 18px;
+      margin-right: 18px;
+      display: inline-block;
+      position: relative;
+      line-height: 20px;
+
+      a {
+        position: relative;
+        z-index: 1;
+      }
+
+      &:before,
+      &:after {
+        border-right: 1px solid #666;
+        content: '';
+        display: block;
+        height: 50%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 0;
+        opacity: .87;
+      }
+      &:after {
+        bottom: 0;
+        top: auto;
+        transform: skewX(-45deg);
+      }
+
+      &:before {
+        transform: skewX(45deg);
+      }
+
+      &:last-child {
+         &:before,
+         &:after {
+          opacity: 0;
+          display: none;
+         }
+      }
+
+      .home-link {
+
+      }
+
+      &.current-category {
+
+      }
+    }
+  }
+}

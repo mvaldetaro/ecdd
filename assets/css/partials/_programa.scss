@@ -1,0 +1,107 @@
+.programa {
+  &__intro {
+    //margin-bottom:  32px;
+    @include tablet {
+      margin-bottom:  32px;
+    }
+  }
+
+  &__header {
+    .title {
+        font-size: 2.25em;
+        text-transform: uppercase;
+        font-weight: 700;
+        @include tablet {
+          font-size: 3.750em;
+        }
+        @include desktop {
+          font-size: 3.750em;
+        }
+      span {
+        display: block;
+      }
+      .type {
+        display: inline-block;
+        font-weight: 200;
+        font-size: .800em;
+        &:before {
+          content: "";
+          height: 1px;
+          width: 44%;
+          background-color: $gray;
+          display: block;
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+
+  &__content {
+    margin-top: 32px;
+    p {
+      font-size: 1em;
+      line-height: 25px;
+      font-weight: 300;
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      @include tablet {
+        font-size: 1.313em;
+        line-height: 34px;
+      }
+    }
+  }
+}
+
+// TODO: Separa em outro arquivo
+.adicional-intro {
+   &__content {
+    margin-bottom: 32px;
+    h3,
+    .title {
+      text-transform: uppercase;
+      font-size: 1.250em;
+      font-weight: 600;
+      color: $ecdd-mono-extra;
+      margin-bottom: 16px;
+    }
+    .col-md-4 p {
+      font-size: .875em;
+      line-height: 21px;
+      font-weight: 300;
+    }
+
+    .col-md-6 p {
+      font-size: 1em;
+      line-height: 25px;
+      font-weight: 300;
+    }
+
+    .palestrante {
+      margin-bottom: 16px;
+      img {
+        display: inline-block;
+        margin-right: 16px;
+        border-radius: 50%;
+        vertical-align: middle;
+      }
+      p {
+        vertical-align: middle;
+        font-size: 2em;
+        display: inline-block;
+      }
+    }
+    .dia-semana {
+      font-size: 1.2em !important;
+      font-weight: 300 !important;
+      & span {
+        font-size: 1.8em;
+        font-weight: 600;
+        display: block;
+        text-transform: uppercase;
+        margin-bottom: 16px;
+      }
+    }
+  }
+}

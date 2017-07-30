@@ -1,7 +1,7 @@
 <footer class="footer">
   <div class="container">
     <div class="row">
-      <div class="col-md-3">
+      <div class="col-md-3 wow animated zoomIn">
         <figure class="footer__logo">
           <?php the_custom_logo(); ?>
         </figure>
@@ -32,112 +32,42 @@
       </div>
       <!-- MBAs e Pós -->
       <div class="col-md-3">
-        <div class="footer__courses">
+        <div class="footer__courses wow animated fadeInUp">
           <h2 class="footer__courses__title"><a href="<?php bloginfo('url'); ?>/category/mba/">MBAs</a></h2>
           <ul class="footer__courses__list">
-            <li class="footer__courses__list__item">
-              <a href="#">Cinema e Audiovisual (Digital)</a>
-            </li>
-            <li class="footer__courses__list__item">
-              <a href="#">Comunicação Social - Publicidade E Propaganda</a>
-            </li>
-            <li class="footer__courses__list__item">
-              <a href="#">Design de Interiores (Digital)</a>
-            </li>
-            <li class="footer__courses__list__item">
-              <a href="#">Design Gráfico (Design Digital)</a>
-            </li>
-            <li class="footer__courses__list__item">
-              <a href="#">Fotografia (Digital)</a>
-            </li>
+          <?php programasList('mba', 'mba') ?>
           </ul>
         </div>
-        <div class="footer__courses">
+        <div class="footer__courses wow animated fadeInUp" data-wow-delay="0.2">
           <h2 class="footer__courses__title"><a href="<?php bloginfo('url'); ?>/category/pos-graduacao/">Pós Graduações</a></h2>
           <ul class="footer__courses__list">
-            <li class="footer__courses__list__item">
-              <a href="#">Cinema e Audiovisual (Digital)</a>
-            </li>
-            <li class="footer__courses__list__item">
-              <a href="#">Comunicação Social - Publicidade E Propaganda</a>
-            </li>
-            <li class="footer__courses__list__item">
-              <a href="#">Design de Interiores (Digital)</a>
-            </li>
-            <li class="footer__courses__list__item">
-              <a href="#">Design Gráfico (Design Digital)</a>
-            </li>
-            <li class="footer__courses__list__item">
-              <a href="#">Fotografia (Digital)</a>
-            </li>
+            <?php programasList('pos-graduacao', 'pos') ?>
           </ul>
         </div>
       </div>
 
       <!-- Graduações -->
       <div class="col-md-3">
-        <div class="footer__courses">
+        <div class="footer__courses wow animated fadeInUp" data-wow-delay="0.4">
           <h2 class="footer__courses__title"><a href="<?php bloginfo('url'); ?>/category/graduacao/">Graduações</a></h2>
           <ul class="footer__courses__list">
-            <li class="footer__courses__list__item">
-              <a href="#">Cinema e Audiovisual (Digital)</a>
-            </li>
-            <li class="footer__courses__list__item">
-              <a href="#">Comunicação Social - Publicidade E Propaganda</a>
-            </li>
-            <li class="footer__courses__list__item">
-              <a href="#">Design de Interiores (Digital)</a>
-            </li>
-            <li class="footer__courses__list__item">
-              <a href="#">Design Gráfico (Design Digital)</a>
-            </li>
-            <li class="footer__courses__list__item">
-              <a href="#">Fotografia (Digital)</a>
-            </li>
+            <?php programasList('graduacao', 'graduacao') ?>
           </ul>
         </div>
       </div>
 
       <!-- Formações e EAD -->
       <div class="col-md-3">
-        <div class="footer__courses">
-          <h2 class="footer__courses__title"><a href="<?php bloginfo('url'); ?>/category/formacao/">Formações</a></h2>
-          <ul class="footer__courses__list">
-            <li class="footer__courses__list__item">
-              <a href="#">Cinema e Audiovisual (Digital)</a>
-            </li>
-            <li class="footer__courses__list__item">
-              <a href="#">Comunicação Social - Publicidade E Propaganda</a>
-            </li>
-            <li class="footer__courses__list__item">
-              <a href="#">Design de Interiores (Digital)</a>
-            </li>
-            <li class="footer__courses__list__item">
-              <a href="#">Design Gráfico (Design Digital)</a>
-            </li>
-            <li class="footer__courses__list__item">
-              <a href="#">Fotografia (Digital)</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__courses">
+        <div class="footer__courses wow animated fadeInUp" data-wow-delay="0.6">
           <h2 class="footer__courses__title"><a href="<?php bloginfo('url'); ?>/category/ead/">EAD</a></h2>
           <ul class="footer__courses__list">
-            <li class="footer__courses__list__item">
-              <a href="#">Cinema e Audiovisual (Digital)</a>
-            </li>
-            <li class="footer__courses__list__item">
-              <a href="#">Comunicação Social - Publicidade E Propaganda</a>
-            </li>
-            <li class="footer__courses__list__item">
-              <a href="#">Design de Interiores (Digital)</a>
-            </li>
-            <li class="footer__courses__list__item">
-              <a href="#">Design Gráfico (Design Digital)</a>
-            </li>
-            <li class="footer__courses__list__item">
-              <a href="#">Fotografia (Digital)</a>
-            </li>
+            <?php programasList('ead', array('mba', 'pos', 'graduacao', 'formacao')) ?>
+          </ul>
+        </div>
+        <div class="footer__courses wow animated fadeInUp" data-wow-delay="0.8">
+          <h2 class="footer__courses__title"><a href="<?php bloginfo('url'); ?>/category/formacao/">Formações</a></h2>
+          <ul class="footer__courses__list">
+            <?php programasList('formacao', 'formacao') ?>
           </ul>
         </div>
       </div>
@@ -151,6 +81,7 @@
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js"></script>
 <?php wp_footer(); ?>
 </body>
 </html>

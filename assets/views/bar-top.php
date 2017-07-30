@@ -14,6 +14,7 @@
         'menu_class' => 'menu-list',
       ));
     ?>
+    <!--
     <div class="action-box">
       <button class="btn-show-searchform" data-toggle="modal" data-target="#searchform">
         <span>Busca</span>
@@ -22,5 +23,6 @@
         <a class="btn btn-primary btn-xs btn-user" href="https://lms.infnet.edu.br/moodle/login/index.php">Área do Aluno</a>
       </div>
     </div>
+    -->
   </div>
 <!-- /Barra do topo -->

@@ -1,0 +1,73 @@
+.galeria {
+  padding: 32px 0;
+  position: relative;
+  background: #fff;
+  .container {
+    position: relative;
+  }
+  &__header {
+    .title {
+      font-weight: 300;
+      font-size: 1.8em;
+      display: inline-block;
+      text-transform: uppercase;
+      @include tablet {
+        font-size: 2.5em;
+      }
+      &:before {
+        content: "";
+        height: 1px;
+        width: 60%;
+        background-color: $black;
+        display: block;
+        margin-bottom: 16px;
+        @include tablet {
+          width: 26%;
+        }
+      }
+    }
+  }
+  &__content {
+    &__list {
+      list-style: none;
+      padding-left: 0;
+      margin: 0 -2px;
+      @include tablet {
+        padding: 0;
+        margin: 0;
+      }
+      &__item {
+        display: inline-block;
+        margin: 8px;
+
+        @include tablet {
+          margin: 16px;
+          &:first-child,
+            &:nth-child(5n) {
+              margin-left: 0;
+            }
+            &:nth-child(4n) {
+              margin-right: 0;
+            }
+        }
+
+        @include desktop {
+          margin: 16px;
+          &:first-child,
+            &:nth-child(5n) {
+              margin-left: 16px;
+            }
+            &:nth-child(7n) {
+              margin-left: 0;
+            }
+            &:nth-child(4n) {
+              margin-right: 16px;
+            }
+            &:nth-child(6n) {
+              margin-right: 0;
+            }
+        }
+      }
+    }
+  }
+}

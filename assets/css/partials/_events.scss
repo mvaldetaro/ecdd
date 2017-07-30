@@ -17,6 +17,9 @@
       text-transform: uppercase;
       color: $gray;
       display: inline-block;
+      @include tablet {
+        font-size: 1.5em;
+      }
       &:before{
         content: "";
         height: 1px;
@@ -51,7 +54,20 @@
     overflow: hidden;
     background: $ecdd-mono-one;
     position: relative;
-    &__figure{
+
+    @include tablet {
+      height: 300px;
+    }
+
+    @include desktop {
+      height: 377px;
+    }
+
+    @include large-desktop {
+      height: 436px;
+    }
+
+    &__figure {
       width: 100%;
       height: inherit;
       position: absolute;

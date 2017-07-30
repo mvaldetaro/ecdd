@@ -1,0 +1,136 @@
+.fundamentos-curso {
+  padding: 32px 0;
+  position: relative;
+
+  .container {
+    position: relative;
+  }
+  &__header {
+    .title {
+      font-weight: 300;
+      font-size: 1.8em;
+      display: inline-block;
+      text-transform: uppercase;
+      @include tablet {
+        font-size: 2.5em;
+      }
+      &:before {
+        content: "";
+        height: 1px;
+        width: 60%;
+        background-color: $black;
+        display: block;
+        margin-bottom: 16px;
+        @include tablet {
+          width: 26%;
+        }
+      }
+    }
+  }
+
+  &__controller {
+    position: absolute;
+    width: calc(100% - 20px);
+    top: 50%;
+    @include tablet {
+      width: calc(100% - 30px);
+    }
+
+    @include desktop {
+      width: calc(100% - 38px);
+    }
+
+    .arrow-left,
+    .arrow-right {
+      width:  32px;
+      height:  32px;
+      border: none;
+      background: transparent;
+      position: relative;
+      z-index: 1;
+
+      @include tablet {
+        width:  42px;
+        height:  42px;
+      }
+
+      &:before,
+      &:after {
+        border-right: 2px solid #666;
+        content: '';
+        display: block;
+        height: 50%;
+        position: absolute;
+        left: 0;
+        right: 20px;
+        top: 0;
+        z-index: 0;
+        opacity: .87;
+      }
+
+      &:hover {
+        &:before,
+        &:after {
+          border-color: $ecdd-mono-one;
+        }
+      }
+    }
+
+    .arrow-right {
+      float: right;
+      &:after {
+        bottom: 0;
+        top: auto;
+        transform: skewX(-45deg);
+      }
+
+      &:before {
+        transform: skewX(45deg);
+      }
+    }
+
+    .arrow-left {
+      float: left;
+      &:after {
+        bottom: 0;
+        top: auto;
+        transform: skewX(45deg);
+      }
+
+      &:before {
+        transform: skewX(-45deg);
+      }
+    }
+  }
+
+  &__content {
+    padding: 0 40px;
+    @include tablet {
+      padding: 0 60px;
+    }
+
+    &__item {
+      text-align: center;
+
+      figure {
+        margin-top: 22px;
+      }
+
+      .title {
+        text-transform: uppercase;
+        font-size: 1.250em;
+        font-weight: 600;
+        color: $ecdd-mono-extra;
+        margin-bottom: 16px;
+      }
+
+      p {
+        font-size: .85em;
+        line-height: 21px;
+        font-weight: 400;
+        margin-bottom: 8px;
+      }
+    }
+  }
+}
+

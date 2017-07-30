@@ -1,0 +1,125 @@
+.processo-seletivo {
+  margin-bottom:  32px;
+  &-banner {
+    background-color: $ecdd-mono-one;
+    color: $white;
+    padding: 16px 0 14px 0;
+    position: relative;
+    margin-bottom: 32px;
+
+    @include tablet {
+      margin-bottom: 0;
+    }
+
+    &__content {
+      .call {
+        display: inline-block;
+        vertical-align: top;
+        width: 100%;
+        @include tablet {
+          width: 316px;
+        }
+        p {
+          font-family: $headings-font;
+          font-size: 1em;
+          text-transform: uppercase;
+          margin: 0;
+          @include tablet {
+            font-size: 1.5em;
+          }
+
+          .ano {
+            font-weight: 600;
+          }
+        }
+      }
+      .description {
+        display: none;
+        font-size: .75em;
+        width: 100%;
+        @include tablet {
+          display: inline-block;
+          width: 200px;
+          font-size: .8em;
+        }
+      }
+    }
+
+    &__actions {
+      .btn {
+        margin-top: 5px;
+        @include tablet {
+          margin-top: initial;
+        }
+      }
+
+      .btn-primary:hover {
+        color: $ecdd-mono-one !important;
+      }
+    }
+    .arrow {
+      display: block;
+      background-color: $ecdd-mono-one;
+      border-radius: 3px;
+      -ms-transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+      position: absolute;
+      bottom: -7px;
+      left: calc(50% - 20px);
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &__hl {
+    font-size: .95em;
+    line-height: 21px;
+    font-weight: 400;
+    margin-bottom: 24px;
+    @include tablet {
+      font-size: 1.1em;
+      line-height: 34px;
+    }
+    span {
+      color: $ecdd-mono-extra;
+      font-weight: 300;
+      @include tablet {
+        display: block;
+        font-size: 1.685em;
+      }
+    }
+  }
+
+  &__content {
+
+    &__item {
+      margin-bottom: 32px;
+      .icon {
+        width: 60px;
+        height: 60px;
+      }
+      h4 {
+        font-size: 1.4em;
+        font-weight: 300;
+        @include tablet {
+          font-size: 1.750em;
+        }
+      }
+      p {
+        font-size: .875em;
+        line-height: 21px;
+        b {
+          color: $ecdd-mono-extra;
+        }
+      }
+
+      .modalidade {
+        margin-bottom: 16px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

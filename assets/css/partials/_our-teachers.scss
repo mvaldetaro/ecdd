@@ -1,14 +1,7 @@
 .our-teachers {
   margin-top: 16px;
   position: relative;
-  &:after {
-    content: "";
-    height: 1px;
-    width: 45%;
-    background-color: $gray-light;
-    display: block;
-    margin: 32px auto 16px auto;
-  }
+  margin-bottom: 16px;
   *,
   *:before,
   *:after {
@@ -24,6 +17,12 @@
       text-transform: uppercase;
       color: $gray;
       display: inline-block;
+      @include tablet {
+        font-size: 1.5em;
+      }
+      @include desktop {
+
+      }
       &:before{
         content: "";
         height: 1px;
@@ -63,11 +62,17 @@
       position: relative;
       margin-top: 16px;
       padding-top: 16px;
-      /*border-top: 1px solid $gray-lighter;*/
       min-height: 75px;
       overflow: hidden;
       clear: both;
       transition: .2s all ease-in-out;
+
+      @include tablet {
+        margin-top: 0;
+        padding-top: 0;
+        min-height: 100px;
+        margin-bottom: 16px;
+      }
 
       &.item-invisible {
         display: none;
@@ -82,6 +87,11 @@
         font-size: 1.250em;
         display: inline-block;
         float: left;
+        @include desktop {
+          width: inherit;
+          height: 156px;
+          margin-bottom: 16px;
+        }
         img {
           width: 100%;
           height: auto;
@@ -93,6 +103,11 @@
         display: inline-block;
         padding-left: 8px;
         margin-left: 8px;
+        @include desktop {
+          padding-left: 0;
+          margin-left: 0;
+          width: inherit;
+        }
         h3 {
           margin-top: 0;
           font-size: 1em;
@@ -100,7 +115,6 @@
         }
         p {
           font-size: .75em;
-          margin-bottom: 0;
         }
       }
 

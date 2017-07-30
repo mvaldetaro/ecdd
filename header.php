@@ -34,6 +34,7 @@
 
   <?php get_search_form() ?>
   <div class="wrap">
+    <span aria-hidden="true">
     <?php
     wp_nav_menu( array(
       'theme_location' => 'mobile',
@@ -41,4 +42,5 @@
       'container_class' => 'main-menu-mobile',
       'menu_class' => 'main-menu-mobile__list',
     ));
-  ?>
+    ?>
+    </span>

@@ -3,7 +3,7 @@
   width: 100%;
   display: none;
 
-  @include tablet {
+  @include desktop {
     display: block;
   }
 
@@ -23,7 +23,20 @@
         line-height: 16px;
         letter-spacing: .1px;
 
-        &.current-menu-item {}
+        &.current-menu-item a {
+           &.hvr-underline-from-left {
+            &:before {
+              content: "";
+              position: absolute;
+              z-index: -1;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              background: $white;
+              height: 2px;
+            }
+          }
+        }
 
         a {
           color: $white;
@@ -31,6 +44,8 @@
           text-transform: uppercase;
           display: block;
           padding: 8px 16px;
+          font-weight: 500;
+          text-shadow: 0px 1px 1px rgba(0, 0, 0, .50);
           &:hover {
 
           }

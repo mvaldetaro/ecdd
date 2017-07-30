@@ -1,7 +1,8 @@
 // Media Queries
 
 $phone-width: 480px !default;
-$tablet-width: 720px !default;
+/*$tablet-width: 720px !default;*/
+$tablet-width: 768px !default;
 $desktop-width: 992px !default;
 $large-desktop-width: 1200px !default;
 $retina: '-webkit-min-device-pixel-ratio: 2' !default;
@@ -18,7 +19,7 @@ $banner-subheading-font: 'proxima_novalight' !default;
 
 // Colors
 $black: rgba(0,0,0, .87);
-$white: rgba(255,255,255, .87);
+$white: rgba(255,255,255, 1);
 
 $gray-base:              #000 !default;
 $gray-darker:            lighten($gray-base, 13.5%) !default; // #222
@@ -33,6 +34,8 @@ $ecdd-mono-three: rgb(223, 141, 55) !default;
 $ecdd-mono-four: rgb(217, 174, 10) !default;
 $ecdd-mono-five: rgb(245, 203, 7) !default;
 $ecdd-mono-six:  rgb(254, 222, 72) !default;
+
+$ecdd-mono-extra: #EF6C00 !default;
 
 $link-default: #33ADFF !default;
 $link-hover: $ecdd-mono-three !default;

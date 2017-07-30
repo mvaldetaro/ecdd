@@ -1,0 +1,59 @@
+.ficha-tecnica {
+  padding: 32px 0;
+  position: relative;
+
+  &__header {
+    .title {
+      font-weight: 300;
+      font-size: 1.8em;
+      display: inline-block;
+      text-transform: uppercase;
+      @include tablet {
+        font-size: 2.5em;
+      }
+      &:before {
+        content: "";
+        height: 1px;
+        width: 60%;
+        background-color: $black;
+        display: block;
+        margin-bottom: 16px;
+        @include tablet {
+          width: 30%;
+        }
+      }
+    }
+  }
+
+  &__content {
+    @include tablet {
+      -moz-column-count: 2;
+      -webkit-column-count: 2;
+      column-count: 2;
+      column-gap: 1.875em;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      li {
+        -webkit-column-break-inside: avoid;
+        page-break-inside: avoid;
+        break-inside: avoid-column;
+      }
+    }
+
+    h3,
+    .title {
+      text-transform: uppercase;
+      font-size: 1.250em;
+      font-weight: 600;
+      color: $ecdd-mono-extra;
+      margin-bottom: 16px;
+    }
+
+    p {
+      line-height: 25px;
+    }
+  }
+}

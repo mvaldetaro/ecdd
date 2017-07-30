@@ -79,27 +79,48 @@
     float: left;
     // Make the list-items overlay the bottom border
     margin-bottom: -1px;
+    position: relative;
 
     // Actual tabs (as links)
     > a {
       margin-right: 2px;
       line-height: $line-height-base;
-      border: 1px solid transparent;
-      border-radius: $border-radius-base $border-radius-base 0 0;
+      text-transform: uppercase;
+      font-weight: 500;
+      //border: 1px solid transparent;
+      //border-radius: $border-radius-base $border-radius-base 0 0;
       &:hover {
-        border-color: $nav-tabs-link-hover-border-color $nav-tabs-link-hover-border-color $nav-tabs-border-color;
+        //border-color: $nav-tabs-link-hover-border-color $nav-tabs-link-hover-border-color $nav-tabs-border-color;
+         color: $ecdd-mono-extra;
+         background-color: transparent;
       }
     }
 
     // Active state, and its :hover to override normal :hover
     &.active > a {
+      background-color: transparent;
+      &:after {
+        border-left: 1px solid $nav-tabs-border-color;
+        border-top: 1px solid $nav-tabs-border-color;
+        background: #f9f9fb;
+        content: '';
+        display: block;
+        height: 11px;
+        width: 11px;
+        position: absolute;
+        left: calc(50% - 5px);
+        bottom: -5px;
+        z-index: 0;
+        transform: rotate(45deg);
+      }
       &,
       &:hover,
       &:focus {
-        color: $nav-tabs-active-link-hover-color;
-        background-color: $nav-tabs-active-link-hover-bg;
-        border: 1px solid $nav-tabs-active-link-hover-border-color;
-        border-bottom-color: transparent;
+        color: $ecdd-mono-extra;
+        background-color: transparent;
+        //background-color: $nav-tabs-active-link-hover-bg;
+        //border: 1px solid $nav-tabs-active-link-hover-border-color;
+        //border-bottom-color: transparent;
         cursor: default;
       }
     }

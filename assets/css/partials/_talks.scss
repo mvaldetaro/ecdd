@@ -1,0 +1,42 @@
+.talks {
+  margin-top: 16px;
+  position: relative;
+  @include tablet {
+    &:after {
+      content: "";
+      height: 1px;
+      /*width: 45%;
+      background-color: $gray-light;*/
+      display: block;
+      margin: 32px auto 16px auto;
+    }
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+  }
+  &__header {
+    margin-bottom: 16px;
+    position: relative;
+    .title {
+      font-family: $headings-font;
+      font-size: 1em;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: $gray;
+      display: inline-block;
+      @include tablet {
+        font-size: 1.5em;
+      }
+      &:before{
+        content: "";
+        height: 1px;
+        width: 45%;
+        background-color: $gray;
+        display: block;
+        margin-bottom: 8px;
+      }
+    }
+  }
+}

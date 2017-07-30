@@ -1,0 +1,97 @@
+.programas {
+  &__menu{
+    &__list {
+      list-style: none;
+      padding-left: 0;
+      font-size: .75em;
+      @include tablet {
+        font-size: 1em;
+      }
+    }
+    &__item {
+      text-transform: uppercase;
+      display: inline-block;
+      a {
+      padding: 4px;
+      @include tablet {
+        padding: 8px;
+      }
+      color: $ecdd-mono-extra;
+        &:hover,
+        &:active,
+        &:focus {
+          text-decoration: none;
+        }
+      }
+      .hvr-underline-from-left:before {
+        background: $ecdd-mono-extra;
+      }
+      &--current {
+        text-transform: uppercase;
+        display: inline-block;
+        a {
+          padding: 5px;
+          @include tablet {
+            padding: 8px;
+          }
+          color: $ecdd-mono-extra;
+          &:hover,
+          &:active,
+          &:focus {
+            text-decoration: none;
+          }
+          &:before {
+            background: $ecdd-mono-extra;
+            content: "";
+            position: absolute;
+            z-index: -1;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 2px;
+            -webkit-transition-property: right;
+            transition-property: right;
+            -webkit-transition-duration: .3s;
+            transition-duration: .3s;
+            -webkit-transition-timing-function: ease-out;
+            transition-timing-function: ease-out;
+          }
+        }
+
+      }
+    }
+  }
+
+  &-grid {
+    &__header {
+      margin-bottom: 32px;
+      .title {
+        font-size: 1.75em;
+        text-transform: uppercase;
+        font-weight: 700;
+        @include tablet {
+          font-size: 3.750em;
+        }
+        @include desktop {
+          font-size: 3.750em;
+        }
+        span {
+          display: block;
+        }
+        .type {
+          display: inline-block;
+          font-weight: 200;
+          font-size: .800em;
+          &:before {
+            content: "";
+            height: 1px;
+            width: 44%;
+            background-color: $gray;
+            display: block;
+            margin-bottom: 8px;
+          }
+        }
+      }
+    }
+  }
+}

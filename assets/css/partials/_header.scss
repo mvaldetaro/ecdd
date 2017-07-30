@@ -11,6 +11,16 @@
     height: 830px;
   }
 
+  &--internal {
+    height: 135px;
+    @include tablet {
+      height: 135px;
+    }
+    @include desktop {
+      height: 217px;
+    }
+  }
+
   .header-content,
   .header-background {
     width: 100%;
@@ -18,6 +28,9 @@
     top: 0;
     left: 0;
     height: inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
   }
 
   .header-content {

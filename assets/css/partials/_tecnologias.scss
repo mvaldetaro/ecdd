@@ -1,0 +1,104 @@
+.timeline {
+  padding: 32px 0;
+  position: relative;
+
+
+  &__header {
+    margin-bottom: 32px;
+    .title {
+      font-weight: 300;
+      font-size: 1.8em;
+      display: inline-block;
+      text-transform: uppercase;
+      @include tablet {
+        font-size: 2.5em;
+      }
+      &:before {
+        content: "";
+        height: 1px;
+        width: 60%;
+        background-color: $black;
+        display: block;
+        margin-bottom: 16px;
+        @include tablet {
+          width: 16%;
+        }
+      }
+    }
+  }
+
+  &__content {
+    background: url('assets/img/dot.jpg') repeat-y 24px center;
+    @include tablet {
+      background: url('assets/img/dot.jpg') repeat-y center center;
+    }
+
+    &__list {
+      list-style: none;
+      padding: 0;
+      &__item {
+        padding: 8px 48px;
+        position: relative;
+
+        &.compbox p {
+          padding: 16px 24px;
+          font-size: 14px;
+          line-height: 21px;
+          font-weight: 500;
+          background-color: #fff;
+          border-radius: 4px;
+          box-shadow: 0 -1px 1px 0 rgba(0,0,0,0.05), 0 1px 2px 0 rgba(0,0,0,0.2);
+          -webkit-transition: all .2s ease;
+          transition: all .2s ease;
+        }
+        &:before {
+          content: "";
+          height: 1px;
+          width: 21px;
+          height: 21px;
+          background-color: $ecdd-mono-one;
+          display: block;
+          border-radius: 50%;
+          position: absolute;
+          left: 14px;
+          top: 30px;
+        }
+        &:nth-child(odd) {
+
+          @include tablet {
+            padding: 8px 32px 8px 48px;
+            margin-right: 50%;
+            text-align: right;
+            &:before {
+              right: -10px;
+              left: inherit;
+            }
+          }
+
+        }
+        &:nth-child(even) {
+          @include tablet {
+            padding: 8px 48px 8px 32px;
+            margin-left: 50%;
+            &:before {
+              left: -10px;
+            }
+          }
+
+        }
+
+        .title {
+          text-transform: uppercase;
+          font-size: 1.250em;
+          font-weight: 600;
+          color: $ecdd-mono-extra;
+          margin-bottom: 16px;
+        }
+
+        p {
+          line-height: 25px;
+        }
+      }
+    }
+  }
+}
