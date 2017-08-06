@@ -3,7 +3,7 @@
  * @version v1.0.0
  * @link http://www.infnet.edu.br/ecdd
  * @author Magno Valdetaro
- * @last update Sun Jul 30 2017,
+ * @last update Sun Aug 06 2017,
  */
 /*! normalize.css v6.0.0 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
 article,aside,footer,header,nav,section{display:block}
@@ -447,8 +447,8 @@ tbody.collapse.in{display:table-row-group}
 .nav{margin-bottom:0;padding-left:0;list-style:none}
 .nav:before,.nav:after{content:" ";display:table}
 .nav:after{clear:both}
-.nav>li{position:relative;display:block}
-.nav>li>a{position:relative;display:block;padding:10px 15px}
+.nav>li{position:relative;display:block;font-size:14px}
+.nav>li>a{position:relative;display:block;padding:10px 10px}
 .nav>li>a:hover,.nav>li>a:focus{text-decoration:none;background-color:#eee}
 .nav>li.disabled>a{color:#919191}
 .nav>li.disabled>a:hover,.nav>li.disabled>a:focus{color:#919191;text-decoration:none;background-color:transparent;cursor:not-allowed}
@@ -1091,6 +1091,8 @@ th.visible-sm,td.visible-sm{display:table-cell !important}
 .col-md-offset-10{margin-left:83.3333333333%}
 .col-md-offset-11{margin-left:91.6666666667%}
 .col-md-offset-12{margin-left:100%}
+.nav>li{font-size:inherit}
+.nav>li>a{padding:10px 15px}
 .modal-lg{width:900px}
 }@media(min-width:992px) and (max-width:1199px){.visible-md{display:block !important}
 table.visible-md{display:table !important}

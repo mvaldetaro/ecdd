@@ -10,7 +10,7 @@
         </address>
 
         <div class="footer__social">
-          <a href="#" class="footer__social__item" rel="facebook">
+          <a href="https://www.facebook.com/ecdd.infnet/" class="footer__social__item" rel="facebook">
             <svg viewBox="0 0 32 32" class="footer__social__icon">
               <use xlink:href="#facebook-logo" />
             </svg>

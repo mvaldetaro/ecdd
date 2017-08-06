@@ -1,10 +1,12 @@
-<div class="processo-seletivo-banner">
+<div class="processo-seletivo-banner processo-seletivo-banner--slim ">
   <div class="container">
     <div class="row">
+    <!--
       <div class="col-xs-5 col-sm-8">
         <div class="processo-seletivo-banner__content">
         </div>
       </div>
+
       <div class="col-xs-7 col-sm-4">
         <?php if ($GLOBALS['switch'] == ''): ?>
           <div class="processo-seletivo-banner__actions text-right">
@@ -19,6 +21,7 @@
         </div>
         <?php endif ?>
       </div>
+    -->
     </div>
   </div>
   <span class="arrow"></span>

@@ -3,7 +3,7 @@
  * @version v1.0.0
  * @link http://www.infnet.edu.br/ecdd
  * @author Magno Valdetaro
- * @last update Sun Jul 30 2017,
+ * @last update Sun Aug 06 2017,
  */
 @font-face{font-family:'proxima_novablack';src:url("../ecdd/assets/font/proximanova-black-webfont.woff2") format("woff2"),url("../ecdd/assets/font/proximanova-black-webfont.woff") format("woff");font-weight:normal;font-style:normal}
 @font-face{font-family:'proxima_nova_rgbold';src:url("../ecdd/assets/font/proximanova-bold-webfont.woff2") format("woff2"),url("../ecdd/assets/font/proximanova-bold-webfont.woff") format("woff");font-weight:normal;font-style:normal}
@@ -468,6 +468,7 @@ div.wpcf7 .ajax-loader{background:url(assets/img/ripple.svg) no-repeat center ce
 .breadcrumbs-warp .entry-breadcrumbs [itemprop="itemListElement"]:last-child:before,.breadcrumbs-warp .entry-breadcrumbs [itemprop="itemListElement"]:last-child:after{opacity:0;display:none}
 .processo-seletivo{margin-bottom:32px}
 .processo-seletivo-banner{background-color:#d64b10;color:white;padding:16px 0 14px 0;position:relative;margin-bottom:32px}
+.processo-seletivo-banner--slim{padding:8px 0}
 .processo-seletivo-banner__content .call{display:inline-block;vertical-align:top;width:100%}
 .processo-seletivo-banner__content .call p{font-family:"Raleway",sans-serif;font-size:1em;text-transform:uppercase;margin:0}
 .processo-seletivo-banner__content .call p .ano{font-weight:600}

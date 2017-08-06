@@ -7,6 +7,10 @@
     position: relative;
     margin-bottom: 32px;
 
+    &--slim {
+      padding: 8px 0;
+    }
+
     @include tablet {
       margin-bottom: 0;
     }

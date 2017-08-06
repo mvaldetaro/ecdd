@@ -6,14 +6,20 @@
     <div class="tabs">
       <!-- Nav tabs -->
       <ul class="nav nav-tabs" role="tablist">
-        <li role="presentation" class="active"><a href="#admissao-mba-e-pos-graduacao" aria-controls="#admissao-mba-e-pos-graduacao" role="tab" data-toggle="tab">MBA e Pós Graduação</a></li>
-        <li role="presentation"><a href="#admissao-graduacoes" aria-controls="#admissao-graduacoes" role="tab" data-toggle="tab">Graduações</a></li>
-        <li role="presentation"><a href="#admissao-formacoes" aria-controls="#admissao-formacoes" role="tab" data-toggle="tab">Formações</a></li>
+        <li role="presentation" class="active">
+          <a href="#admissao-graduacoes" aria-controls="#admissao-graduacoes" role="tab" data-toggle="tab">Graduações</a>
+        </li>
+        <li role="presentation">
+          <a href="#admissao-mba-e-pos-graduacao" aria-controls="#admissao-mba-e-pos-graduacao" role="tab" data-toggle="tab">MBA e Pós<span class="hidden-xs"> Graduação</span></a>
+        </li>
+        <li role="presentation">
+          <a href="#admissao-formacoes" aria-controls="#admissao-formacoes" role="tab" data-toggle="tab">Formações</a>
+        </li>
       </ul>
 
       <!-- Tab panes -->
       <div class="tab-content page__content page__content--tab">
-        <div role="tabpanel" class="tab-pane active" id="admissao-mba-e-pos-graduacao">
+        <div role="tabpanel" class="tab-pane" id="admissao-mba-e-pos-graduacao">
 
           <div class="row">
             <div class="col-md-6">
@@ -70,7 +76,7 @@
           </div>
         </div>
 
-        <div role="tabpanel" class="tab-pane" id="admissao-graduacoes">
+        <div role="tabpanel" class="tab-pane active" id="admissao-graduacoes">
           <div class="row">
             <div class="col-md-6">
               <h2>Requisitos para o ingresso</h2>
@@ -168,7 +174,6 @@
     </div>
   </div>
 </div>
-
 
 <!-- Aproveitamento de estudos -->
 <section class="call-action bg-admissao no-top-margin">
@@ -268,7 +273,7 @@
         </header>
         <div class="call-action__content call-action__content--financiamentos">
           <p>O Instituto Infnet participa do Programa de Financiamento Estudantil (Fies), que se destina a estudantes matriculados em cursos de graduação presencial de instituições de ensino superior não gratuitas na forma da Lei 10.260/2001.</p>
-          <p class="pl-text-center"><a href="<?php bloginfo('url') ?>/financiamentos" class="btn btn-secondary btn-lg btn-lg-wide">Entenda Mais</a></p>
+          <p class="text-center"><a href="<?php bloginfo('url') ?>/financiamentos" class="btn btn-secondary btn-lg btn-lg-wide">Entenda Mais</a></p>
         </div>
       </div>
     </div>
