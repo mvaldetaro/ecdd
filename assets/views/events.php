@@ -1,12 +1,12 @@
 <section class="events">
   <header class="events__header wow animated fadeIn">
     <h2 class="title">Aconteceu na ECDD</h2>
-    <a class="go-to-link" href="<?php bloginfo('url'); ?>/category/eventos" title="Eventos passados">Outros eventos</a>
+    <!--<a class="go-to-link" href="<?php bloginfo('url'); ?>/category/eventos" title="Eventos passados">Outros eventos</a>-->
   </header>
   <div class="events__content">
     <?php
     $args = array(
-      'category_name' => 'eventos',
+      'category_name' => 'aconteceu-ecdd',
       'post_status' => 'publish',
       'posts_per_page' => 1
       );

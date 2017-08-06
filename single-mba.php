@@ -9,7 +9,7 @@
 <?php get_header(); ?>
 <header class="header header--internal">
   <div class="header-content">
-    <div class="container-fluid">
+    <div class="container">
       <div class="row">
         <div class="col-md-12">
           <?php get_template_part('assets/views/bar-top', 'bar-top'); ?>
@@ -36,7 +36,7 @@
   <?php get_template_part('assets/views/processo-seletivo-banner', 'processo-seletivo-banner'); ?>
   <?php get_template_part('assets/views/breadcrumb', 'breadcrumb'); ?>
   <?php get_template_part('assets/views/content-mba', 'content-mba'); ?>
-  <?php get_template_part('assets/views/como-chegar', 'como-chegar'); ?>
+  <?php //get_template_part('assets/views/como-chegar', 'como-chegar'); ?>
 </main>
 
 <?php get_footer(); ?>

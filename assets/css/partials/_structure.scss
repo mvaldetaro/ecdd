@@ -2,6 +2,10 @@
   outline: none;
 }
 
+.lwrCase {
+  text-transform: lowercase !important;
+}
+
 .main {
   position: relative;
   background-color: #F9F9FB;
@@ -57,14 +61,14 @@
   margin-bottom: 32px;
 
   &--programa {
-    min-height: 308px;
+    min-height: 330px;
 
     @include desktop {
-      min-height: 374px;
+      min-height: 330px;
     }
 
     @include large-desktop {
-      min-height: 308px;
+      min-height: 330px;
     }
   }
 

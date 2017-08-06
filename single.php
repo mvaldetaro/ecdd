@@ -7,7 +7,7 @@
 <?php get_header(); ?>
 <header class="header">
   <div class="header-content">
-    <div class="container-fluid">
+    <div class="container">
       <div class="row">
         <div class="col-md-12">
           <?php get_template_part('assets/views/bar-top', 'bar-top'); ?>

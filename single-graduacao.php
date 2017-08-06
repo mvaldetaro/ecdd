@@ -36,7 +36,7 @@
   <?php get_template_part('assets/views/processo-seletivo-banner', 'processo-seletivo-banner'); ?>
   <?php get_template_part('assets/views/breadcrumb', 'breadcrumb'); ?>
   <?php get_template_part('assets/views/content-graduacao', 'content-graduacao'); ?>
-  <?php get_template_part('assets/views/como-chegar', 'como-chegar'); ?>
+  <?php //get_template_part('assets/views/como-chegar', 'como-chegar'); ?>
 </main>
 
 <?php get_footer(); ?>

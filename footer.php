@@ -30,28 +30,53 @@
           </a>-->
         </div>
       </div>
+
+      <!-- Graduações -->
+      <div class="col-md-3">
+
+        <div class="footer__courses wow animated fadeInUp">
+          <h2 class="footer__courses__title">
+            <a href="<?php bloginfo('url'); ?>/a-escola/">A Escola</a>
+          </h2>
+          <ul class="footer__courses__list">
+            <li class="footer__courses__list__item">
+              <a href="<?php bloginfo('url'); ?>/admissao/" title="Admissão">Admissão</a>
+            </li>
+            <li class="footer__courses__list__item">
+              <a href="<?php bloginfo('url'); ?>/vida-do-aluno/" title="Vida do Aluno">Vida do Aluno</a>
+            </li>
+            <li class="footer__courses__list__item">
+              <a href="<?php bloginfo('url'); ?>/alumni/" title="Alumni">Alumni</a>
+            </li>
+            <li class="footer__courses__list__item">
+              <a href="<?php bloginfo('url'); ?>/atendimento/" title="Atendimento">Atendimento</a>
+            </li>
+            <li class="footer__courses__list__item">
+              <a href="<?php bloginfo('url'); ?>/parcerias/" title="Parcerias">Parcerias</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__courses wow animated fadeInUp" data-wow-delay="0.4">
+          <h2 class="footer__courses__title"><a href="<?php bloginfo('url'); ?>/category/graduacao/">Graduações</a></h2>
+          <ul class="footer__courses__list">
+            <?php programasList('graduacao', 'graduacao') ?>
+          </ul>
+        </div>
+      </div>
+
       <!-- MBAs e Pós -->
       <div class="col-md-3">
         <div class="footer__courses wow animated fadeInUp">
-          <h2 class="footer__courses__title"><a href="<?php bloginfo('url'); ?>/category/mba/">MBA</a></h2>
+          <h2 class="footer__courses__title"><a href="<?php bloginfo('url'); ?>/category/mba/">MBA<span class="lwrCase">s</span></a></h2>
           <ul class="footer__courses__list">
           <?php programasList('mba', 'mba') ?>
           </ul>
         </div>
         <div class="footer__courses wow animated fadeInUp" data-wow-delay="0.2">
-          <h2 class="footer__courses__title"><a href="<?php bloginfo('url'); ?>/category/pos-graduacao/">Pós Graduação</a></h2>
+          <h2 class="footer__courses__title"><a href="<?php bloginfo('url'); ?>/category/pos-graduacao/">Pós-Graduações</a></h2>
           <ul class="footer__courses__list">
             <?php programasList('pos-graduacao', 'pos') ?>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Graduações -->
-      <div class="col-md-3">
-        <div class="footer__courses wow animated fadeInUp" data-wow-delay="0.4">
-          <h2 class="footer__courses__title"><a href="<?php bloginfo('url'); ?>/category/graduacao/">Graduação</a></h2>
-          <ul class="footer__courses__list">
-            <?php programasList('graduacao', 'graduacao') ?>
           </ul>
         </div>
       </div>
@@ -65,7 +90,7 @@
           </ul>
         </div>
         <div class="footer__courses wow animated fadeInUp" data-wow-delay="0.8">
-          <h2 class="footer__courses__title"><a href="<?php bloginfo('url'); ?>/category/formacao/">Formação</a></h2>
+          <h2 class="footer__courses__title"><a href="<?php bloginfo('url'); ?>/category/formacao/">Formações</a></h2>
           <ul class="footer__courses__list">
             <?php programasList('formacao', 'formacao') ?>
           </ul>

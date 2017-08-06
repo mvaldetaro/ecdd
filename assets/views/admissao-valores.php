@@ -15,7 +15,7 @@
       <?php if ($posttype != 'formacao'): ?>
         <h2 class="title">Admissão e Valores</h2>
       <?php else: ?>
-        <h2 class="title">Valores</h2>
+        <h2 class="title">Receba mais informações e valores.</h2>
       <?php endif ?>
       <p class="subtitle">Solicitar valor e Forma de Pagamento</p>
     </header>

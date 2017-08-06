@@ -34,6 +34,7 @@ p{font-family:"Raleway",sans-serif}
 .text-align-left{text-align:left}
 .text-align-center{text-align:center}
 *{outline:0}
+.lwrCase{text-transform:lowercase !important}
 .main{position:relative;background-color:#f9f9fb}
 .fb-page-box{display:inline-block;margin-top:16px}
 .bg-orange{background:#d64b10;background:-webkit-linear-gradient(bottom left,#d64b10 0,#e38806 100%);background:linear-gradient(to top right,#d64b10 0,#e38806 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr= $left,endColorstr= $right,GradientType=1)}
@@ -44,7 +45,7 @@ p{font-family:"Raleway",sans-serif}
 .btn-wide{padding-left:32px;padding-right:32px}
 .btn-lg-wide{padding-left:48px;padding-right:48px}
 .card{position:relative;background-color:#fff;width:100%;border-radius:4px;box-shadow:0 -1px 1px 0 rgba(0,0,0,0.05),0 1px 2px 0 rgba(0,0,0,0.2);-webkit-transition:all .2s ease;transition:all .2s ease;margin-bottom:32px}
-.card--programa{min-height:308px}
+.card--programa{min-height:330px}
 .card--portfolio{min-height:290px}
 .card.hover{-webkit-transform:translateY(-4px);-ms-transform:translateY(-4px);transform:translateY(-4px);box-shadow:0 4px 25px 0 rgba(0,0,0,0.3),0 0 1px 0 rgba(0,0,0,0.25)}
 .card.hover picture img{-webkit-transform:scale(1.1);-ms-transform:scale(1.1);transform:scale(1.1);border-top-left-radius:4px;border-top-right-radius:4px}
@@ -485,7 +486,7 @@ div.wpcf7 .ajax-loader{background:url(assets/img/ripple.svg) no-repeat center ce
 .processo-seletivo__content__item p b{color:#ef6c00}
 .processo-seletivo__content__item .modalidade{margin-bottom:16px}
 .processo-seletivo__content__item .modalidade:last-child{margin-bottom:0}
-.galeria{padding:32px 0;position:relative;background:#fff}
+.galeria{padding:32px 0;position:relative}
 .galeria .container{position:relative}
 .galeria__header .title{font-weight:300;font-size:1.8em;display:inline-block;text-transform:uppercase}
 .galeria__header .title:before{content:"";height:1px;width:60%;background-color:rgba(0,0,0,0.87);display:block;margin-bottom:16px}
@@ -611,7 +612,7 @@ div.wpcf7 .ajax-loader{background:url(assets/img/ripple.svg) no-repeat center ce
 .grid__header .title{font-size:2.5em}
 .grid__header .title:before{width:26%}
 }@media(min-width:992px){.hidden-lg-up{display:none !important}
-.card--programa{min-height:374px}
+.card--programa{min-height:330px}
 .page__header .title{font-size:3.750em}
 .page__content .testimony__cite{font-size:1.250em}
 .generic__header .title{font-size:2.500em}
@@ -652,12 +653,12 @@ div.wpcf7 .ajax-loader{background:url(assets/img/ripple.svg) no-repeat center ce
 .infos__form__button{margin:8px 0}
 .local__header .title{font-size:2.500em}
 .galeria__content__list__item{margin:16px}
-.galeria__content__list__item:first-child,.galeria__content__list__item:nth-child(5n){margin-left:16px}
+.galeria__content__list__item:first-child,.galeria__content__list__item:nth-child(5n){margin-left:0}
 .galeria__content__list__item:nth-child(7n){margin-left:0}
 .galeria__content__list__item:nth-child(4n){margin-right:16px}
 .galeria__content__list__item:nth-child(6n){margin-right:0}
 }@media(min-width:1200px){.hidden-xl-up{display:none !important}
-.card--programa{min-height:308px}
+.card--programa{min-height:330px}
 .head .main-menu{padding-left:34px}
 .students-works__content__item.nth-1{height:196px}
 .students-works__content__item.nth-2{height:321px}

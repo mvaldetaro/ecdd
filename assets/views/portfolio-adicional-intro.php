@@ -110,7 +110,7 @@
   <div class="container">
     <header class="call-action__header">
       <h2 class="call-action__title">Programas Relacionados</h2>
-      <p class="call-action__subtitle">Conheça alguns programas relacionados a <b><?php the_field('programa'); ?></b></p>
+      <p class="call-action__subtitle">À <?php the_field('programa'); ?></p>
     </header><!-- /header -->
     <div class="call-action__content">
     <div class="row">
@@ -120,7 +120,7 @@
           $post_object = get_sub_field('programa');
           $attachment_id = get_post_thumbnail_id($post_object->ID);
       ?>
-      <div class="col-sm-6 col-md-3 col-lg-3">
+      <div class="col-sm-6 col-md-4 col-lg-4">
         <div class="card card--programa">
           <figure class="card__figure">
             <a href="<?php the_permalink();?>" title="<?php the_title_attribute(); ?>">
@@ -137,7 +137,7 @@
                 <?php echo get_the_title($post_object->ID); ?>
               </a>
             </h2>
-            <p><?php echo get_sub_excerpt($post_object->post_content, 70); ?></p>
+            <p><?php echo get_the_excerpt($post_object->ID); ?></p>
           </div>
         </div>
       </div>

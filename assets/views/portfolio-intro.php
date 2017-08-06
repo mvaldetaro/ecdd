@@ -2,7 +2,7 @@
   <div class="container">
     <header class="programa__header">
       <h1 class="title">
-        <span class="type">Trabalho do aluno:</span>
+        <span class="type">Trabalho do aluno(a):</span>
         <span><?php the_title(); ?><span>
       </h1>
     </header><!-- /header -->

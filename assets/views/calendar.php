@@ -1,7 +1,7 @@
 <section class="calendar">
   <header class="calendar__header wow animated fadeIn">
     <h2 class="title">Agenda</h2>
-    <a class="go-to-link" href="<?php bloginfo('url'); ?>/category/agenda/" title="">Agenda Completa</a>
+    <!--<a class="go-to-link" href="<?php bloginfo('url'); ?>/category/agenda/" title="">Agenda Completa</a>-->
   </header>
   <div class="calendar__content">
     <ul class="calendar__content__list">

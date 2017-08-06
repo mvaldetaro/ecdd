@@ -1,7 +1,7 @@
 <section class="valores">
   <div class="container">
     <header class="valores__header wow animated fadeIn">
-      <h2 class="title">Valores</h2>
+      <h2 class="title">Receba mais informações e valores.</h2>
     </header>
     <div class="row">
       <div class="valores__content wow animated fadeIn">
