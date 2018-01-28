@@ -86,14 +86,17 @@
 
     // Professores sizes
 
-    add_image_size('professores-thumb-large', 204, 204, true );
-    add_image_size('professores-thumb-large-2x', 408, 408, true );
+    add_image_size('professores-thumb-large-desktop', 204, 204, true );
+    add_image_size('professores-thumb-large-desktop-2x', 408, 408, true );
 
-    add_image_size('professores-thumb-medium', 120, 120, true );
-    add_image_size('professores-thumb-medium-2x', 240, 240, true );
+    add_image_size('professores-thumb-laptop', 164, 164, true );
+    add_image_size('professores-thumb-laptop-2x', 328, 328, true );
 
-    add_image_size('professores-thumb-small', 83, 83, true );
-    add_image_size('professores-thumb-small-2x', 166, 166, true );
+    add_image_size('professores-thumb-tablet', 120, 120, true );
+    add_image_size('professores-thumb-tablet-2x', 240, 240, true );
+
+    add_image_size('professores-thumb-mobile', 95, 95, true );
+    add_image_size('professores-thumb-mobile-2x', 190, 190, true );
 
     // This theme uses wp_nav_menu() in two locations.
     register_nav_menus(array(

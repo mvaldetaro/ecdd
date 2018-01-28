@@ -28,9 +28,10 @@
             <div class="our-teachers__content__item <?php addClassDocente($i); ?>">
               <figure class="our-teachers__content__item__thumb">
                 <picture>
-                  <source media="(min-width: 992px)" srcset="<?php imageSrc($attachment_id, 'professores-thumb-large'); ?>, <?php imageSrc($attachment_id, 'professores-thumb-large-2x'); echo ' 2x'; ?>">
-                  <source media="(min-width: 768px)" srcset="<?php imageSrc($attachment_id, 'professores-thumb-medium'); ?>, <?php imageSrc($attachment_id, 'professores-thumb-medium-2x'); echo ' 2x';?>">
-                  <img srcset="<?php imageSrc($attachment_id, 'professores-thumb-small'); ?>, <?php imageSrc($attachment_id, 'professores-thumb-small-2x'); echo ' 2x';?>" alt="<?php the_title(); ?>"/>
+                  <source media="(min-width: 1200px)" srcset="<?php imageSrc($attachment_id, 'professores-thumb-large-desktop'); ?>, <?php imageSrc($attachment_id, 'professores-thumb-large-desktop-2x'); echo ' 2x'; ?>">
+                  <source media="(min-width: 992px)" srcset="<?php imageSrc($attachment_id, 'professores-thumb-laptop'); ?>, <?php imageSrc($attachment_id, 'professores-thumb-laptop-2x'); echo ' 2x'; ?>">
+                  <source media="(min-width: 768px)" srcset="<?php imageSrc($attachment_id, 'professores-thumb-tablet'); ?>, <?php imageSrc($attachment_id, 'professores-thumb-tablet-2x'); echo ' 2x';?>">
+                  <img srcset="<?php imageSrc($attachment_id, 'professores-thumb-mobile'); ?>, <?php imageSrc($attachment_id, 'professores-thumb-mobile-2x'); echo ' 2x';?>" alt="<?php the_title(); ?>"/>
                  </picture>
               </figure>
               <div class="our-teachers__content__item__info">
