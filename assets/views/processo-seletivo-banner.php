@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-xs-5 col-sm-8">
         <div class="processo-seletivo-banner__content">
-          <div class="call"><p>PROCESSO SELETIVO <span class="ano">2017</span></p></div>
+          <div class="call"><p>PROCESSO SELETIVO <span class="ano"><?php the_field('ano_processo_seletivo'); ?></span></p></div>
 
           <?php
           if(get_post_type() == "graduacao") {

@@ -19,14 +19,11 @@
             <a href="http://www.vestibularinfnet.com.br/formulario.php" class="btn btn-wide btn-invert">Inscreva-se Já</a>
             </div>
 
-            <?php
-            if ( in_category('ead') ) {
-              echo '<div class="modalidade">';
-              echo '<p><b>Online:</b> Confira as próximas datas.</p>';
-              echo '<a href="http://goo.gl/bV3nP0" class="btn btn-wide btn-invert">Agendamento</a>';
-              echo '</div>';
-            }
-            ?>
+          <div class="modalidade">
+            <p><b>Online:</b> Confira as próximas datas.</p>
+            <a href="http://goo.gl/bV3nP0" class="btn btn-wide btn-invert">Agendamento</a>
+          </div>
+
           </div>
         </div>
         <div class="col-sm-4">
@@ -34,7 +31,7 @@
             <img class="icon wow animated bounceIn" src="<?php bloginfo('template_url') ?>/assets/img/icons/enem.svg" alt="Portador de Diploma/ Transferência" aria-hidden="true">
             <h4>Nota no ENEM</h4>
             <p>De acordo com a média inicial de <br>entrada do curso escolhido, você poderá <br>ingressar diretamente com sua nota do Enem e <br>ainda usufruir de descontos adicionais.</p>
-            <a href="<?php bloginfo('url') ?>/admissao/#bolsa" class="btn btn-wide btn-invert">Saiba Mais</a>
+            <a href="<?php bloginfo('url') ?>/bolsas-de-estudo-e-financiamento/merito-no-enem/" class="btn btn-wide btn-invert">Saiba Mais</a>
           </div>
         </div>
         <div class="col-sm-4">

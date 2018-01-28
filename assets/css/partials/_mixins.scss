@@ -4,6 +4,14 @@
   }
 }
 
+@mixin tablet-landscape {
+  @media (min-width : 768px)
+  and (max-width : 1024px)
+  and (orientation : landscape) {
+    @content;
+  }
+}
+
 @mixin mid-tablet {
   @media (min-width: #{$mid-tablet-width}) {
     @content;
@@ -12,6 +20,12 @@
 
 @mixin desktop {
   @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+@mixin land {
+  @media (orientation: landscape) {
     @content;
   }
 }

@@ -1,14 +1,28 @@
 <div class="page">
   <div class="container">
-    <header class="page__header wow animated fadeInUp">
+    <div class="page__header wow animated fadeInUp">
       <h1 class="title">
         <span class="type">ECDD</span><br>
         <b>Escola de <br>Comunicação <br>e Design Digital</b>
       </h1>
-      <div class="page__header__intro">
-        <?php the_content(); ?>
+      <div class="row">
+        <aside class="col-md-3">
+         <?php
+         wp_nav_menu( array(
+          'theme_location' => 'escola',
+          'container' => 'nav',
+          'container_class' => 'side-menu',
+          'menu_class' => 'side-menu__list',
+          ));
+          ?>
+        </aside>
+        <div class="col-md-9">
+          <?php the_content(); ?>
+        </div>
       </div>
-    </header>
+    </div>
+
+    <!--
     <div class="page__content wow animated fadeInUp">
       <div class="col-md-8 col-md-offset-2">
         <div class="testimony wow animated fadeInUp">
@@ -20,7 +34,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-6 wow animated fadeInUp">
+        <div class="col-md-12 wow animated fadeInUp">
           <h2>História</h2>
           <p>Em 1994, apenas um ano após o desenvolvimento do primeiro browser web, o Mosaic, o Instituto Infnet passou a oferecer cursos de criação de páginas Web. No decorrer dos anos, webdesign foi deixando de ser um assunto “à parte” para se tornar uma área do design.</p>
           <p>Em 1999, acompanhando essa evolução, os docentes do Instituto se organizaram em uma coordenação exclusiva voltada para essa vertente. Cada vez mais, o webdesign adotava conhecimentos tradicionais do design gráfico, como tratamento de imagens e videografismo. A demanda por serviços do gênero crescia, bem como o alcance da internet como meio de comunicação, passando a atrair mais audiência e verbas publicitárias em comparação com as mídias tradicionais. Em paralelo, os docentes da instituição nutriam o desejo de aprofundar a experiência de seus programas de ensino, oferecendo outros mais abrangentes, voltados ao ensino superior formal.</p>
@@ -35,13 +49,15 @@
         </div>
       </div>
     </div>
+    -->
   </div>
+
 
   <section class="widebox bg-gray">
     <div class="container">
       <div class="col-md-12">
         <header class="widebox__header wow animated fadeInUp">
-          <h2 class="title">Por que Estudar no Infnet</h2>
+          <h2 class="title">Por que Estudar na ECDD</h2>
         </header>
         <div class="widebox__content">
           <div class="row">
@@ -107,7 +123,7 @@
     </div>
   </section>
 
-  <div class="page__content">
+  <!--<div class="page__content">
     <div class="container">
       <div class="col-md-8 col-md-offset-2">
         <div class="testimony wow animated fadeInUp">
@@ -119,16 +135,16 @@
         </div>
       </div>
     </div>
-  </div>
+  </div>-->
 
-  <?php get_template_part('assets/views/our-teachers', 'our-teachers'); ?>
+  <?php //get_template_part('assets/views/our-teachers', 'our-teachers'); ?>
 
-  <div class="page__content">
+  <!--<div class="page__content">
     <div class="container">
       <section>
         <header class="generic__header wow animated fadeInUp">
           <h2 class="title">Editais do Corpo Docente</h2>
-        </header><!-- /header -->
+        </header>
         <div class="row">
           <div class="col-md-12 wow animated fadeInUp">
             <h3>Torne-se docente no Instituto Infnet</h3>
@@ -192,9 +208,9 @@
         <p>Se você quer fazer parte do time, envie seu currículo para <a href="mailto: rhg-rj@infnet.edu.br" rel="noopener noreferrer nofollow">rhg-rj@infnet.edu.br</a>. Escreva no "assunto" do e-mail se a sua intenção inicial é de ministrar aulas nas graduações, pós-graduações ou formações.</p>
       </section>
     </div>
-  </div>
+  </div>-->
 
-  <section class="call-action bg-orange call-action--eventos">
+  <!--<section class="call-action bg-orange call-action--eventos">
     <div class="container">
       <div class="row">
         <div class="col-md-12 col-lg-8">
@@ -209,7 +225,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section>-->
 
   <div class="page__content">
     <div class="container">
@@ -224,8 +240,8 @@
               <li><b>Diretora de Graduação e Pós-Graduação:</b> Profa. Esp. Adriana Melo</li>
               <li><b>Professor-chefe:</b> Prof. Ms. Jonas Almeida</li>
               <li><b>Gerente Acadêmica:</b> Profa. Esp. Maria Eugênia Sayão</li>
-              <li><b>Assistente de Recrutamento e Seleção:</b> Fernanda Jesus</li>
-              <li><b>Auxiliar de Secretaria:</b> Thiessa Leite</li>
+              <li><b>Recrutamento e Seleção:</b> Fernanda Jesus</li>
+              <li><b>Atendimento:</b> Thiessa Leite</li>
             </ul>
             <h3>Coordenação de Pós-Graduação:</h3>
             <ul>
@@ -236,20 +252,76 @@
               <li><b>Desenvolvimento de Games:</b> Prof. Me. Leandro Costa</li>
               <li><b>UX Design, Arquitetura da Informação e Usabilidade:</b> Prof. Me. Leandro Calvão</li>
             </ul>
+
             <h3>NDEs e Colegiados de Graduação:</h3>
             <ul>
-              <li><b>NDE da Graduação em Design Gráfico:</b> Prof. Dr. Eduardo Ramos, Profa.Esp. Adriana Melo, Prof. Ms. Bruno Garcia, Prof. Ms. Jonas Almeida, Prof. Ms. Leandro Calvão</li>
-              <li><b>NDE da Graduação em Publicidade e Propaganda:</b> Prof. Dr. Eduardo Ramos, Profa. Esp. Adriana Melo, Prof. Ms. Jonas Almeida, Prof. Ms. João Vitor, Profa. Ms. Chaiane Bitelo, Profa. Ms. Renata Perim</li>
-              <li><b>NDE da Graduação em Cinema e Audiovisual:</b> Prof. Dr. Eduardo Ramos, Profa. Esp. Adriana Melo, Prof. Ms. Jonas Almeida, Prof. Ms. Anna Azevedo, Prof. Esp. Bruno Tinoco</b> </li>
-              <li><b>NDE da Graduação em Produção Multimídia: Design de Animação:</b> Prof. Dr. Eduardo Ramos, Profa. Esp. Adriana Melo, Prof. Ms. Jonas Almeida</li>
-              <li><b>NDE da Graduação em Jogos Digitais:</b> Prof. Dr. Eduardo Ramos, Profa. Esp. Adriana Melo, Prof. Ms. Jonas Almeida, Prof. Ms. Leandro Costa, Prof. Ms. André Falcão</li>
-              <li><b>NDE da Graduação em Fotografia:</b> Prof. Dr. Eduardo Ramos, Profa. Esp. Adriana Melo, Prof. Ms. Fabrício Cavalcanti, Prof. Ms. Jonas Almeida, Prof. Ms. Flaviano Quaresma</li>
-              <li><b>Colegiado da Graduação em Publicidade e Propaganda:</b> Profa. Dra. Raquel Lobão, Prof. Esp. Alexander Francisco, Profa. Esp. Maria Eugênia Sayão, Representante Discente Titular: Gabriel Ferreira Cardoso, Representante Discente Suplente: Thiago Lima Póvoa</li>
-              <li><b>Colegiado da Graduação em Cinema e Audiovisual:</b> Profa. Esp. Maria Eugênia Sayão, Prof. Francisco Taunay Costa Ribeiro, Representante Discente Titular: Matheus Fonseca de Brito</li>
-              <li><b>Colegiado da Graduação em Design Gráfico:</b> Profa. Esp. Maria Eugênia Sayão, Representante Discente Titular: Marcelli Ferreira Leite Gonçalves de Oliveira</li>
-              <li><b>Colegiado da Graduação em Fotografia:</b> Profa. Esp. Maria Eugênia Sayão, Prof. Fernando Torres, Representante Discente Titular: Bianca Rodrigues da Silva, Representante Discente Suplente: Pedro de Freitas Castro Mendes</li>
-              <li><b>Colegiado da Graduação em Jogos Digitais:</b> Profa. Esp. Maria Eugênia Sayão, Representante Discente Titular: Thiago Berardinelli Vieira Braz, Representante Discente Suplente: Stephany J. Santiago</li>
-              <li><b>Colegiado da Graduação em Produção Multimídia:</b> Profa. Esp. Maria Eugênia Sayão, Prof. Jonas Gimenez Almeida, Representante Discente Suplente: Estevão de Lima da Cunha</li>
+              <li><b>NDE da Graduação em Design Gráfico:</b>
+              Prof. Dr. Eduardo Ramos,
+              Profa.Esp. Adriana Melo,
+              Profa. Msc. Karen Santos Cesar,
+              Prof. Ms. Jonas Almeida,
+              Prof. Ms. Leandro Calvão
+              </li>
+              <li><b>NDE da Graduação em Publicidade e Propaganda:</b>
+              Prof. Dr. Eduardo Ramos,
+              Profa. Esp. Adriana Melo,
+              Prof. Ms. Jonas Almeida,
+              Profa. Msc. Chaiane Bitelo,
+              Profa. Msc. Renata Perim,
+              Prof. Msc. Tadeu Carvão</li>
+              <li><b>NDE da Graduação em Cinema e Audiovisual:</b>
+              Prof. Dr. Eduardo Ramos,
+              Profa. Esp. Adriana Melo,
+              Prof. Ms. Jonas Almeida,
+              Prof. Ms. Anna Azevedo,
+              Prof. Esp. Bruno Tinoco
+              </li>
+              <li><b>NDE da Graduação em Produção Multimídia: Design de Animação:</b>
+              Prof. Dr. Eduardo Ramos,
+              Profa. Esp. Adriana Melo,
+              Prof. Ms. Jonas Almeida,
+              Profa. Msc. Giselle Arruda,
+              Prof. Msc. Ygor Speranza
+              </li>
+              <li><b>NDE da Graduação em Jogos Digitais:</b>
+              Prof. Dr. Eduardo Ramos,
+              Profa. Esp. Adriana Melo,
+              Prof. Ms. Jonas Almeida,
+              Prof. Ms. Leandro Costa,
+              Prof. Ms. André Falcão</li>
+
+              <li><b>NDE da Graduação em Fotografia:</b>
+              Prof. Dr. Eduardo Ramos,
+              Profa. Esp. Adriana Melo,
+              Prof. Ms. Jonas Almeida,
+              Prof. Ms. Rony Maltz</li>
+
+              <li><b>Colegiado da Graduação em Publicidade e Propaganda:</b>
+              Maria Eugênia Sayão - Gerente Acadêmica (preside),
+              Vinicius de Paula Gomes Nunes - Representante Discente
+              </li>
+
+              <li><b>Colegiado da Graduação em Cinema e Audiovisual:</b>
+              Maria Eugênia Sayão - Gerente Acadêmica (preside),
+              Prof. Francisco Taunay Costa Ribeiro,
+              Representante Discente Titular: Matheus Fonseca de Brito</li>
+
+              <li><b>Colegiado da Graduação em Design Gráfico:</b>
+              Maria Eugênia Sayão - Gerente Acadêmica (preside), ,
+              Representante Discente Titular: Marcelli Ferreira Leite Gonçalves de Oliveira</li>
+
+              <li><b>Colegiado da Graduação em Fotografia:</b>
+              Maria Eugênia Costa Sayão - Gerente Acadêmica (preside),
+              Rodolfo Rodrigo Viana de Paulo - Representante Discente
+              </li>
+
+              <li><b>Colegiado da Graduação em Jogos Digitais:</b>
+              Maria Eugênia Sayão - Gerente Acadêmica (preside)</li>
+
+              <li><b>Colegiado da Graduação em Produção Multimídia:</b>
+              Maria Eugênia Sayão - Gerente Acadêmica (preside),
+              Jefferson Yuri Lopes Gomes - Representante Docente ,
+              Raphael Pereira Rodrigues - Representante Discente</li>
             </ul>
           </div>
         </div>

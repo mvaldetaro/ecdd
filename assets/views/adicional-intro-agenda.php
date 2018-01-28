@@ -1,30 +1,31 @@
-
 <div class="adicional-intro container">
   <div class="adicional-intro__content">
     <div class="row">
-       <div class="col-md-4">
+      <?php
+        if( have_rows('palestrantes') ):
+      ?>
+       <div class="col-md-6">
         <div class="adicional-intro__item">
         <?php
           $l = count(get_field('palestrantes'));
-          if( have_rows('palestrantes') ):
-              while ( have_rows('palestrantes') ) : the_row();
-                if ($l <= 1) {
-                  echo '<h3>Palestrante</h3>';
-                  echo '<div class="palestrante">';
-                  echo '<img src="'.get_sub_field('foto').'" alt="'.get_sub_field('nome').'">';
-                  echo '<p>'.get_sub_field('nome').'</p>';
-                  echo '</div>';
-                } else {
-                  echo '<h3>Palestrantes</h3>';
-                  the_sub_field('nome');
-                }
-              endwhile;
-          else :
-            echo '<p>Nenhum palestrante cadastrado</p>';
-          endif;
+            if ($l <= 1) {
+                echo '<h3>Palestrante</h3>';
+              } else {
+                echo '<h3>Palestrantes</h3>';
+              }
+            while ( have_rows('palestrantes') ) : the_row();
+              echo '<div class="palestrante">';
+              if (get_sub_field('foto')) {
+                echo '<img src="'.get_sub_field('foto').'" alt="'.get_sub_field('nome').'" width="80px" height="80px">';
+              }
+              echo '<p>'.get_sub_field('nome').'</p>';
+              echo '</div>';
+            endwhile;
           ?>
         </div>
       </div>
+      <?php endif; ?>
+      <!--
       <div class="col-md-4">
         <div class="adicional-intro__item">
         <h3>Entrada</h3>
@@ -32,6 +33,7 @@
         <p>Todos os alimentados arrecados serão doados <br>para <a href="http://papainoel.org/" title="Instituto Casa do Papai Noel">Casa do Papai Noel</a> - Instituto de Apoio e Assistência Social</p>
         </div>
       </div>
+      -->
       <div class="col-md-4">
         <div class="adicional-intro__item">
         <?php
@@ -54,6 +56,7 @@
     </div>
   </div>
 </div>
+
 
 
 

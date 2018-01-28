@@ -8,21 +8,10 @@
   }
 
   @include desktop {
-    height: 830px;
+    height: 745px;
   }
 
-  &--internal {
-    height: 135px;
-    @include tablet {
-      height: 135px;
-    }
-    @include desktop {
-      height: 217px;
-    }
-  }
-
-  .header-content,
-  .header-background {
+  .header-content {
     width: 100%;
     position: absolute;
     top: 0;
@@ -30,7 +19,63 @@
     height: inherit;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    background-position: center;
+  }
+
+  .header-background {
+    background-image: url('assets/img/home/bg_iphone.jpg');
+    background-color: #e48100;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 453px;
+
+    @include tablet {
+      height: 726px;
+      background-image: url('assets/img/home/bg_ipad.jpg');
+    }
+
+    @include desktop {
+      height: 745px;
+      background-image: url('assets/img/home/bg_iphone_horizontal.jpg');
+    }
+
+    @include large-desktop {
+      background-image: url('assets/img/home/bg_desktop.jpg');
+    }
+  }
+
+  &--internal {
+    height: 135px;
+
+    @include tablet {
+      height: 135px;
+    }
+
+    @include desktop {
+      height: 217px;
+    }
+
+    .header-content {
+      background: -webkit-linear-gradient(left, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,0) 97%);
+      background: -o-linear-gradient(left, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,0) 97%);
+      background: linear-gradient(to right, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,0) 97%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=1 );
+    }
+
+    .header-background {
+      @include tablet {
+        height: 135px;
+      }
+
+      @include desktop {
+        height: 217px;
+      }
+    }
   }
 
   .header-content {

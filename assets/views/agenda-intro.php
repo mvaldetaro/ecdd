@@ -3,7 +3,7 @@
     <header class="programa__header">
     <?php $terms = wp_get_post_tags($post->ID); ?>
       <h1 class="title">
-        <span class="type">Aconteceu na ECDD</span>
+        <span class="type">Evento</span>
         <span class="sr-only"><?php echo $terms[0]->name ?></span>
         <span><?php the_title(); ?><span>
       </h1>
@@ -11,6 +11,7 @@
     <div class="programa__content">
       <?php the_content(); ?>
     </div>
+    <p><a class="btn btn-invert btn-lg-wide btn-lg" href="<?php the_field('inscricao'); ?>" role="button">Inscreva-se</a></p>
   </div>
 </div>
 

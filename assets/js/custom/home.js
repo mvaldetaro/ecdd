@@ -1,12 +1,31 @@
 console.info('home');
 
+(function(){
+  $('.dropdown-toggle').dropdown();
+
+  $("[data-toggle=popover]").each(function(i, obj) {
+
+    $(this).popover({
+      html: true,
+      content: function() {
+        var id = $(this).attr('id')
+        return $('#popover-content-' + id).html();
+      }
+    });
+  });
+})();
+
 /* Controla Componente Trabalhos dos Alunos */
 (function(){
-  var container = document.querySelector('.students-works__content');
+  var container = document.querySelector('.students-works');
+  //console.log(container);
   if(container || container != null) {
     var mixer = mixitup('.students-works__content', {
       animation: {
         easing: "cubic-bezier(.55,0,.1,1)"
+      },
+      controls: {
+        enable: false
       },
       load: {
         filter: '.recente'
@@ -18,8 +37,8 @@ console.info('home');
         }
       }
     });
+    mixer.filter('.recente');
   }
-
 })();
 
 // Implementa toogle click

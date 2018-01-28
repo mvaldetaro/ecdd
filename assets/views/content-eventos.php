@@ -14,7 +14,7 @@
 
     if (have_posts() ) {
       echo '<div class="row">';
-      query_posts('category_name=eventos&posts_per_page=-1');
+      query_posts('category_name=aconteceu-ecdd&posts_per_page=-1');
       $delay = 0.0;
       $i = 0;
       while (have_posts()) {

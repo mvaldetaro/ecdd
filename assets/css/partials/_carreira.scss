@@ -1,0 +1,47 @@
+.carreira {
+  padding: 32px 0;
+  position: relative;
+  //background-image: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #111312;
+
+  .container {
+    position: relative;
+  }
+
+  &__header {
+    margin-bottom: 16px;
+    .title {
+      font-weight: 300;
+      font-size: 1.8em;
+      color: $white;
+      display: inline-block;
+      text-transform: uppercase;
+      @include tablet {
+        font-size: 2.5em;
+      }
+      &:before {
+        content: "";
+        height: 1px;
+        width: 60%;
+        background-color: $white;
+        display: block;
+        margin-bottom: 16px;
+        @include tablet {
+          width: 26%;
+        }
+      }
+    }
+  }
+
+  &__content {
+    p {
+      color: #fff;
+    }
+    @include tablet {
+      font-size: 1.188em;
+      line-height: 31px;
+    }
+  }
+}

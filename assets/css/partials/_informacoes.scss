@@ -95,9 +95,8 @@ $bg-color-ca-small: #455A64 !default;
 
     &__textarea {
       background-color: transparent;
-      border: none;
       border-bottom: 1px solid $white;
-      padding: 8px 0;
+      padding: 8px;
       width: 100%;
       height: 139px;
       font-size: 1em;

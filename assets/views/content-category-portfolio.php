@@ -2,7 +2,7 @@
 <div class="container">
   <header class="programas-grid__header">
     <h1 class="title"><?php single_cat_title(); ?></h1>
-  </header><!-- /header -->
+  </header> <!-- /header -->
   <div class="programas-grid__content sh">
     <?php
       //TODO: Remover imageSrc() para o arquivo functions.php
@@ -10,7 +10,6 @@
       $img_url = wp_get_attachment_image_src($id, $size, true );
       echo $img_url[0];
     }
-
 
     if (have_posts() ) {
       echo '<div class="row">';
@@ -29,15 +28,20 @@
                 <picture>
                   <source media="(min-width: 992px)" srcset="<?php imageSrc($attachment_id, 'category-thumb-large'); ?>">
                   <source media="(min-width: 768px)" srcset="<?php imageSrc($attachment_id, 'category-thumb-large'); ?>">
-                    <img src="<?php imageSrc($attachment_id, 'category-thumb-large'); ?>" />
-                  </picture>
-                </a>
-              </figure>
+                  <img src="<?php imageSrc($attachment_id, 'category-thumb-large'); ?>" />
+                </picture>
+              </a>
+            </figure>
               <div class="card__content">
                 <h2 class="title"><a href="<?php the_permalink();?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
-                <?php if (get_field('programa')): ?>
-                  <p><?php the_field('programa'); ?></p>
-                <?php endif ?>
+                <?php
+                  $posttags = get_the_tags();
+                  $programa = get_field('programa');
+
+                  echo "<p>";
+                  echo $posttags[0]->name ." ". $programa->post_title;
+                  echo "</p>";
+                ?>
               </div>
             </div>
           </div>

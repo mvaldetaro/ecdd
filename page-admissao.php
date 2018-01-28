@@ -19,16 +19,7 @@
     </div>
   </div>
   <div aria-hidden="true" class="header-background">
-    <?php
-      $image = get_field('imagem_topo');
-      $alt = get_the_title();
-      $url = get_template_directory_uri();
-      if ($image) {
-        echo '<img src="'.$image.'" alt="'.$alt.'">';
-      } else {
-        echo '<img src="'.$url.'/assets/img/bg-category-head.jpg" alt="'.$alt.'">';
-      }
-    ?>  </div>
+  </div>
 </header>
 
 <main class="main">

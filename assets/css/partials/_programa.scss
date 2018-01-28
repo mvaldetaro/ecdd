@@ -1,9 +1,14 @@
 .programa {
-  &__intro {
-    //margin-bottom:  32px;
+  &__intro
+   {
     @include tablet {
       margin-bottom:  32px;
     }
+  }
+
+  &__videos {
+    margin-top: -32px;
+    margin-bottom:  32px;
   }
 
   &__header {
@@ -38,7 +43,7 @@
 
   &__content {
     margin-top: 32px;
-    p {
+    p, li {
       font-size: 1em;
       line-height: 25px;
       font-weight: 300;

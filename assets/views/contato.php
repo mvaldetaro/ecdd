@@ -17,7 +17,9 @@
     </header>
     <div class="infos__content infos__content--admissao slideInLeft">
       <div class="row">
+          <div class="col-md-8">
           <?php the_content(); ?>
+          </div>
       </div>
     </div>
     <?php

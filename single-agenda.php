@@ -19,16 +19,7 @@
     </div>
   </div>
   <div aria-hidden="true" class="header-background">
-    <?php
-    $image = get_field('imagem_topo');
-    $alt = get_the_title();
-    $url = get_template_directory_uri();
-    if ($image) {
-      echo '<img src="'.$image.'" alt="'.$alt.'">';
-    } else {
-      echo '<img src="'.$url.'/assets/img/bg-category-head.jpg" alt="'.$alt.'">';
-    }
-    ?>
+
   </div>
 </header>
 
@@ -36,7 +27,7 @@
   <?php get_template_part('assets/views/atendimento-banner', 'atendimento-banner'); ?>
   <?php get_template_part('assets/views/breadcrumb', 'breadcrumb'); ?>
   <?php get_template_part('assets/views/content-single-agenda', 'content-single-agenda'); ?>
-  <?php get_template_part('assets/views/como-chegar', 'como-chegar'); ?>
+  <?php //get_template_part('assets/views/como-chegar', 'como-chegar'); ?>
 </main>
 
 <?php get_footer(); ?>

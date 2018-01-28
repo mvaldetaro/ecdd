@@ -4,7 +4,7 @@
 
   function create_post_type() {
     new_post_type('mba','MBAs','MBA', 'Todos os');
-    new_post_type('pos','Pós Graduações','Pós Graduação', 'Todos as');
+    new_post_type('pos','Pós-Graduações','Pós-Graduação', 'Todos as');
     new_post_type('graduacao','Graduações','Graduação', 'Todos as');
     new_post_type('formacao','Formações','Formação', 'Todos as');
     new_post_type('ead','EADs','EAD', 'Todos os');

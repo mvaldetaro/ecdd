@@ -6,11 +6,12 @@
           <?php the_custom_logo(); ?>
         </figure>
         <address class="footer__address">
-          Rua do Rosário, 129 - Centro,<br> Rio de Janeiro - RJ, 20041-005
+          Rua do Rosário, 129 - Centro,<br> Rio de Janeiro - RJ, 20041-005 <br>
+          <a href="https://www.google.com.br/maps/place/ECDD+-+Escola+de+Comunica%C3%A7%C3%A3o+de+Design+Digital+(Infnet)/@-22.903346,-43.1788017,15z/data=!4m5!3m4!1s0x0:0xe1fcda50975d36cd!8m2!3d-22.903346!4d-43.1788017" title="Localização da ECDD - Escola de Comunicação de Design Digital (Google Maps)" target="_blank">Ver no Mapa</a>
         </address>
-
+        <p>ACESSE NOSSAS REDES SOCIAIS:</p>
         <div class="footer__social">
-          <a href="https://www.facebook.com/ecdd.infnet/" class="footer__social__item" rel="facebook">
+          <a href="https://www.facebook.com/ecdd.infnet/" class="footer__social__item" rel="facebook" target="_blank">
             <svg viewBox="0 0 32 32" class="footer__social__icon">
               <use xlink:href="#facebook-logo" />
             </svg>
@@ -49,16 +50,16 @@
               <a href="<?php bloginfo('url'); ?>/alumni/" title="Alumni">Alumni</a>
             </li>
             <li class="footer__courses__list__item">
-              <a href="<?php bloginfo('url'); ?>/atendimento/" title="Atendimento">Atendimento</a>
+              <a href="<?php bloginfo('url'); ?>/parcerias/" title="Parcerias">Parcerias com empresas</a>
             </li>
             <li class="footer__courses__list__item">
-              <a href="<?php bloginfo('url'); ?>/parcerias/" title="Parcerias">Parcerias</a>
+              <a href="<?php bloginfo('url'); ?>/contato/" title="Contato">Contato</a>
             </li>
           </ul>
         </div>
 
         <div class="footer__courses wow animated fadeInUp" data-wow-delay="0.4">
-          <h2 class="footer__courses__title"><a href="<?php bloginfo('url'); ?>/category/graduacao/">Graduações</a></h2>
+          <h2 class="footer__courses__title"><a href="<?php bloginfo('url'); ?>/category/graduacao/">Graduação</a></h2>
           <ul class="footer__courses__list">
             <?php programasList('graduacao', 'graduacao') ?>
           </ul>
@@ -68,13 +69,13 @@
       <!-- MBAs e Pós -->
       <div class="col-md-3">
         <div class="footer__courses wow animated fadeInUp">
-          <h2 class="footer__courses__title"><a href="<?php bloginfo('url'); ?>/category/mba/">MBA<span class="lwrCase">s</span></a></h2>
+          <h2 class="footer__courses__title"><a href="<?php bloginfo('url'); ?>/category/mba/">MBA</h2>
           <ul class="footer__courses__list">
           <?php programasList('mba', 'mba') ?>
           </ul>
         </div>
         <div class="footer__courses wow animated fadeInUp" data-wow-delay="0.2">
-          <h2 class="footer__courses__title"><a href="<?php bloginfo('url'); ?>/category/pos-graduacao/">Pós-Graduações</a></h2>
+          <h2 class="footer__courses__title"><a href="<?php bloginfo('url'); ?>/category/pos-graduacao/">Pós-Graduação</a></h2>
           <ul class="footer__courses__list">
             <?php programasList('pos-graduacao', 'pos') ?>
           </ul>
@@ -106,7 +107,8 @@
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js"></script>
+
 <?php wp_footer(); ?>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js"></script>
 </body>
 </html>

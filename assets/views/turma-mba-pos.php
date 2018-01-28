@@ -8,10 +8,10 @@
           if($modalidades) {
             echo '<p class="wow animated slideInLeft" data-wow-delay="0.2s">';
             if(count($modalidades) < 2) {
-              echo 'Esta graduação é oferecida na modalidade: ';
+              echo 'Esta pós-graduação é oferecida na modalidade: ';
               echo '<span class="modalidades">'.$modalidades[0].'</span>';
             } elseif(count($modalidades) >= 2) {
-              echo 'Esta graduação é oferecida nas modalidades: ';
+              echo 'Esta pós-graduação é oferecida nas modalidades: ';
               echo '<span class="modalidades">'.implode(", ",$modalidades).'</span>';
             } else {
               echo 'Indisponível no momento.';
@@ -41,7 +41,7 @@
               <p><?php the_field('carga_horaria'); ?></p>
             <?php endif ?>
 
-            <h3 class="title">Ínicio e Horário</h3>
+            <h3 class="title">Início e Horário</h3>
             <p>
             <?php
               if( have_rows('inicio_e_horario') ):

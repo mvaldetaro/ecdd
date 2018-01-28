@@ -1,15 +1,18 @@
 .matriz {
   padding: 32px 0;
   position: relative;
-  background: #fff;
+  background-image: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
 
   .container {
     position: relative;
   }
+
   &__header {
+    margin-bottom: 16px;
     .title {
       font-weight: 300;
       font-size: 1.8em;
+      color: $white;
       display: inline-block;
       text-transform: uppercase;
       @include tablet {
@@ -19,7 +22,7 @@
         content: "";
         height: 1px;
         width: 60%;
-        background-color: $black;
+        background-color: $white;
         display: block;
         margin-bottom: 16px;
         @include tablet {
@@ -57,7 +60,7 @@
 
       &:before,
       &:after {
-        border-right: 2px solid #666;
+        border-right: 2px solid #fff;
         content: '';
         display: block;
         height: 50%;
@@ -72,7 +75,7 @@
       &:hover {
         &:before,
         &:after {
-          border-color: $ecdd-mono-one;
+          border-color: $black;
         }
       }
     }
@@ -110,17 +113,44 @@
       padding: 0 60px;
     }
 
-    &__overflow {}
+    &__overflow {
+    }
 
     &__item {
-
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
       .title {
         text-transform: uppercase;
-        font-size: 1.250em;
+        font-size: 1.18em;
         font-weight: 600;
-        color: $ecdd-mono-extra;
-        min-height: 44px;
-        margin-bottom: 16px;
+        color: $alpha-white;
+        min-height: 76px;
+        //margin-bottom: 16px;
+        margin: 0;
+        padding: 16px;
+        display: table;
+        width: 100%;
+
+        .vertical {
+          display: table-cell;
+          vertical-align: middle;
+          margin: 0;
+        }
+
+        &_bg_0 { background: #F3A900; }
+
+        &_bg_1 { background: #F28900; }
+
+        &_bg_2 { background: #EA6A00; }
+
+        &_bg_3 { background: #EE470D; }
+
+        &_bg_4 { background: #E82308; }
+
+        &_bg_5 { background: #C61800; }
+
+        &_bg_6 { background: #921807; }
+
+        &_bg_7 { background: #5B0F04; }
       }
 
       .disciplinas {
@@ -131,24 +161,70 @@
           font-size: .85em;
           line-height: 21px;
           font-weight: 400;
-          margin-bottom: 8px;
-          min-height: 42px;
+          //margin-bottom: 8px;
+          min-height: 74px;
+          background: #1F1B1B;
+          padding: 16px;
+          color: #FFD09D;
+          display: table;
+          width: 100%;
 
           h4 {
-
+            color: #FFD09D;
           }
 
-          p {}
+          p {
+            color: #FFD09D;
+            &.vertical {
+              display: table-cell;
+              vertical-align: middle;
+              margin: 0;
+            }
+          }
 
           &:last-child {
-            padding: 8px 0;
-            margin-top: 8px;
-            border-top: 1px solid #95989A;
+            //padding: 8px 0;
+            margin-top: 1px;
+            //border-top: 1px solid #95989A;
             font-weight: 600;
+          }
+        }
+
+        &__mba-pos {
+          li {
+            min-height: 213px;
+            /*.vertical {
+              display: table-cell;
+              vertical-align: middle;
+              margin: 0;
+            }*/
+            p {
+              color: $alpha-white;
+            }
+            &:last-child {
+              min-height: 234px;
+            }
           }
         }
       }
     }
   }
 
+  &__livreto {
+    margin-top: 24px;
+    text-align: center !important;
+    padding: 0 40px;
+    .vertical {
+      display: table;
+      width: 100%;
+      p {
+        display: table-cell;
+        vertical-align: middle;
+        height: 44px;
+      }
+    }
+    p {
+      color: #fff;
+    }
+  }
 }

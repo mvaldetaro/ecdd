@@ -4,7 +4,7 @@
     <h2 class="students-works__title">Trabalhos dos alunos</h2>
     <nav class="students-works__menu">
       <ul class="students-works__menu__list">
-        <li class="students-works__menu__item-current">
+        <!--<li class="students-works__menu__item-current">
           <a href="javascript:;" data-filter=".recente">Recentes</a>
         </li>
         <li class="students-works__menu__item">
@@ -18,7 +18,7 @@
         </li>
         <li class="students-works__menu__item">
           <a href="javascript:;" data-filter=".formacao">Formação</a>
-        </li>
+        </li>-->
       </ul>
     </nav>
   </header>

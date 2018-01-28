@@ -1,4 +1,3 @@
-
 <div class="adicional-intro container">
   <div class="adicional-intro__content">
     <div class="row">
@@ -29,7 +28,7 @@
         </div>
       </div>
 
-        <div class="col-md-6 wow animated fadeInUp" data-wow-delay="0.2">
+      <div class="col-md-6 wow animated fadeInUp" data-wow-delay="0.2">
         <div class="adicional-intro__item">
         <h3>Público Alvo</h3>
           <p><?php the_field('publico_alvo'); ?></p>

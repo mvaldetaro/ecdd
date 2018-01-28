@@ -1,0 +1,44 @@
+.enade {
+  background: #1f1b1b;
+  padding: 32px 0;
+  h2 {
+    color: #D9551B;
+    font-size: 38px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    @include tablet {
+      margin-top: 58px;
+      font-size: 48px;
+    }
+    @include desktop {
+      text-align: left;
+    }
+  }
+  img {
+    margin: 0 auto;
+    display: block;
+    @include tablet {
+      float: right;
+      display: block;
+    }
+    @include desktop {
+
+    }
+  }
+  p {
+    color: $white;
+    text-transform: uppercase;
+    font-size: 19px;
+    letter-spacing: .1px;
+    text-align: center;
+    @include tablet {
+      font-size: 24px;
+      letter-spacing: 0.2px;
+    }
+    @include desktop {
+      text-align: left;
+    }
+  }
+}

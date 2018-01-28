@@ -1,7 +1,11 @@
 .turma {
   background: url('assets/img/turma.jpg') center center no-repeat #CF541D;
-  background-attachment: fixed;
+
   color: $white;
+
+  @include desktop {
+    background-attachment: fixed;
+  }
 
   .container {
     position: relative;

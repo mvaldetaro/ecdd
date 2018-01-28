@@ -48,7 +48,7 @@
        *
        */
 
-      wp_register_script('ecdd_mordenizr', 'https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js');
+      wp_register_script('ecdd_mordenizr', 'https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js');
       wp_enqueue_script('ecdd_mordenizr'); // Enqueue it!
     }
   }

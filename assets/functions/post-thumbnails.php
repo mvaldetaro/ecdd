@@ -18,7 +18,7 @@
 
     // Category sizes
     add_image_size('category-thumb-large', 360, 162, true );
-    add_image_size('category-thumb-medium', 375, 150, true );
+    add_image_size('category-thumb-medium', 345, 162, true );
     add_image_size('category-thumb-small', 100, 100, true );
 
     // Eventos sizes
@@ -27,7 +27,7 @@
     add_image_size('evento-thumb-small', 290, 195, true );
 
     // Professores sizes
-    add_image_size('professores-thumb-large', 262, 150, true );
-    add_image_size('professores-thumb-medium', 213, 120, true );
+    add_image_size('professores-thumb-large', 204, 204, true );
+    add_image_size('professores-thumb-medium', 204, 204, true );
     add_image_size('professores-thumb-small', 100, 100, true );
 ?>

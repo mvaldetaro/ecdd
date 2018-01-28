@@ -37,6 +37,7 @@
         'post_status' => 'publish',
         'posts_per_page' => -1
       );
+
       $query = new WP_Query($args);
 
       function post($post_id) {
@@ -67,12 +68,20 @@
             <picture>
               <source media="(min-width: 992px)" srcset="<?php imageSrc($attachment_id, 'category-thumb-large'); ?>">
               <source media="(min-width: 768px)" srcset="<?php imageSrc($attachment_id, 'category-thumb-large'); ?>">
-              <img src="<?php imageSrc($attachment_id, 'category-thumb-large'); ?>"  class="img-responsive"/>
+              <img src="<?php imageSrc($attachment_id, 'category-thumb-large'); ?>" />
              </picture>
           </a>
         </figure>
         <div class="card__content">
-          <h2 class="title"><a href="<?php the_permalink();?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+          <h2 class="title">
+            <a href="<?php the_permalink();?>" title="<?php the_title_attribute(); ?>">
+              <?php
+              $cats = get_the_category($post_object->ID);
+              echo toSingular($cats[count($cats)-1]->cat_name) . " ";
+              the_title();
+              ?>
+            </a>
+          </h2>
           <p><?php echo get_excerpt(); ?></p>
         </div>
       </div>

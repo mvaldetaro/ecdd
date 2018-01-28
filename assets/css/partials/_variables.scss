@@ -20,6 +20,7 @@ $banner-subheading-font: 'proxima_novalight' !default;
 // Colors
 $black: rgba(0,0,0, .87);
 $white: rgba(255,255,255, 1);
+$alpha-white: rgba(255,255,255, .87);
 
 $gray-base:              #000 !default;
 $gray-darker:            lighten($gray-base, 13.5%) !default; // #222

@@ -1,7 +1,7 @@
 <section class="events">
   <header class="events__header wow animated fadeIn">
     <h2 class="title">Aconteceu na ECDD</h2>
-    <!--<a class="go-to-link" href="<?php bloginfo('url'); ?>/category/eventos" title="Eventos passados">Outros eventos</a>-->
+    <a class="go-to-link" href="<?php bloginfo('url'); ?>/category/aconteceu-ecdd" title="Eventos passados">Outros eventos</a>
   </header>
   <div class="events__content">
     <?php

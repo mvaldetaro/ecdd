@@ -1,10 +1,18 @@
 .embed-frame {
   position: relative;
   width: 100%;
-  padding-top: 56.3%;
+  //padding-top: 56.3%;
+
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
 }
 
-.embed-frame iframe {
+.embed-frame iframe,
+.embed-frame object,
+.embed-frame embed {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -34,6 +42,10 @@
 
 .top-margin {
   margin-top: 32px !important;
+}
+
+.bottom-sm-margin {
+  margin-top: 16px !important;
 }
 
 .extra-bottom-padding {
@@ -125,5 +137,41 @@
 @media print {
   .hidden-print {
     display: none !important;
+  }
+}
+
+.col-xs-5ths,
+.col-sm-5ths,
+.col-md-5ths,
+.col-lg-5ths {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.col-xs-5ths {
+  width: 20%;
+  float: left;
+}
+
+@media (min-width: 768px) {
+  .col-sm-5ths {
+    width: 20%;
+    float: left;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-md-5ths {
+      width: 20%;
+      float: left;
+  }
+}
+
+@media (min-width: 1200px) {
+  .col-lg-5ths {
+      width: 20%;
+      float: left;
   }
 }

@@ -52,20 +52,23 @@
 
         @include desktop {
           margin: 16px;
-          &:first-child,
-            &:nth-child(5n) {
-              margin-left: 0px;
-            }
-            &:nth-child(7n) {
-              margin-left: 0;
-            }
-            &:nth-child(4n) {
-              margin-right: 16px;
-            }
-            &:nth-child(6n) {
-              margin-right: 0;
-            }
+          &:first-child {
+            margin-left: 0px;
+          }
+          &:nth-child(5n) {
+            margin-left: 16px;
+          }
+          &:nth-child(6n+1) {
+            margin-left: 0;
+          }
+          &:nth-child(4n) {
+            margin-right: 16px;
+          }
+          &:nth-child(6n) {
+            margin-right: 0;
+          }
         }
+
       }
     }
   }

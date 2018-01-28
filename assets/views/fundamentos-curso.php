@@ -1,7 +1,7 @@
 <section class="fundamentos-curso">
   <div class="container wow animated zoomIn">
     <header class="fundamentos-curso__header">
-      <h2 class="title">Fundamentos do curso</h2>
+      <h2 class="title">Diferenciais e Fundamentos do Curso</h2>
     </header>
     <nav id="fundamentos-controller" class="fundamentos-curso__controller">
       <a href="#" class="previous arrow-left"></a>

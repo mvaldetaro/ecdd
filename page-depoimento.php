@@ -19,15 +19,6 @@
     </div>
   </div>
   <div aria-hidden="true" class="header-background">
-    <?php
-    $url = get_template_directory_uri();
-    $alt = 'ecdd';
-    if ( has_post_thumbnail() ) {
-      the_post_thumbnail();
-    } else {
-      echo '<img src="'.$url.'/assets/img/bg-category-head.jpg" alt="'.$alt.'">';
-    }
-    ?>
   </div>
 </header>
 

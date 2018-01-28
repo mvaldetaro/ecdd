@@ -19,16 +19,14 @@
 
       <!-- Tab panes -->
       <div class="tab-content page__content page__content--tab">
+
+        <!-- MBA Pós Graduação -->
         <div role="tabpanel" class="tab-pane" id="admissao-mba-e-pos-graduacao">
 
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-12">
               <h2>Requisitos para o ingresso</h2>
-              <p>Fazer uma Pós-Graduação na Escola de Comunicação e Design Digital é um grande passo em sua carreira. Os programas são ministrados por professores especialistas em cada assunto. E, nos programas mais técnicos, todas as aulas são ministradas em laboratório de workstations. Os módulos são “mão na massa” e você aprende na prática, com trabalhos que simulam situações reais de mercado ao final de cada bloco.</p>
-            </div>
-            <div class="col-md-6">
-              <h2>Valores</h2>
-              <p>Para saber o valor das Pós-Graduações e MBAs, encontre no site o programa de seu interesse e clique em Admissão e Valores, o último item do menu da esquerda. </p>
+              <p>Fazer uma Pós-Graduação na <strong>Escola de Comunicação e Design Digital</strong> é um grande passo em sua carreira. Os programas são ministrados por professores especialistas em cada assunto. E, nos programas mais técnicos, todas as aulas são ministradas em laboratório de workstations. Os módulos são “mão na massa” e você aprende na prática, com trabalhos que simulam situações reais de mercado ao final de cada bloco.</p>
             </div>
           </div>
 
@@ -52,6 +50,9 @@
             </div>
 
             <div class="col-md-8">
+              <h2>Valores</h2>
+              <p>Para saber o valor das Pós-Graduações e MBAs, encontre no site o programa de seu interesse e clique em Admissão e Valores, o último item do menu da esquerda. </p>
+
               <h2>Requisitos</h2>
               <h3>QUAIS OS PRÉ-REQUISITOS PARA O ALUNO FAZER UMA PÓS-GRADUAÇÃO?</h3>
               <ul>
@@ -75,16 +76,15 @@
             </div>
           </div>
         </div>
+        <!-- /MBA Pós Graduação -->
 
+        <!-- Graduação -->
         <div role="tabpanel" class="tab-pane active" id="admissao-graduacoes">
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-12">
               <h2>Requisitos para o ingresso</h2>
-              <p>Estudar na Escola de Comunicação e Design Digital fará uma grande diferença em sua vida profissional. As Graduações são ministradas por professores que conhecem o mercado de trabalho. São Graduações de verdade, que exigem esforço e estudo desde o primeiro ciclo. É por isso que o mercado valoriza o aluno Infnet e reconhece que a Instituição oferece cursos de alto nível e voltados ao mercado profissional na área de design e comunicação. Se você quer uma Graduação que não "enrola" e que prepara para a entrada imediata no mercado de trabalho, estudar no Instituto Infnet é a escolha certa.</p>
-            </div>
-            <div class="col-md-6">
-              <h2>Valores</h2>
-              <p>Nas páginas que descrevem as Graduações do Infnet, há um item Valor no menu da esquerda. Basta clicar para saber o valor da mensalidade do curso escolhido.</p>
+              <p>Estudar na <strong>Escola de Comunicação e Design Digital</strong> fará uma grande diferença em sua vida profissional. As Graduações são ministradas por professores que conhecem o mercado de trabalho. São Graduações de verdade, que exigem esforço e estudo desde o primeiro ciclo. É por isso que o mercado valoriza o aluno Infnet e reconhece que a Instituição oferece cursos de alto nível e voltados ao mercado profissional na área de design e comunicação.</p>
+              <p>Se você quer uma Graduação que não "enrola" e que prepara para a entrada imediata no mercado de trabalho, estudar no Instituto Infnet é a escolha certa.</p>
             </div>
           </div>
 
@@ -99,13 +99,15 @@
               <p><a href="http://www.vestibularinfnet.com.br/resultados.php" rel="me">Clique aqui</a> e confira o resultado.</p>
 
               <h3>Combine um dia para fazer sua matrícula</h3>
-              <p>Envie um e-mail para <a href="mailto:graduacao.rj@infnet.edu.br" rel="nofollow">graduacao.rj@infnet.edu.br</a> e combine com um Consultor Educacional o melhor dia para você fazer sua matrícula.</p>
+              <p><a href="#mais_informacoes">Clique aqui</a> e combine com um Consultor Educacional o melhor dia para você fazer sua matrícula.</p>
 
               <h3>Faça sua matrícula</h3>
               <p>Venha ao Infnet no dia combinado, com todos os documentos necessários, e torne-se um aluno Infnet.</p>
             </div>
 
             <div class="col-md-8">
+              <h2>Valores</h2>
+              <p>Nas páginas que descrevem as Graduações do Infnet, há um item Valor no menu da esquerda. Basta clicar para saber o valor da mensalidade do curso escolhido.</p>
               <h2>Requisitos</h2>
               <h3>Quais os pré-requisitos para o aluno fazer uma graduação?</h3>
               <ul>
@@ -125,7 +127,7 @@
               <h3>É possível obter uma bolsa de estudos na graduação?</h3>
               <p>Sim, o Instituto Infnet possui alguns programas de <a href="<?php bloginfo('url') ?>/bolsas-de-estudo-e-financiamento/"><strong>Bolsas de Estudo</strong></a>, como o <a href="<?php bloginfo('url') ?>/bolsas-de-estudo-e-financiamento/merito-no-enem/"><strong>Mérito no ENEM</strong></a> e o <strong><a href="<?php bloginfo('url') ?>/bolsas-de-estudo-e-financiamento/prouni/">PROUNI</a></strong>. Caso você não se enquadre em nenhum deles, também é possível financiar seus estudos através do <strong><a href="<?php bloginfo('url') ?>/financiamentos/">FIES</a></strong>, você estuda agora e só paga depois de se formar. </p>
               <h3>Se eu já tiver feito uma graduação, como faço para estudar no infnet?</h3>
-              <p>Os portadores de diploma de nível superior interessados em fazer a segunda graduação deverão submeter-se a um processo seletivo específico para graduados. Nesse caso, a seleção será feita por meio de entrevista e/ou análise curricular.<br />Os candidatos devem procurar a Central de Matrículas (dúvidas pelo e-mail <a href="mailto:graduacoes.rj@infnet.edu.br">graduacoes.rj@infnet.edu.br</a>), com os seguintes documentos acadêmicos originais:</p>
+              <p>Os portadores de diploma de nível superior interessados em fazer a segunda graduação deverão submeter-se a um processo seletivo específico para graduados. Nesse caso, a seleção será feita por meio de entrevista e/ou análise curricular.<br />Os candidatos devem procurar a Central de Matrículas, com os seguintes documentos acadêmicos originais:</p>
               <ul>
                 <li>Histórico Escolar do curso de graduação (original)</li>
                 <li>Conteúdo programático de todas as disciplinas para as quais deseja análise de forma a obter o aproveitamento de estudos</li>
@@ -136,7 +138,7 @@
               <p>O aluno que trancou a matrícula e quer retornar os estudos deverá requerer sua reabertura de matrícula, na Secretaria, via requerimento, para análise pela Coordenação do Curso. Na reabertura de matrícula, o aluno fica sujeito às alterações da matriz curricular que tenham ocorrido no curso durante o período em que esteve com a matrícula trancada. Além disso, é necessário que a vaga requerida esteja disponível e que os prazos previstos para a integralização do referida matriz possam ser cumpridos.</p>
               <h3>Se estudo em outra faculdade, mas quero solicitar a transferência para o infnet, como faço?</h3>
               <p>Os candidatos interessados deverão submeter-se a processo seletivo específico para transferidos. Nesse caso, a seleção será feita por meio de entrevista e/ou análise curricular.</p>
-              <p>Os candidatos devem procurar a Central de Matrículas (dúvidas pelo e-mail <a href="mailto:graduacoes.rj@infnet.edu.br">graduacoes.rj@infnet.edu.br</a>), com os seguintes documentos (fornecidos pela Instituição de Ensino Superior da qual o requerente pretende transferir-se):</p>
+              <p>Os candidatos devem procurar a Central de Matrículas, com os seguintes documentos (fornecidos pela Instituição de Ensino Superior da qual o requerente pretende transferir-se):</p>
               <ul>
                 <li>Histórico Escolar do curso de graduação (original).</li>
                 <li>Conteúdo programático de todas as disciplinas para as quais deseja análise de forma a obter o aproveitamento de estudos.</li>
@@ -154,29 +156,32 @@
             </div>
           </div>
         </div>
+        <!-- /Graduação -->
 
+        <!-- Extensão -->
         <div role="tabpanel" class="tab-pane" id="admissao-formacoes">
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-12">
               <h2>Requisitos para o ingresso</h2>
-              <p>Fazer uma formação na Escola de Comunicação e Design Digital é estudar de um jeito prático, com profissionais que trabalham na área. Boa parte dos bons webdesigners e webmasters estudou conosco, em formações que oferecemos desde 1995. </p>
+              <p>Fazer uma formação na <strong>Escola de Comunicação e Design Digital</strong> é estudar de um jeito prático, com profissionais que trabalham na área. Boa parte dos bons webdesigners e webmasters estudou conosco, em formações que oferecemos desde 1995. </p>
               <p>Hoje, a ECDD oferece uma gama de formações intensivas para você aprender sobre os vários aspectos do design, sempre "colocando a mão na massa".</p>
               <p>Não há pré-requisitos formais para estudar em uma formação. Você não precisa apresentar nenhum diploma. No entanto, são cursos puxados, com várias horas de aula por dia, e você precisa estar disposto a se esforçar. Dependendo de seu talento para a área, pode ser necessário estudar fora do horário das aulas.</p>
               <p>Para fazer sua inscrição, converse com um Consultor de Matrículas pelo e-mail <a href="mailto: cursos.rj@infnet.edu.br" rel="nofollow">cursos.rj@infnet.edu.br</a>.</p>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-12">
               <h2>Valores</h2>
               <p>Para saber o valor das formações, encontre no site o programa de seu interesse e clique em Valor e Turmas, o último item do menu da esquerda.</p>
             </div>
           </div>
         </div>
+        <!-- /Extensão -->
       </div>
     </div>
   </div>
 </div>
 
 <!-- Aproveitamento de estudos -->
-<section class="call-action bg-admissao no-top-margin">
+<section id="aproveitamento" class="call-action bg-admissao no-top-margin">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -184,7 +189,7 @@
           <h2 class="call-action__title">Aproveitamento de Estudos</h2>
         </header>
       </div>
-      <div class="col-md-8">
+      <div class="col-md-10">
         <div class="call-action__content wow animated slideInLeft">
           <p>O aproveitamento de estudos e competências é uma forma de você ganhar tempo, reduzindo a duração de uma graduação. Afinal, se você já sabe algo,  por que estudar de novo?</p>
           <p>Você pode já ter estudado o mesmo conteúdo em outra faculdade ou, de alguma forma, aprendeu o assunto. Nesses casos,  você pode ficar isento de fazer alguns módulos. São analisados os seguintes casos:</p>
@@ -193,6 +198,7 @@
             <li class="call-action__list__item">Aproveitamento direto de competências, se você possui certificações oficiais válidas.</li>
             <li class="call-action__list__item">Aproveitamento indireto de competências, se você possui larga e comprovada experiência em um assunto específico tratado na graduação.</li>
           </ul>
+          <p>Veja todos os detalhes <a href="http://ecdd.infnet.edu.br/wp-content/downloads/regimento-versao-competencias-2016.pdf" rel="download">nesse documento</a>.</p>
         </div>
       </div>
     </div>
@@ -212,8 +218,9 @@
       <div class="col-md-12">
         <div class="call-action__content">
           <dl class="call-action__content__dl">
-            <dt class="call-action__content__dt wow animated slideInLeft">Programa Estude Sempre</dt>
-            <dd class="call-action__content__dd wow animated slideInLeft">
+
+            <dt class="call-action__content__dt wow animated slideInLeft estude">Programa Estude Sempre</dt>
+            <dd class="call-action__content__dd wow animated slideInLeft estude">
               <div class="row">
                 <div class="col-md-8">
                   <p>Um programa de bolsas crescentes para os alunos Infnet, na medida em que eles estudam no Instituto e “acumulam” horas de aula. Válido para Graduações, Pós-Graduações e Formações, com bolsas de até 75%.</p>
@@ -223,8 +230,9 @@
                 </div>
               </div>
             </dd>
-            <dt class="call-action__content__dt wow animated slideInLeft">Programa de Bolsas por Mérito e Necessidade</dt>
-            <dd class="call-action__content__dd wow animated slideInLeft">
+
+            <dt class="call-action__content__dt wow animated slideInLeft merito">Programa de Bolsas por Mérito e Necessidade</dt>
+            <dd class="call-action__content__dd wow animated slideInLeft merito">
               <div class="row">
                 <div class="col-md-8">
                   <p>Um programa do Instituto que distribui uma certa quantidade de bolsas de estudo, de 25% a 100%, em Graduações, Pós-Graduações e Formações. A participação é trabalhosa e voltada apenas para alunos que não podem arcar com o valor integral dos cursos.</p>
@@ -234,8 +242,9 @@
                 </div>
               </div>
             </dd>
-            <dt class="call-action__content__dt wow animated slideInLeft">Programa de Mérito no ENEM</dt>
-            <dd class="call-action__content__dd wow animated slideInLeft">
+
+            <dt class="call-action__content__dt wow animated slideInLeft enem">Programa de Mérito no ENEM</dt>
+            <dd class="call-action__content__dd wow animated slideInLeft enem">
               <div class="row">
                 <div class="col-md-8">
                   <p>Visa atrair, para as Graduações do Instituto Infnet, os melhores alunos do ENEM</p>
@@ -245,8 +254,9 @@
                 </div>
               </div>
             </dd>
-            <dt class="call-action__content__dt wow animated slideInLeft">Programa Prouni</dt>
-            <dd class="call-action__content__dd wow animated slideInLeft">
+
+            <dt class="call-action__content__dt wow animated slideInLeft prouni">Programa Prouni</dt>
+            <dd class="call-action__content__dd wow animated slideInLeft prouni">
               <div class="row">
                 <div class="col-md-8">
                   <p>Um programa do governo federal que distribui bolsas de 100% e 50%, de acordo com a nota do ENEM, para alunos de baixa renda que estudaram toda a vida em escolas públicas.</p>
@@ -264,23 +274,26 @@
 </section>
 
 <!-- Financiamento -->
-<section class="call-action bg-green no-top-margin call-action--financiamentos">
+<section id="financiamentos" class="call-action bg-green no-top-margin call-action--financiamentos">
   <div class="container wow animated bounceIn">
-    <div class="row">
-      <div class="col-md-12 col-lg-8">
-        <header class="call-action__header">
+    <header class="call-action__header">
           <h2 class="call-action__title call-action__title--financiamentos">Financiamentos</h2>
         </header>
+    <div class="row">
+      <div class="col-md-12 col-lg-8">
         <div class="call-action__content call-action__content--financiamentos">
           <p>O Instituto Infnet participa do Programa de Financiamento Estudantil (Fies), que se destina a estudantes matriculados em cursos de graduação presencial de instituições de ensino superior não gratuitas na forma da Lei 10.260/2001.</p>
-          <p class="text-center"><a href="<?php bloginfo('url') ?>/financiamentos" class="btn btn-secondary btn-lg btn-lg-wide">Entenda Mais</a></p>
         </div>
+      </div>
+      <div class="col-md-12 col-lg-4">
+        <p class="text-center"><a href="<?php bloginfo('url') ?>/financiamentos" class="btn btn-secondary btn-lg btn-lg-wide">Entenda Mais</a></p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- Solicitar Informações -->
+<a name="mais_informacoes"></a>
 <?php get_template_part('assets/views/contato', 'contato'); ?>
 
 

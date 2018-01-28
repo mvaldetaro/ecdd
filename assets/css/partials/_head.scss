@@ -7,11 +7,16 @@
 
   .logo {
     display: inline-block;
-    /*width: 180px;*/
+    width: 180px;
 
     @include tablet {
-      width: 222px;
-      height: 80px;
+      width: 253px;
+      //height: 80px;
+    }
+
+    @include desktop {
+      width: 281px;
+      //height: 80px;
     }
 
     img {
@@ -25,8 +30,9 @@
     float: right;
     @include desktop {
       display: inline-block;
-      float: none;
-      vertical-align: text-top;
+      float: right;
+      margin-top: 29px;
+      //vertical-align: text-top;
     }
 
     @include large-desktop {
@@ -99,6 +105,7 @@
 
     .menu-item {
       border-bottom: 1px solid $ecdd-mono-two;
+      font-size: .875em;
       &:last-child{
         border-bottom: none;
       }

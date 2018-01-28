@@ -71,7 +71,7 @@
                     <p><?php the_sub_field('carga_horaria'); ?></p>
                   <?php endif ?>
 
-                  <h3 class="title">Ínicio e Horário</h3>
+                  <h3 class="title">Início e Horário</h3>
                   <p>
                   <?php
                     if( have_rows('inicio_e_horario') ):

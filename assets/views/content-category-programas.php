@@ -55,7 +55,7 @@
                 <picture>
                   <source media="(min-width: 992px)" srcset="<?php imageSrc($attachment_id, 'category-thumb-large'); ?>">
                   <source media="(min-width: 768px)" srcset="<?php imageSrc($attachment_id, 'category-thumb-large'); ?>">
-                  <img src="<?php imageSrc($attachment_id, 'category-thumb-large'); ?>"  class="img-responsive"/>
+                  <img src="<?php imageSrc($attachment_id, 'category-thumb-large'); ?>" />
                  </picture>
               </a>
             </figure>

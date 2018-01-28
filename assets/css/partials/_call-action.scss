@@ -5,7 +5,7 @@ $bg-color-ca-small: #455A64 !default;
   background-color: $bg-color-ca-default;
   margin-top: 32px;
   position: relative;
-  padding: 40px 0 20px 0;
+  padding: 40px 0;
 
   *,
   *:before,
@@ -37,6 +37,7 @@ $bg-color-ca-small: #455A64 !default;
     text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 8px;
+
     @include tablet {
       font-size: 3.375em;
     }
@@ -108,9 +109,23 @@ $bg-color-ca-small: #455A64 !default;
   }
 
   &__list {
-
+    list-style: none;
+    padding-left: 0;
+    margin-top: 24px;
     &__item {
       margin-bottom: 16px;
+      position: relative;
+      padding-left: 28px;
+      &:before {
+        content: '';
+        display: block;
+        height: 18px;
+        width: 18px;
+        background: url('assets/img/mark.png') no-repeat center center;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
     }
   }
 
@@ -133,7 +148,8 @@ $bg-color-ca-small: #455A64 !default;
 
   &__form {
 
-    &__input {
+    &__input,
+    &__select {
       background-color: transparent;
       border: none;
       border-bottom: 1px solid $white;
@@ -141,16 +157,21 @@ $bg-color-ca-small: #455A64 !default;
       width: 100%;
       font-size: 1em;
       color: $white;
-      font-weight: 300;
+      font-weight: 400;
       &::placeholder {
         color: rgba(255,255,255, .67);
-        font-size: .85em;
+        font-size: 1em;
       }
       &:hover{
         border-color: $ecdd-mono-three;
       }
       &:focus {
         border-color: $ecdd-mono-five;
+      }
+      option {
+        color: $black;
+        line-height: 21px;
+        font-size: .85em;
       }
     }
     &__button {

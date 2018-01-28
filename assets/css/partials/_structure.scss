@@ -2,6 +2,12 @@
   outline: none;
 }
 
+.wrap {
+  @include desktop {
+    margin-top: 47px;
+  }
+}
+
 .lwrCase {
   text-transform: lowercase !important;
 }
@@ -61,11 +67,18 @@
   margin-bottom: 32px;
 
   &--programa {
-    min-height: 330px;
+
+    @include tablet {
+      min-height: 355px;
+    }
 
     @include desktop {
-      min-height: 330px;
+      min-height: 375px;
     }
+
+    /*@include tablet-landscape {
+      min-height: 375px;
+    }*/
 
     @include large-desktop {
       min-height: 330px;
@@ -73,7 +86,13 @@
   }
 
   &--portfolio {
-    min-height: 290px;
+    @include tablet {
+      min-height: 250px;
+    }
+
+    @include desktop {
+      min-height: 290px;
+    }
   }
 
   &.hover {
@@ -171,6 +190,28 @@ body.page  {
   margin-bottom: 0;
 }
 
+.list {
+  list-style: none;
+  padding-left: 0 !important;
+  margin-top: 24px;
+
+  li {
+    margin-bottom: 16px;
+    position: relative;
+    padding-left: 28px;
+    &:before {
+      content: '';
+      display: block;
+      height: 18px;
+      width: 18px;
+      background: url('assets/img/mark.png') no-repeat center center;
+      position: absolute;
+      top: 1px;
+      left: 0;
+    }
+  }
+}
+
 .page {
   margin-bottom: 32px;
   &__header {
@@ -207,12 +248,25 @@ body.page  {
     }
   }
 
+  &__full_content {
+    p {
+      font-size: 1em;
+      line-height: 25px;
+      font-weight: 300;
+      @include tablet {
+        font-size: 1.313em;
+        line-height: 34px;
+      }
+    }
+  }
+
   &__content {
     h2 {
       font-size: 1.6em;
       text-transform: uppercase;
-      font-weight: 400;
+      //font-weight: 400;
       color: $black; //$ecdd-mono-extra
+      margin-top: 40px;
     }
 
     h3 {
@@ -234,18 +288,37 @@ body.page  {
       margin-bottom: 16px;
     }
 
+    .col-md-12 {
+      p {
+        font-size: .875em;
+        line-height: 21px;
+        @include desktop {
+          font-size: 1.313em;
+          line-height: 34px;
+          font-weight: 300;
+        }
+      }
+    }
+
     .col-md-6 {
       p {
         font-size: .875em;
-        line-height: 23px;
+        line-height: 21px;
+        @include desktop {
+          line-height: 23px;
+        }
       }
     }
 
     .col-md-4 {
       p {
-        font-size: .813em;
-        line-height: 19px;
+        font-size: .875em;
+        line-height: 21px;
         text-rendering: optimizeLegibility;
+        @include desktop {
+          font-size: .813em;
+          line-height: 21px;
+        }
       }
       ul {
         padding-left: 0px;
@@ -259,8 +332,9 @@ body.page  {
       }
     }
 
-    ul {
+    ul, ol {
       margin-bottom: 16px;
+      padding-left: 16px;
       li {
         margin-bottom: 8px;
       }
@@ -300,8 +374,6 @@ body.page  {
           }
         }
       }
-
-
 
       &__image {
         border-radius: 50%;
@@ -418,6 +490,18 @@ body.page  {
 
     }
   }
+
+  &-contato {
+    background: transparent;
+    .call-action__form__select,
+    .call-action__form__input {
+      border-bottom: 1px solid $black;
+      color: $black;
+      &::placeholder {
+        color: $black;
+      }
+    }
+  }
 }
 
 .widebox {
@@ -510,4 +594,45 @@ body.page  {
   }
 }
 
+.form-group {
+  position: relative;
+}
 
+.math-quiz {
+  position: relative;
+}
+
+.help {
+  background: url('assets/img/icons/ic_help_outline_white_24px.svg') no-repeat;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 22px;
+  left: 190px;
+  cursor: help;
+  &__invert {
+    background: url('assets/img/icons/ic_help_outline_black_24px.svg') no-repeat;
+    top: 6px;
+  }
+}
+
+.selo {
+  position: absolute;
+  width: 80px;
+  top: 123px;
+  left: 15px;
+
+  @include tablet {
+    right: 80px;
+    left: inherit;
+    top: 27px;
+    width: 90px;
+  }
+
+  @include desktop {
+    right: 0px;
+    left: inherit;
+    top: 66px;
+    width: 90px;
+  }
+}

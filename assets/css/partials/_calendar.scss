@@ -49,8 +49,81 @@
       }
     }
   }
-  &__content{
-    &__list{
+  &__nav {
+    a {
+      opacity: .87;
+      background: transparent;
+      position: absolute;
+      width: 32px;
+      height: 32px;
+      display: block;
+      left: calc(50% - 16px);
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+
+      &.arrow_up {
+        top: 0;
+        border-top: 2px solid #666;
+        border-left: 2px solid #666;
+      }
+
+      &.arrow_down {
+        bottom: 0;
+        border-bottom: 2px solid #666;
+        border-right: 2px solid #666;
+      }
+
+      &.arrow_up,
+      &.arrow_down {
+        &:after,
+        &:before {
+          //border-top: 3px solid #666;
+          //content: '';
+          //display: block;
+          //width: 50%;
+          //position: absolute;
+          //top: 16px;
+          //z-index: 0;
+          //opacity: .87;
+        }
+        &:before {
+          //right: 0;
+          //border-color: red;
+          //-webkit-transform: skewY(-45deg);
+          //-ms-transform: skewY(-45deg);
+          //transform: skewY(-45deg);
+          //-webkit-transform: rotate(45deg);
+          //-ms-transform: rotate(45deg);
+          //transform: rotate(45deg);
+        }
+        &:after {
+          //left: 0;
+          //border-color: green;
+          //-webkit-transform: skewY(-45deg);
+          //-ms-transform: skewY(-45deg);
+          //transform: skewY(-45deg);
+        }
+      }
+      &.arrow_down {
+        &:before {
+          //left: 0;
+          //right: initial;
+        }
+        &:after {
+          //right: 0;
+          //left: initial;
+        }
+      }
+      span {
+        display: none;
+      }
+    }
+  }
+  &__content {
+    position: relative;
+    padding: 40px 0;
+    &__list {
       list-style: none;
       margin: 0;
       padding: 0;
@@ -58,8 +131,8 @@
         display: block;
         position: relative;
         margin-bottom: 16px;
-        padding-bottom: 16px;
-        min-height: 97px;
+        /*padding-bottom: 16px;*/
+        min-height: 100px;
         @include desktop {
           &:last-child {
             display: none;
@@ -92,9 +165,14 @@
           border-left: 1px solid $gray-light;
           padding-left: 8px;
           margin-left: 8px;
+          height: 100px;
+          overflow: hidden;
           h3 {
             font-size: 1em;
+            line-height: 21px;
             margin-top: 8px;
+            margin-bottom: 4px;
+            text-transform: uppercase;
             a {
               color: $link-default;
               transition: all .2s ease-in-out;
