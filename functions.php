@@ -49,20 +49,20 @@
     add_image_size('head-banner-internal-2x', 3840, 434, true );
 
     // Trabalho Alunos sizes
-    add_image_size('works-thumb-large', 570, 321, true );
-    add_image_size('works-thumb-large-2x', 1140, 642, true );
+    add_image_size('works-thumb-large-desktop', 380, 380, true );
+    add_image_size('works-thumb-large-desktop-2x', 760, 760, true );
 
-    add_image_size('works-thumb-medium', 428, 196, true );
-    add_image_size('works-thumb-medium-2x', 856, 392, true );
+    add_image_size('works-thumb-laptop', 315, 315, true );
+    add_image_size('works-thumb-laptop-2x', 630, 630, true );
 
-    add_image_size('works-thumb-small', 285, 196, true );
-    add_image_size('works-thumb-small-2x', 570, 392, true );
+    add_image_size('works-thumb-tablet', 240, 240, true );
+    add_image_size('works-thumb-tablet-2x', 480, 480, true );
 
-    add_image_size('works-thumb-portrait', 285, 321, true );
-    add_image_size('works-thumb-portrait-2x', 570, 642, true );
+    add_image_size('works-thumb-mobile', 135, 135, true );
+    add_image_size('works-thumb-mobile-2x', 270, 270, true );
 
-    add_image_size('works-thumb-square', 167, 167, true );
-    add_image_size('works-thumb-square-2x', 334, 334, true );
+    //add_image_size('works-thumb-square', 167, 167, true );
+    //add_image_size('works-thumb-square-2x', 334, 334, true );
 
     // Category sizes
     add_image_size('category-thumb-large', 390, 162, true );

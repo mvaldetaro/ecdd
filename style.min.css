@@ -198,6 +198,19 @@ body.page{margin-bottom:0}
 .students-works__content__item{width:calc(99.9%/3);display:inline-block}
 .students-works__content__item>div{height:inherit}
 .students-works__content__item img{width:100%;height:auto}
+.students-works__content a{display:inline-block;text-align:left;opacity:.99;overflow:hidden;position:relative;box-shadow:0 0 20px 0 rgba(0,0,0,0.05)}
+.students-works__content a:before{content:'';background:-webkit-linear-gradient(top,transparent 0,rgba(0,0,0,0.7) 100%);background:linear-gradient(to bottom,transparent 0,rgba(0,0,0,0.7) 100%);width:100%;height:50%;opacity:0;position:absolute;top:100%;left:0;z-index:2;-webkit-transition-property:top,opacity;transition-property:top,opacity;-webkit-transition-duration:.3s;transition-duration:.3s}
+.students-works__content a:focus img,.students-works__content a:hover img{-webkit-filter:saturate(1);filter:saturate(1);-webkit-transform:scale(1.1);-ms-transform:scale(1.1);transform:scale(1.1);-webkit-transition:all .5s;transition:all .5s}
+.students-works__content a:focus:before,.students-works__content a:focus span,.students-works__content a:hover:before,.students-works__content a:hover span{opacity:1}
+.students-works__content a:focus:before,.students-works__content a:hover:before{top:50%}
+.students-works__content a:focus span,.students-works__content a:hover span{top:0}
+.students-works__content a:focus .title,.students-works__content a:hover .title{-webkit-transition-delay:.15s;transition-delay:.15s}
+.students-works__content a:focus .category,.students-works__content a:hover .category{-webkit-transition-delay:.25s;transition-delay:.25s}
+.students-works__content a img{display:block;max-width:100%;backface-visibility:hidden;-webkit-backface-visibility:hidden;-webkit-transition:all .5s;transition:all .5s}
+.students-works__content .details{font-size:16px;padding:20px;color:#fff;position:absolute;bottom:0;left:0;z-index:3}
+.students-works__content .details span{display:block;opacity:0;position:relative;top:100px;-webkit-transition-property:top,opacity;transition-property:top,opacity;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-delay:0s;transition-delay:0s}
+.students-works__content .details .title{line-height:1;font-weight:600;font-size:18px}
+.students-works__content .details .category{line-height:1.2;margin-top:5px;font-size:12px}
 .students-works .mix,.students-works .gap{display:inline-block;vertical-align:top}
 .students-works .mix{background:#fff;position:relative}
 .students-works .mix:before{content:'';display:inline-block}
@@ -606,12 +619,6 @@ div.wpcf7 .ajax-loader{background:url(assets/img/ripple.svg) no-repeat center ce
 .students-works__menu__list{margin-top:10px;font-size:.75em}
 .students-works__menu__item>a,.students-works__menu__item-current>a{color:white}
 .students-works__content__item{overflow:hidden}
-.students-works__content__item.nth-1{width:calc(99.9%/4);height:123.79px}
-.students-works__content__item.nth-2{width:calc(99.9%/2);height:202.73px}
-.students-works__content__item.nth-3{width:calc(99.9%/4);height:202.74px}
-.students-works__content__item.nth-4{width:calc(99.9%/4);height:202.74px;margin-top:-79px}
-.students-works__content__item.nth-5{width:calc(99.9%/2.666);height:123.79px}
-.students-works__content__item.nth-6{width:calc(99.9%/2.666);height:123.79px}
 .students-works__content__item img{height:100%}
 .calendar__header .title{font-size:1.5em}
 .events__header .title{font-size:1.5em}
@@ -723,12 +730,6 @@ div.wpcf7 .ajax-loader{background:url(assets/img/ripple.svg) no-repeat center ce
 .head .main-menu{display:inline-block;float:right;margin-top:29px}
 .students-works__title{font-size:1.5em}
 .students-works__menu__list{font-size:.8125em}
-.students-works__content__item.nth-1{width:calc(99.9%/4);height:161.61px}
-.students-works__content__item.nth-2{width:calc(99.9%/2);height:264.68px}
-.students-works__content__item.nth-3{width:calc(99.9%/4);height:264.68px}
-.students-works__content__item.nth-4{width:calc(99.9%/4);height:264.68px;margin-top:-103px}
-.students-works__content__item.nth-5{width:calc(99.9%/2.666);height:161.61px}
-.students-works__content__item.nth-6{width:calc(99.9%/2.666);height:161.61px}
 .calendar__content__list__item:last-child{display:none}
 .events__content{height:377px}
 .our-teachers__content__item{min-height:380px}
@@ -765,12 +766,6 @@ div.wpcf7 .ajax-loader{background:url(assets/img/ripple.svg) no-repeat center ce
 .card--programa{min-height:330px}
 .header .header-background{background-image:url("assets/img/home/bg_desktop.jpg")}
 .head .main-menu{padding-left:34px}
-.students-works__content__item.nth-1{height:196px}
-.students-works__content__item.nth-2{height:321px}
-.students-works__content__item.nth-3{height:321px}
-.students-works__content__item.nth-4{height:321px;margin-top:-125px}
-.students-works__content__item.nth-5{height:196px}
-.students-works__content__item.nth-6{height:196px}
 .calendar__content__list__item:last-child{display:block}
 .events__content{height:436px}
 }@media(max-width:1199px){.hidden-lg-down{display:none !important}

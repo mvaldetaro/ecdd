@@ -18,7 +18,7 @@ function porfolio($programa='') {
     'category_name' => 'trabalhos-alunos',
     'post_status' => 'publish',
     'posts_per_page' => 6
-    );
+  );
 
   if($programa) {
     $tagslug = $programa;
@@ -28,53 +28,41 @@ function porfolio($programa='') {
   }
 
   $query = new WP_Query($args);
-  $i = 1;
 
   if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post();
 
-  $t = wp_get_post_tags($post->ID);
-  $attachment_id = get_post_thumbnail_id($post->ID);
+    $t = wp_get_post_tags($post->ID);
+    $attachment_id = get_post_thumbnail_id($post->ID);
 
-  echo '<div class="students-works__content__item mix '.$tagslug.' nth-'.$i.'">';
+    $posttags = get_the_tags();
+    $programa = get_field('programa');
 
-  echo '<div class="students-works__content__item__content">';
-  echo '<a href="'.get_the_permalink().'" title="'.get_the_title().'">';
-  echo '<picture>';
-  switch ($i) {
-    case 1:
-    echo '<source media="(min-width: 992px)" srcset="'. imageUrl($attachment_id, "works-thumb-small") .'">';
-    echo '<source media="(min-width: 768px)" srcset="'. imageUrl($attachment_id, 'works-thumb-small') .'">';
-    echo '<img src="'. imageUrl($attachment_id, 'works-thumb-square') .'" class="img-responsive"/>';
-    break;
-    case 2:
-    echo '<source media="(min-width: 992px)" srcset="'. imageUrl($attachment_id, "works-thumb-large") .'">';
-    echo '<source media="(min-width: 768px)" srcset="'. imageUrl($attachment_id, 'works-thumb-large') .'">';
-    echo '<img src="'. imageUrl($attachment_id, 'works-thumb-square') .'" class="img-responsive"/>';
-    break;
-    case 3;
-    case 4;
-    echo '<source media="(min-width: 992px)" srcset="'. imageUrl($attachment_id, "works-thumb-portrait") .'">';
-    echo '<source media="(min-width: 768px)" srcset="'. imageUrl($attachment_id, 'works-thumb-portrait') .'">';
-    echo '<img src="'. imageUrl($attachment_id, 'works-thumb-square') .'" class="img-responsive"/>';
-    break;
-    case 5;
-    case 6;
-    echo '<source media="(min-width: 992px)" srcset="'. imageUrl($attachment_id, "works-thumb-medium") .'">';
-    echo '<source media="(min-width: 768px)" srcset="'. imageUrl($attachment_id, 'works-thumb-medium') .'">';
-    echo '<img src="'. imageUrl($attachment_id, 'works-thumb-square') .'" class="img-responsive"/>';
-    break;
-  }
-  echo '</picture>';
 
-  echo '</a>';
-  echo '</div>';
-  echo '</div>';
 
-  $i++;
+    echo '<div class="students-works__content__item mix '.$tagslug.'">';
+
+    echo '<div class="students-works__content__item__content">';
+    echo '<a href="'.get_the_permalink().'" title="'.get_the_title().'">';
+    echo '<picture>';
+    //, imageSrc($attachment_id, 'professores-thumb-large-2x') ' 2x';
+    echo '<source media="(min-width: 1200px)" srcset="'. imageUrl($attachment_id, "works-thumb-large-desktop").', '. imageUrl($attachment_id, "works-thumb-large-desktop-2x").' 2x">';
+    echo '<source media="(min-width: 992px)" srcset="'. imageUrl($attachment_id, "works-thumb-laptop") .', '. imageUrl($attachment_id, "works-thumb-laptop-2x") .' 2x">';
+    echo '<source media="(min-width: 768px)" srcset="'. imageUrl($attachment_id, 'works-thumb-tablet') .', '.imageUrl($attachment_id, 'works-thumb-tablet-2x') .' 2x">';
+    echo '<img srcset="'. imageUrl($attachment_id, 'works-thumb-mobile') .', '.imageUrl($attachment_id, 'works-thumb-mobile-2x').'" class="img-responsive"/>';
+
+    echo '</picture>';
+    echo '<div class="details">';
+    echo '<span class="title">'.get_the_title().'</span>';
+    echo '<span class="category">'. $posttags[0]->name .' '. $programa->post_title. '</span>';
+    echo '</div>';
+    echo '</a>';
+    echo '</div>';
+    echo '</div>';
+
   endwhile;
   wp_reset_postdata();
-  else :
-    _e('Nada encontrado.');
-  endif;
+else :
+  _e('Nada encontrado.');
+endif;
 }
 ?>
