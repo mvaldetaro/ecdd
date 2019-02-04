@@ -104,8 +104,6 @@ $(window).load(function() {
   );
 });
 
-console.info('scripts');
-
 (function(){
   $(document).ready(function(){
     if (/Android|BlackBerry|iPhone|iPad|iPod|webOS/i.test(navigator.userAgent) === false) {
@@ -130,17 +128,17 @@ console.info('scripts');
         var st = $(this).scrollTop();
         // Make sure they scroll more than delta
         if(Math.abs(lastScrollTop - st) <= delta)
-            return;
+          return;
 
         // If they scrolled down and are past the navbar, add class .nav-up.
         // This is necessary so you never see what is "behind" the navbar.
         if (st > lastScrollTop && st > navbarHeight){
             // Scroll Down
             $('.bar-super').removeClass('nav-down').addClass('nav-up');
-        } else {
+          } else {
           // Scroll Up
           if(st + $(window).height() < $(document).height()) {
-              $('.bar-super').removeClass('nav-up').addClass('nav-down');
+            $('.bar-super').removeClass('nav-up').addClass('nav-down');
           }
         }
         lastScrollTop = st;
@@ -162,12 +160,12 @@ $(window).load(function() {
 * Permite interação com o iframe do Google Maps
 */
 $('.map .map__content')
-  .click(function(){
-    $(this).find('iframe').addClass('actived')
-  })
-  .mouseleave(function(){
-    $(this).find('iframe').removeClass('actived')
-  });
+.click(function(){
+  $(this).find('iframe').addClass('actived')
+})
+.mouseleave(function(){
+  $(this).find('iframe').removeClass('actived')
+});
 
 /**
 * Responsive slider Turma
@@ -211,13 +209,13 @@ $(function () {
 
 $(function () {
   var wow = new WOW(
-    {
+  {
       boxClass:     'wow',      // animated element css class (default is wow)
       animateClass: 'animated', // animation css class (default is animated)
       offset:       15,          // distance to the element when triggering the animation (default is 0)
       mobile:       false,       // trigger animations on mobile devices (default is true)
     }
-  );
+    );
   //wow.init();
 });
 
@@ -291,6 +289,34 @@ $(document).ready(function(){
 // Formulários - Integração com Talisma utilizando eventos do plugin contact form 7
 
 $(function () {
+
+  var flds = {
+    id:-1,
+    nome: "nome",                 //"nome" = nome e id do campo no formulário.
+    email:"email",                //"email" = nome e id do campo no formulário.
+    datanascimento: "dtnascimento", //"nascimento" = nome e id do campo no formulário.
+    telefone: "tel",            //"phonec" = nome e id do campo no formulário.
+    uf: "uf",                 //"estadoc" = nome e id do campo no formulário.
+    site:"ECDD",               //"XXXXXXX" = nome do site. exemplo: ESTI, ADS...
+    eventotalisma: "evento",       //"evento" = nome e id do campo no formulário
+    form:"info",             //"formulario" = nome e id do formulário
+
+    //Campos obrigatórios para o formulário. Usar os nomes acima.
+    obrigatorios: {
+      novidades: ["nome", "email"],
+      informacoes: ["nome", "email", "telefone", "eventotalisma", "uf"]
+    }
+  };
+
+  //Função chamada no botão de enviar do Formulário
+  window.onload = function() {
+    $(".wpcf7-submit").onclick = function() {
+      console.log("objeto flds");
+      console.log(flds);
+      //return talisma.informacoes.insert(flds);
+    }
+  };
+
   var wpcf7Elm = document.querySelector( '.wpcf7' );
   console.log(wpcf7Elm);
 
@@ -298,6 +324,10 @@ $(function () {
     console.log("Evento de Envio");
     fbq('track', 'Lead');
     ga('send','event','Forms','Click');
+    console.log("objeto flds");
+    console.log(flds);
+    console.log(sendAdmissao());
+    console.log(talisma.informacoes.insert(flds));
   }, false );
 
   wpcf7Elm.addEventListener( 'wpcf7invalid', function( event ) {
@@ -306,7 +336,7 @@ $(function () {
 
   wpcf7Elm.addEventListener( 'wpcf7mailsent', function( event ) {
     // Função de envio de mensagem para o Talisma [talisma.js]
-    sendAdmissao();
+    //sendAdmissao();
     console.log("Enviado com sucesso!");
   }, false );
 

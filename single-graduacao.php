@@ -29,7 +29,6 @@
     }
     ?>
   <div aria-hidden="true" class="header-background" style="background-image: url('<?php echo $image; ?>'); "> </div>
-
 </header>
 
 <main class="main">

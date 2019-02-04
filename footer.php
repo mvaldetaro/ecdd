@@ -107,8 +107,9 @@
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
-
-<?php wp_footer(); ?>
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js"></script>
+<script src="https://www.infnet.edu.br/js/jquery-confirm.min.js" type="text/javascript" charset="utf-8" async defer></script>
+<script src="https://www.infnet.edu.br/js/talisma.min.js" type="text/javascript" charset="utf-8" async defer></script>
+<?php wp_footer(); ?>
 </body>
 </html>

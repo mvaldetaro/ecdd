@@ -14,11 +14,15 @@
             ?>
             <div class="group">
               <p class="modalidade"><?php the_sub_field('modalidade'); ?> |
-              <!--<span class="bolsa">Bolsa <?php the_sub_field('percentagem_bolsa'); ?>%</span>-->
+              <span class="bolsa">Bolsa <?php the_sub_field('percentagem_bolsa'); ?>%</span>
               <span class="sr-only">das</span>
               <span class="horario"><?php the_sub_field('horario'); ?></span>
               </p>
-              <p class="preco">R$ <?php the_sub_field('valor_com_desconto'); ?> mensais <span class="preco__integral" style="line-height: 16px; margin-top: 8px;">Entre em contato para condições especiais para a próxima entrada.<!-- Valor Integral: R$<?php //the_sub_field('valor_integral'); ?> mensais--></span></p>
+              <p class="preco">
+                R$ <?php the_sub_field('valor_com_desconto'); ?> mensais 
+                <span class="preco__integral">
+                  Valor Integral: R$<?php the_sub_field('valor_integral'); ?> mensais
+                </span></p>
             </div>
             <?php
               endwhile;

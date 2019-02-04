@@ -17,6 +17,14 @@
    * as indicating support for post thumbnails.
    */
   function ecdd_setup() {
+
+    add_action('um_registration_complete', 'my_registration_complete', 10, 2 );
+    function my_registration_complete($user_id, $args) {
+        $url = $_COOKIE["wp_last_url"];
+        header("Location: ".$url);
+        die();
+    }
+
     // Add default posts and comments RSS feed links to head.
     add_theme_support( 'automatic-feed-links' );
 
@@ -343,7 +351,7 @@ function custom_post_select( $tag ) {
     'orderby' => 'type'
   );
   $posts = get_posts( $args );
-  $output .= "<select name='evento' id='evento' class='call-action__form__select' onchange='document.getElementById(\"" . $posttype . "\").value=this.value;'><option value='' disabled selected>Selecione o programa que deseja cursar</option>";
+  $output .= "<select name='evento' id='evento' class='call-action__form__select'><option value='' disabled selected>Selecione o programa que deseja cursar</option>";
   // if you've set the name part to true in wpcf7_add_shortcode use $tag['name'] instead of $posttype as the name of the select.
 
   foreach ( $posts as $post ) {

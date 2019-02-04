@@ -4,27 +4,27 @@
     <div class="row">
       <div class="col-md-6">
         <?php
-        $args = array(
+        /*$args = array(
           'post_status' => 'publish',
           'posts_per_page' => 1,
           'name' => 'quer-saber-mais'
           );
         $query = new WP_Query($args);
-        if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post();
+        if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post();*/
         ?>
         <header class="call-action__header wow animated zoomIn">
-          <h2 class="call-action__title"><?php the_title(); ?></h2>
-          <h3 class="call-action__subtitle"><?php echo(get_the_excerpt()); ?></h3>
+          <h2 class="call-action__title">QUER SABER MAIS</h2>
+          <h3 class="call-action__subtitle">SOBRE O CURSO QUE PROCURA?</h3>
         </header>
         <div class="call-action__content wow animated zoomIn">
-          <?php the_content(); ?>
+          <?php //the_content(); ?>
+          <?php echo do_shortcode('[contact-form-7 id="172" title="Programas Home" html_id="info" html_name="info"]'); //[contact-form-7 id="290" title="Solicitar Informações"]?>
         </div>
         <?php
-        endwhile;
-        wp_reset_postdata();
-        else : ?>
-        <p><?php _e('Nada encontrado.'); ?></p>
-      <?php endif; ?>
+        //endwhile;
+        //wp_reset_postdata();
+        //else : ?>
+      <?php //endif; ?>
     </div>
     <div class="col-md-6">
       <!-- TODO: animação do foguete no hover-->

@@ -63,3 +63,23 @@ div.wpcf7 .ajax-loader {
 .math-quiz .wpcf7-quiz {
   width: 64px;
 }
+
+
+.um {
+    max-width: inherit !important;
+}
+
+.um-login .um-col-121 {
+  width: 100%;
+}
+
+.um-form-field {
+    background-color: transparent !important;
+    border: 0 !important;
+    border-bottom: 1px solid rgba(0,0,0,0.87) !important;
+    color: rgba(0,0,0,0.87) !important;
+    padding: 8px 0 !important;
+    width: 100% !important;
+    font-size: 1em !important;
+    font-weight: 400;
+}

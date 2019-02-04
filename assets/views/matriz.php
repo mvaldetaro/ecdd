@@ -36,6 +36,13 @@
                 ?>
                 <li><p class="vertical"><?php the_sub_field('disciplina_de_projeto'); ?></p></li>
               </ul>
+              <?php 
+                $id_post = get_sub_field('especificacao'); 
+                if ($id_post) {
+                  echo '<a href="'.esc_url(get_permalink($id_post)).'" class="btn btn-block btn-primary" target="_blank" rel="download">Download</a>';
+                }
+                ?>
+              
             </div>
           </div>
           <!-- /loop -->

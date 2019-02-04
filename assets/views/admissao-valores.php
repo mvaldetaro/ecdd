@@ -23,7 +23,7 @@
       <div class="row">
         <div class="col-md-6">
           <?php //the_content(); ?>
-          <?php echo do_shortcode('[contact-form-7 id="290" title="Solicitar Informações"]');?>
+          <?php echo do_shortcode('[contact-form-7 id="290" title="Solicitar Informações" html_id="info" html_name="info"]');?>
         </div>
         <div class="col-md-6">
           <?php //if ($posttype != 'formacao'): ?>

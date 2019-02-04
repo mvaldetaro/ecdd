@@ -32,7 +32,7 @@
                   <source media="(min-width: 992px)" srcset="<?php imageSrc($attachment_id, 'professores-thumb-laptop'); ?>, <?php imageSrc($attachment_id, 'professores-thumb-laptop-2x'); echo ' 2x'; ?>">
                   <source media="(min-width: 768px)" srcset="<?php imageSrc($attachment_id, 'professores-thumb-tablet'); ?>, <?php imageSrc($attachment_id, 'professores-thumb-tablet-2x'); echo ' 2x';?>">
                   <img srcset="<?php imageSrc($attachment_id, 'professores-thumb-mobile'); ?>, <?php imageSrc($attachment_id, 'professores-thumb-mobile-2x'); echo ' 2x';?>" alt="<?php the_title(); ?>"/>
-                 </picture>
+                </picture>
               </figure>
               <div class="our-teachers__content__item__info">
                 <h3><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
